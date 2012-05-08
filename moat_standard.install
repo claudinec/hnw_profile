@@ -1,0 +1,66 @@
+<?php
+/**
+ * @file
+ * Install, update and uninstall functions for the the minimal install profile.
+ */
+
+/**
+ * Implements hook_install().
+ *
+ * Performs actions to set up the site for this profile.
+ *
+ * @see system_install()
+ */
+function moat_standard_install() {
+
+	// Create Omega subtheme.
+	module_load_include('inc', 'omega_tools', 'includes/omega_tools.admin');
+  module_load_include('inc', 'omega_tools', 'includes/omega_tools.wizard');
+
+  $form_state = array(
+    'values' => array(
+      'name' => 'test',
+      'machine_name' => 'test',
+      'automated' => 1,
+      'destination' => str_replace('sites/', '', conf_path()),
+      'base' => 'omega',
+      'starterkit' => 'starterkit_omega_html5',
+    ),
+  );
+  omega_tools_subtheme_add_submit(array(), $form_state);
+
+  $form_state = array(
+    'subtheme' => omega_tools_cache_load('test'),
+  );
+  $form_state['subtheme']->destination = conf_path() . '/themes/custom/test';
+  omega_tools_subtheme_wizard_finish($form_state);
+
+
+	
+	// Enable some standard blocks.
+  $default_theme = variable_get('theme_default', 'bartik');
+  $values = array(
+    array(
+      'module' => 'system',
+      'delta' => 'main',
+      'theme' => $default_theme,
+      'status' => 1,
+      'weight' => 0,
+      'region' => 'content',
+      'pages' => '',
+      'cache' => -1,
+    ),
+  );
+  $query = db_insert('block')->fields(array('module', 'delta', 'theme', 'status', 'weight', 'region', 'pages', 'cache'));
+  foreach ($values as $record) {
+    $query->values($record);
+  }
+  $query->execute();
+
+  // Allow visitor account creation, but with administrative approval.
+  variable_set('user_register', USER_REGISTER_VISITORS_ADMINISTRATIVE_APPROVAL);
+
+  // Enable default permissions for system roles.
+  user_role_grant_permissions(DRUPAL_ANONYMOUS_RID, array('access content'));
+  user_role_grant_permissions(DRUPAL_AUTHENTICATED_RID, array('access content'));
+}

@@ -1,0 +1,8 @@
+name = Moat Standard
+description = Standard core Moat Media installation profile.
+version = VERSION
+core = 7.x
+dependencies[] = block
+;dependencies[] = dblog
+dependencies[] = omega_tools
+dependencies[] = ctools
