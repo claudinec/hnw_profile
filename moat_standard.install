@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Install, update and uninstall functions for the the minimal install profile.
+ * Install, update and uninstall functions for the moat_standard install profile.
  */
 
 /**
@@ -13,30 +13,12 @@
  */
 function moat_standard_install() {
 
-	// Create Omega subtheme.
-	module_load_include('inc', 'omega_tools', 'includes/omega_tools.admin');
-  module_load_include('inc', 'omega_tools', 'includes/omega_tools.wizard');
+	// Create Omega subtheme via omega_tools module.
+	_moat_standard_add_subtheme_omega();
 
-  $form_state = array(
-    'values' => array(
-      'name' => 'test',
-      'machine_name' => 'test',
-      'automated' => 1,
-      'destination' => str_replace('sites/', '', conf_path()),
-      'base' => 'omega',
-      'starterkit' => 'starterkit_omega_html5',
-    ),
-  );
-  omega_tools_subtheme_add_submit(array(), $form_state);
+	// Disable all temporary modules.
+  module_disable(array('omega_tools'));
 
-  $form_state = array(
-    'subtheme' => omega_tools_cache_load('test'),
-  );
-  $form_state['subtheme']->destination = conf_path() . '/themes/custom/test';
-  omega_tools_subtheme_wizard_finish($form_state);
-
-
-	
 	// Enable some standard blocks.
   $default_theme = variable_get('theme_default', 'bartik');
   $values = array(
@@ -63,4 +45,23 @@ function moat_standard_install() {
   // Enable default permissions for system roles.
   user_role_grant_permissions(DRUPAL_ANONYMOUS_RID, array('access content'));
   user_role_grant_permissions(DRUPAL_AUTHENTICATED_RID, array('access content'));
+}
+
+function _moat_standard_add_subtheme_omega {
+  // Programatically generate theme based on sites configuration path
+  // (sites/[path]).
+  // @TODO - May need to use request_uri() instead for non-aegir based sites.
+  $name = preg_filter('/(sites\/)(.*?)\..*/', '$2', conf_path()) . '_omega_theme';
+
+  $subtheme = new stdClass();
+  $subtheme->new = TRUE;
+  $subtheme->name = 'Site theme - Omega';
+  $subtheme->machine_name = $name;
+  $subtheme->path = conf_path() . '/themes/' . $subtheme->machine_name;
+  $subtheme->base = 'omega';
+  $subtheme->default = TRUE;
+  $subtheme->status = TRUE;
+
+  omega_tools_subtheme_create($subtheme);
+  omega_tools_subtheme_process($subtheme);
 }
