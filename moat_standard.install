@@ -47,7 +47,7 @@ function moat_standard_install() {
   user_role_grant_permissions(DRUPAL_AUTHENTICATED_RID, array('access content'));
 }
 
-function _moat_standard_add_subtheme_omega {
+function _moat_standard_add_subtheme_omega() {
   // Programatically generate theme based on sites configuration path
   // (sites/[path]).
   // @TODO - May need to use request_uri() instead for non-aegir based sites.
