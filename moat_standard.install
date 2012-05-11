@@ -52,16 +52,17 @@ function _moat_standard_add_subtheme_omega() {
   // (sites/[path]).
   // @TODO - May need to use request_uri() instead for non-aegir based sites.
 	$url = $_SERVER['HTTP_HOST'].request_uri();
-	$name_array = explode($url, '.localhost');
-	$name = $name_array[0] . '_omega_theme';
-  $subtheme = new stdClass();
-  $subtheme->new = TRUE;
-  $subtheme->name = 'Site theme - Omega';
-  $subtheme->machine_name = $name;
-  $subtheme->path = conf_path() . '/themes/' . $subtheme->machine_name;
-  $subtheme->base = 'omega';
-  $subtheme->default = TRUE;
-  $subtheme->status = TRUE;
+	if (preg_match('/^(.*)\.localhost/', $string, $matches)) {
+		$name = $matches[1] . '_omega_theme';
+		$subtheme = new stdClass();
+		$subtheme->new = TRUE;
+		$subtheme->name = 'Site theme - Omega';
+		$subtheme->machine_name = $name;
+		$subtheme->path = conf_path() . '/themes/' . $subtheme->machine_name;
+		$subtheme->base = 'omega';
+		$subtheme->default = TRUE;
+		$subtheme->status = TRUE;
+	}
 
   omega_tools_subtheme_create($subtheme);
   omega_tools_subtheme_process($subtheme);
