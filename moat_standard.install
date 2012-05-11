@@ -54,7 +54,7 @@ function _moat_standard_add_subtheme_omega() {
 	$name = str_replace('-', '_', $matches[1]) . '_omega_theme';
 	$subtheme = new stdClass();
 	$subtheme->new = TRUE;
-	$subtheme->name = 'Site theme - Omega';
+	$subtheme->name = uc_words(str_replace('_', ' ', $name));
 	$subtheme->machine_name = $name;
 	$subtheme->path = conf_path() . '/themes/' . $subtheme->machine_name;
 	$subtheme->base = 'omega';
