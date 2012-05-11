@@ -51,8 +51,8 @@ function _moat_standard_add_subtheme_omega() {
   // Programatically generate theme based on sites configuration path
   // (sites/[path]).
   // @TODO - May need to use request_uri() instead for non-aegir based sites.
-  $name = preg_filter('/(sites\/)(.*?)\..*/', '$2', conf_path()) . '_omega_theme';
-
+	$url = $_SERVER['HTTP_HOST'].request_uri();
+	$name = $url . '_omega_theme';
   $subtheme = new stdClass();
   $subtheme->new = TRUE;
   $subtheme->name = 'Site theme - Omega';
