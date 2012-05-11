@@ -39,6 +39,17 @@ function moat_standard_install() {
   }
   $query->execute();
 
+	// Create some default roles.
+	$newRoles = array('publisher');
+	$roles = user_roles();
+	foreach ($newRoles as $r){
+    if(!user_role_load_by_name($r)){
+      $role = new stdClass();
+      $role->name = $r;
+      user_role_save($role);
+    }
+  }
+	
   // Allow visitor account creation, but with administrative approval.
   variable_set('user_register', USER_REGISTER_VISITORS_ADMINISTRATIVE_APPROVAL);
 
