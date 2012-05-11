@@ -52,7 +52,7 @@ function _moat_standard_add_subtheme_omega() {
   // (sites/[path]).
   // @TODO - May need to use request_uri() instead for non-aegir based sites.
 	$url = $_SERVER['HTTP_HOST'].request_uri();
-	$name_array = explode($url, 'localhost');
+	$name_array = explode($url, '.localhost');
 	$name = $name_array[0] . '_omega_theme';
   $subtheme = new stdClass();
   $subtheme->new = TRUE;
