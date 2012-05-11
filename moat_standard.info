@@ -8,10 +8,28 @@ core = 7.x
 ; -----------------------------------------------------------------------------
 ; Core
 dependencies[] = block
+dependencies[] = toolbar
+dependencies[] = field_ui
+dependencies[] = file
+dependencies[] = image
+dependencies[] = list
+dependencies[] = menu
+dependencies[] = number
+dependencies[] = options
+dependencies[] = path
+dependencies[] = taxonomy
 
 ; Contrib
 dependencies[] = omega_tools
 dependencies[] = ctools
+dependencies[] = devel
+dependencies[] = devel_generate
+dependencies[] = display_suite
+dependencies[] = features
+dependencies[] = diff
+dependencies[] = module_filter
+dependencies[] = strongarm
+dependencies[] = views_ui
 
 ; Custom
 
