@@ -35,3 +35,4 @@ dependencies[] = views_ui
 
 ; Features
 dependencies[] = moat_basic_pages
+dependencies[] = moat_wysiwyg
