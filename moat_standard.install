@@ -54,7 +54,6 @@ function _moat_standard_add_subtheme_omega() {
 	$url = $_SERVER['HTTP_HOST'].request_uri();
 	preg_match('/^(.*)\.localhost/', $string, $matches);
 	$name = $matches[1] . '_omega_theme';
-	print_r '<pre>' . $name . '</pre>';
 	$subtheme = new stdClass();
 	$subtheme->new = TRUE;
 	$subtheme->name = 'Site theme - Omega';
