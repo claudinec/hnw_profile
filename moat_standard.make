@@ -57,14 +57,19 @@ projects[libraries][subdir] = "contrib"
 projects[strongarm][version] = 2.0-rc1
 projects[strongarm][type] = "module"
 projects[strongarm][subdir] = "contrib"
-projects[wysiwyg][version] = 2.1
-projects[wysiwyg][type] = "module"
-projects[wysiwyg][subdir] = "contrib"
 projects[views][version] = 3.3
 projects[views][type] = "module"
 projects[views][subdir] = "contrib"
 projects[omega_tools][subdir] = contrib
 projects[module_filter][subdir] = contrib
+
+; Download a specific Git commit as Features exportability has been committed
+; but no stable build has been released.
+projects[wysiwyg][type] = "module"
+projects[wysiwyg][download][type] = "git"
+projects[wysiwyg][download][url] = "http://git.drupal.org/project/wysiwyg.git"
+projects[wysiwyg][download][revision] = "3e7568e8b8ed077caadcac4dfa147fb394b0b041"
+projects[wysiwyg][subdir] = "contrib"
 
   
 
