@@ -16,6 +16,7 @@ dependencies[] = list
 dependencies[] = menu
 dependencies[] = number
 dependencies[] = options
+dependencies[] = overlay
 dependencies[] = path
 dependencies[] = taxonomy
 
