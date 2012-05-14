@@ -21,8 +21,10 @@ dependencies[] = path
 dependencies[] = taxonomy
 
 ; Contrib
+dependencies[] = boxes
 dependencies[] = omega_tools
 dependencies[] = ctools
+dependencies[] = custom_formatters
 dependencies[] = devel
 dependencies[] = devel_generate
 dependencies[] = ds
@@ -32,6 +34,8 @@ dependencies[] = module_filter
 dependencies[] = strongarm
 dependencies[] = views_ui
 dependencies[] = backup_migrate
+dependencies[] = entity
+dependencies[] = entityreference
 
 ; Custom
 

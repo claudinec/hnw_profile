@@ -34,6 +34,8 @@ projects[drupal][version] = 7
 ; Modules
 ; --------
 projects[backup_migrate][subdir] = "contrib"
+projects[boxes][subdir] = "contrib"
+projects[custom_formatters][subdir] = "contrib"
 projects[ctools][version] = 1.0
 projects[ctools][type] = "module"
 projects[ctools][subdir] = "contrib"
@@ -43,6 +45,8 @@ projects[context][subdir] = "contrib"
 projects[devel][version] = 1.2
 projects[devel][type] = "module"
 projects[devel][subdir] = "contrib"
+projects[entity][subdir] = "contrib"
+projects[entityreference][subdir] = "contrib"
 projects[features][version] = 1.0-rc1
 projects[features][type] = "module"
 projects[features][subdir] = "contrib"
@@ -93,5 +97,7 @@ libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEd
 libraries[profiler][type] = "libraries"
 libraries[profiler][download][type] = "get"
 libraries[profiler][download][url] = "http://ftp.drupal.org/files/projects/profiler-7.x-2.0-beta1.tar.gz"
-
+libraries[editarea][type] = "libraries"
+libraries[editarea][download][type] = "file"
+libraries[editarea][download][url] = "http://downloads.sourceforge.net/project/editarea/EditArea/EditArea%200.8.2/editarea_0_8_2.zip"
 
