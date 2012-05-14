@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the moat_banner feature.
+ */
+
+include_once 'moat_banner.features.inc';
