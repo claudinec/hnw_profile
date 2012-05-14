@@ -65,7 +65,7 @@ projects[views][subdir] = "contrib"
 ; Patch for Profiler to allow Omega subtheme creattion in .info file
 ; see http://drupal.org/node/1328986#comment-5987856
 projects[omega_tools][subdir] = contrib
-projects[omega_tools][version] = 7.x-3.x-dev
+projects[omega_tools][version] = 3.x-dev
 projects[omega_tools][patch][] = http://drupal.org/files/profiler_integration-1328986-4.patch
 
 
