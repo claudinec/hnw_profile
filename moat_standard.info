@@ -37,13 +37,3 @@ dependencies[] = views_ui
 ; Features
 dependencies[] = moat_basic_pages
 dependencies[] = moat_wysiwyg
-
-; Themes
-; Create Omega subtheme with namespace based on the path prefix.
-omega-tools[{machine_name}][new] = 1
-omega-tools[{machine_name}][name] = [conf_path:dir:prefix] theme
-omega-tools[{machine_name}][machine_name] = [conf_path:dir:prefix]_theme
-omega-tools[{machine_name}][base] = omega
-omega-tools[{machine_name}][path] = [conf_path]/themes/[conf_path:dir:prefix]_theme
-omega-tools[{machine_name}][default] = 1
-omega-tools[{machine_name}][status] = 1
