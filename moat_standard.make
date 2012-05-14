@@ -89,8 +89,12 @@ libraries[tinymce][download][url] = "http://www.tinymce.com/track.php?url=http%3
 libraries[ckeditor][type] = "libraries"
 libraries[ckeditor][download][type] = "file"
 libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%203.6.3/ckeditor_3.6.3.tar.gz"
+
+; Patch for Profiler to allow Omega subtheme creattion in .info file
+; see http://drupal.org/node/1328986#comment-5987856
 libraries[profiler][type] = "libraries"
 libraries[profiler][download][type] = "get"
 libraries[profiler][download][url] = "http://ftp.drupal.org/files/projects/profiler-7.x-2.0-beta1.tar.gz"
+libraries[profiler][patch][] = http://drupal.org/files/profiler_integration-1328986-4.patch
 
 
