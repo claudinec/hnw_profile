@@ -100,8 +100,8 @@ function moat_banner_field_default_fields() {
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
-          0 => '',
-          1 => '',
+          0 => 'Off',
+          1 => 'Front',
         ),
         'allowed_values_function' => '',
       ),
@@ -143,7 +143,7 @@ function moat_banner_field_default_fields() {
         'active' => 1,
         'module' => 'options',
         'settings' => array(
-          'display_label' => 0,
+          'display_label' => 1,
         ),
         'type' => 'options_onoff',
         'weight' => '5',
