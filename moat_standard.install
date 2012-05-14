@@ -13,11 +13,11 @@
  */
 function moat_standard_install() {
 
-	// Create Omega subtheme via omega_tools module.
-	_moat_standard_add_subtheme_omega();
+	// // Create Omega subtheme via omega_tools module.
+	// _moat_standard_add_subtheme_omega();
 
-	// Disable all temporary modules.
-  module_disable(array('omega_tools'));
+	// // Disable all temporary modules.
+  // module_disable(array('omega_tools'));
 
 	// Enable some standard blocks.
   $default_theme = variable_get('theme_default', 'bartik');
@@ -61,20 +61,20 @@ function moat_standard_install() {
 	variable_set('admin_theme', 'rubik');
 }
 
-function _moat_standard_add_subtheme_omega() {
-  // Programatically generate theme based on site's path.
-	$url = $_SERVER['HTTP_HOST'].request_uri();
-	preg_match('/^(.*)\.localhost/', $url, $matches);
-	$name = str_replace('-', '_', $matches[1]) . '_omega_theme';
-	$subtheme = new stdClass();
-	$subtheme->new = TRUE;
-	$subtheme->name = ucwords(str_replace('_', ' ', $name));
-	$subtheme->machine_name = $name;
-	$subtheme->path = conf_path() . '/themes/' . $subtheme->machine_name;
-	$subtheme->base = 'omega';
-	$subtheme->default = TRUE;
-	$subtheme->status = TRUE;
+// function _moat_standard_add_subtheme_omega() {
+//   // Programatically generate theme based on site's path.
+// 	$url = $_SERVER['HTTP_HOST'].request_uri();
+// 	preg_match('/^(.*)\.localhost/', $url, $matches);
+// 	$name = str_replace('-', '_', $matches[1]) . '_omega_theme';
+// 	$subtheme = new stdClass();
+// 	$subtheme->new = TRUE;
+// 	$subtheme->name = ucwords(str_replace('_', ' ', $name));
+// 	$subtheme->machine_name = $name;
+// 	$subtheme->path = conf_path() . '/themes/' . $subtheme->machine_name;
+// 	$subtheme->base = 'omega';
+// 	$subtheme->default = TRUE;
+// 	$subtheme->status = TRUE;
 
-  omega_tools_subtheme_create($subtheme);
-  omega_tools_subtheme_process($subtheme);
-}
+//   omega_tools_subtheme_create($subtheme);
+//   omega_tools_subtheme_process($subtheme);
+// }
