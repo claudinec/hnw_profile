@@ -94,30 +94,30 @@ function moat_banner_views_default_views() {
     'image_link' => '',
   );
   $handler->display->display_options['fields']['field_image']['field_api_classes'] = 0;
-  /* Field: Content: Body */
-  $handler->display->display_options['fields']['body']['id'] = 'body';
-  $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
-  $handler->display->display_options['fields']['body']['field'] = 'body';
-  $handler->display->display_options['fields']['body']['label'] = '';
-  $handler->display->display_options['fields']['body']['alter']['alter_text'] = 0;
-  $handler->display->display_options['fields']['body']['alter']['make_link'] = 0;
-  $handler->display->display_options['fields']['body']['alter']['absolute'] = 0;
-  $handler->display->display_options['fields']['body']['alter']['external'] = 0;
-  $handler->display->display_options['fields']['body']['alter']['replace_spaces'] = 0;
-  $handler->display->display_options['fields']['body']['alter']['trim_whitespace'] = 0;
-  $handler->display->display_options['fields']['body']['alter']['nl2br'] = 0;
-  $handler->display->display_options['fields']['body']['alter']['word_boundary'] = 1;
-  $handler->display->display_options['fields']['body']['alter']['ellipsis'] = 1;
-  $handler->display->display_options['fields']['body']['alter']['more_link'] = 0;
-  $handler->display->display_options['fields']['body']['alter']['strip_tags'] = 0;
-  $handler->display->display_options['fields']['body']['alter']['trim'] = 0;
-  $handler->display->display_options['fields']['body']['alter']['html'] = 0;
-  $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['body']['element_default_classes'] = 1;
-  $handler->display->display_options['fields']['body']['hide_empty'] = 0;
-  $handler->display->display_options['fields']['body']['empty_zero'] = 0;
-  $handler->display->display_options['fields']['body']['hide_alter_empty'] = 1;
-  $handler->display->display_options['fields']['body']['field_api_classes'] = 0;
+  /* Field: Content: Text */
+  $handler->display->display_options['fields']['field_text']['id'] = 'field_text';
+  $handler->display->display_options['fields']['field_text']['table'] = 'field_data_field_text';
+  $handler->display->display_options['fields']['field_text']['field'] = 'field_text';
+  $handler->display->display_options['fields']['field_text']['label'] = '';
+  $handler->display->display_options['fields']['field_text']['alter']['alter_text'] = 0;
+  $handler->display->display_options['fields']['field_text']['alter']['make_link'] = 0;
+  $handler->display->display_options['fields']['field_text']['alter']['absolute'] = 0;
+  $handler->display->display_options['fields']['field_text']['alter']['external'] = 0;
+  $handler->display->display_options['fields']['field_text']['alter']['replace_spaces'] = 0;
+  $handler->display->display_options['fields']['field_text']['alter']['trim_whitespace'] = 0;
+  $handler->display->display_options['fields']['field_text']['alter']['nl2br'] = 0;
+  $handler->display->display_options['fields']['field_text']['alter']['word_boundary'] = 1;
+  $handler->display->display_options['fields']['field_text']['alter']['ellipsis'] = 1;
+  $handler->display->display_options['fields']['field_text']['alter']['more_link'] = 0;
+  $handler->display->display_options['fields']['field_text']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['field_text']['alter']['trim'] = 0;
+  $handler->display->display_options['fields']['field_text']['alter']['html'] = 0;
+  $handler->display->display_options['fields']['field_text']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_text']['element_default_classes'] = 1;
+  $handler->display->display_options['fields']['field_text']['hide_empty'] = 0;
+  $handler->display->display_options['fields']['field_text']['empty_zero'] = 0;
+  $handler->display->display_options['fields']['field_text']['hide_alter_empty'] = 1;
+  $handler->display->display_options['fields']['field_text']['field_api_classes'] = 0;
   /* Field: Content: Link text */
   $handler->display->display_options['fields']['field_link_text']['id'] = 'field_link_text';
   $handler->display->display_options['fields']['field_link_text']['table'] = 'field_data_field_link_text';

@@ -21,7 +21,7 @@ function moat_banner_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Show on the following pages',
-    'weight' => '5',
+    'weight' => '6',
     'children' => array(
       0 => 'field_front',
       1 => 'field_other_pages',
