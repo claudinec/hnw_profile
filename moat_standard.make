@@ -62,11 +62,12 @@ projects[libraries][subdir] = "contrib"
 projects[strongarm][version] = 2.0-rc1
 projects[strongarm][type] = "module"
 projects[strongarm][subdir] = "contrib"
+projects[token][subdir] = "contrib"
 projects[views][version] = 3.3
 projects[views][type] = "module"
 projects[views][subdir] = "contrib"
-projects[omega_tools][subdir] = contrib
-projects[module_filter][subdir] = contrib
+projects[omega_tools][subdir] = "contrib"
+projects[module_filter][subdir] = "contrib"
 
 ; Download a specific Git commit as Features exportability has been committed
 ; but no stable build has been released.

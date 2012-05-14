@@ -1,7 +1,7 @@
 name = "moat_banner"
 description = "Banner slideshow that can be enabled on multiple pages"
 core = "7.x"
-package = "Features"
+package = "Moat"
 dependencies[] = "ctools"
 dependencies[] = "entityreference"
 dependencies[] = "features"
