@@ -64,7 +64,7 @@ function moat_standard_install() {
 function _moat_standard_add_subtheme_omega() {
   // Programatically generate theme based on site's path.
 	$url = $_SERVER['HTTP_HOST'].request_uri();
-	preg_match('/^(.*)\.localhost/', $url, $matches);
+	preg_match('/^(.*)\.local/', $url, $matches);
 	$name = str_replace('-', '_', $matches[1]) . '_omega_theme';
 	$subtheme = new stdClass();
 	$subtheme->new = TRUE;
