@@ -54,14 +54,20 @@ projects[ds][subdir] = "contrib"
 projects[libraries][version] = 1.0
 projects[libraries][type] = "module"
 projects[libraries][subdir] = "contrib"
+projects[module_filter][subdir] = contrib
 projects[strongarm][version] = 2.0-rc1
 projects[strongarm][type] = "module"
 projects[strongarm][subdir] = "contrib"
 projects[views][version] = 3.3
 projects[views][type] = "module"
 projects[views][subdir] = "contrib"
+
+; Patch for Profiler to allow Omega subtheme creattion in .info file
+; see http://drupal.org/node/1328986#comment-5987856
 projects[omega_tools][subdir] = contrib
-projects[module_filter][subdir] = contrib
+projects[omega_tools][version] = 7.x-3.x-dev
+projects[omega_tools][patch][] = http://drupal.org/files/profiler_integration-1328986-4.patch
+
 
 ; Download a specific Git commit as Features exportability has been committed
 ; but no stable build has been released.
@@ -89,12 +95,8 @@ libraries[tinymce][download][url] = "http://www.tinymce.com/track.php?url=http%3
 libraries[ckeditor][type] = "libraries"
 libraries[ckeditor][download][type] = "file"
 libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%203.6.3/ckeditor_3.6.3.tar.gz"
-
-; Patch for Profiler to allow Omega subtheme creattion in .info file
-; see http://drupal.org/node/1328986#comment-5987856
 libraries[profiler][type] = "libraries"
 libraries[profiler][download][type] = "get"
 libraries[profiler][download][url] = "http://ftp.drupal.org/files/projects/profiler-7.x-2.0-beta1.tar.gz"
-libraries[profiler][patch][] = http://drupal.org/files/profiler_integration-1328986-4.patch
 
 
