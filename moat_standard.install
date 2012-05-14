@@ -59,7 +59,7 @@ function moat_standard_install() {
 
 	// Set Admin theme & enable for node editing.
 	variable_set('admin_theme', 'rubik');
-	varliable_set('node_admin_theme', 1);
+	variable_set('node_admin_theme', 1);
 }
 
 function _moat_standard_add_subtheme_omega() {

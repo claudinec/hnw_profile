@@ -27,6 +27,7 @@ dependencies[] = ctools
 dependencies[] = custom_formatters
 dependencies[] = devel
 dependencies[] = devel_generate
+dependencies[] = diff
 dependencies[] = ds
 dependencies[] = field_group
 dependencies[] = features
