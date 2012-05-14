@@ -33,6 +33,7 @@ projects[drupal][version] = 7
   
 ; Modules
 ; --------
+projects[backup_migrate][subdir] = "contrib"
 projects[ctools][version] = 1.0
 projects[ctools][type] = "module"
 projects[ctools][subdir] = "contrib"
