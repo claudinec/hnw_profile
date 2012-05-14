@@ -53,11 +53,10 @@ function moat_wysiwyg_wysiwyg_default_profiles() {
       'apply_source_formatting' => 0,
       'paste_auto_cleanup_on_paste' => 0,
       'block_formats' => 'p,address,pre,h2,h3,h4,h5,h6,div',
-      'css_setting' => 'self',
-      'css_path' => '%b/sites/all/themes/custom/moat-sandbox/css/typography.css',
+      'css_setting' => 'theme',
+      'css_path' => '',
       'css_classes' => '',
     ),
-    'rdf_mapping' => array(),
   );
 
   return $profiles;
