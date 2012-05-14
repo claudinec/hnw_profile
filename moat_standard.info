@@ -31,6 +31,7 @@ dependencies[] = diff
 dependencies[] = module_filter
 dependencies[] = strongarm
 dependencies[] = views_ui
+dependencies[] = backup_migrate
 
 ; Custom
 
