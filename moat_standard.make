@@ -67,6 +67,7 @@ projects[token][subdir] = "contrib"
 projects[views][version] = 3.3
 projects[views][type] = "module"
 projects[views][subdir] = "contrib"
+projects[views_slideshow][subdir] = "contrib"
 projects[omega_tools][subdir] = "contrib"
 projects[module_filter][subdir] = "contrib"
 
@@ -102,4 +103,8 @@ libraries[profiler][download][url] = "http://ftp.drupal.org/files/projects/profi
 libraries[editarea][type] = "libraries"
 libraries[editarea][download][type] = "file"
 libraries[editarea][download][url] = "http://downloads.sourceforge.net/project/editarea/EditArea/EditArea%200.8.2/editarea_0_8_2.zip"
+libraries[jquery.cycle][type] = "libraries"
+libraries[jquery.cycle][download][type] = "file"
+libraries[jquery.cycle][download][url] = "http://malsup.github.com/jquery.cycle.all.js"
+
 
