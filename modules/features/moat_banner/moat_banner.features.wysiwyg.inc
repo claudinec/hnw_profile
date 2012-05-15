@@ -45,9 +45,9 @@ function moat_banner_wysiwyg_default_profiles() {
       'apply_source_formatting' => 0,
       'paste_auto_cleanup_on_paste' => 0,
       'block_formats' => 'p',
-      'css_setting' => 'theme',
-      'css_path' => '',
-      'css_classes' => '',
+      'css_setting' => 'self',
+      'css_path' => '%bprofiles/moat_standard/modules/features/moat_banner/css/banner-typography.css',
+      'css_classes' => '**Test Class**=test-class',
     ),
   );
 
