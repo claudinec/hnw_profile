@@ -94,6 +94,30 @@ function moat_banner_views_default_views() {
     'image_link' => '',
   );
   $handler->display->display_options['fields']['field_image']['field_api_classes'] = 0;
+  /* Field: Content: Background colour */
+  $handler->display->display_options['fields']['field_background_colour']['id'] = 'field_background_colour';
+  $handler->display->display_options['fields']['field_background_colour']['table'] = 'field_data_field_background_colour';
+  $handler->display->display_options['fields']['field_background_colour']['field'] = 'field_background_colour';
+  $handler->display->display_options['fields']['field_background_colour']['label'] = '';
+  $handler->display->display_options['fields']['field_background_colour']['alter']['alter_text'] = 0;
+  $handler->display->display_options['fields']['field_background_colour']['alter']['make_link'] = 0;
+  $handler->display->display_options['fields']['field_background_colour']['alter']['absolute'] = 0;
+  $handler->display->display_options['fields']['field_background_colour']['alter']['external'] = 0;
+  $handler->display->display_options['fields']['field_background_colour']['alter']['replace_spaces'] = 0;
+  $handler->display->display_options['fields']['field_background_colour']['alter']['trim_whitespace'] = 0;
+  $handler->display->display_options['fields']['field_background_colour']['alter']['nl2br'] = 0;
+  $handler->display->display_options['fields']['field_background_colour']['alter']['word_boundary'] = 1;
+  $handler->display->display_options['fields']['field_background_colour']['alter']['ellipsis'] = 1;
+  $handler->display->display_options['fields']['field_background_colour']['alter']['more_link'] = 0;
+  $handler->display->display_options['fields']['field_background_colour']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['field_background_colour']['alter']['trim'] = 0;
+  $handler->display->display_options['fields']['field_background_colour']['alter']['html'] = 0;
+  $handler->display->display_options['fields']['field_background_colour']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_background_colour']['element_default_classes'] = 1;
+  $handler->display->display_options['fields']['field_background_colour']['hide_empty'] = 0;
+  $handler->display->display_options['fields']['field_background_colour']['empty_zero'] = 0;
+  $handler->display->display_options['fields']['field_background_colour']['hide_alter_empty'] = 1;
+  $handler->display->display_options['fields']['field_background_colour']['field_api_classes'] = 0;
   /* Field: Content: Text */
   $handler->display->display_options['fields']['field_text']['id'] = 'field_text';
   $handler->display->display_options['fields']['field_text']['table'] = 'field_data_field_text';

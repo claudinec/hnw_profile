@@ -10,6 +10,58 @@
 function moat_banner_field_default_fields() {
   $fields = array();
 
+  // Exported field: 'node-moat_banner_slide-field_background_colour'
+  $fields['node-moat_banner_slide-field_background_colour'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_background_colour',
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'module' => 'jquery_colorpicker',
+      'settings' => array(),
+      'translatable' => '0',
+      'type' => 'jquery_colorpicker',
+    ),
+    'field_instance' => array(
+      'bundle' => 'moat_banner_slide',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'jquery_colorpicker',
+          'settings' => array(),
+          'type' => 'jquery_colorpicker_color_display',
+          'weight' => 7,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_background_colour',
+      'label' => 'Background colour',
+      'required' => 0,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 0,
+        'module' => 'jquery_colorpicker',
+        'settings' => array(),
+        'type' => 'jquery_colorpicker',
+        'weight' => '7',
+      ),
+    ),
+  );
+
   // Exported field: 'node-moat_banner_slide-field_front'
   $fields['node-moat_banner_slide-field_front'] = array(
     'field_config' => array(
@@ -471,6 +523,7 @@ function moat_banner_field_default_fields() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Background colour');
   t('Front page');
   t('Image');
   t('Link');
