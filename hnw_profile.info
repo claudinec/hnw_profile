@@ -42,5 +42,5 @@ dependencies[] = entityreference
 ; Custom
 
 ; Features
-dependencies[] = moat_basic_pages
-dependencies[] = moat_wysiwyg
+dependencies[] = hnw_basic_pages
+dependencies[] = hnw_wysiwyg
