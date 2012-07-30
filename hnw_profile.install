@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Install, update and uninstall functions for the moat_standard install profile.
+ * Install, update and uninstall functions for the hnw_profile install profile.
  */
 
 /**
@@ -11,10 +11,10 @@
  *
  * @see system_install()
  */
-function moat_standard_install() {
+function hnw_profile_install() {
 
 	// Create Omega subtheme via omega_tools module.
-	_moat_standard_add_subtheme_omega();
+	_hnw_profile_add_subtheme_omega();
 
 	// Disable all temporary modules.
   module_disable(array('omega_tools'));
@@ -62,7 +62,7 @@ function moat_standard_install() {
 	variable_set('node_admin_theme', 1);
 }
 
-function _moat_standard_add_subtheme_omega() {
+function _hnw_profile_add_subtheme_omega() {
   // Programatically generate theme based on site's path.
 	$url = $_SERVER['HTTP_HOST'].request_uri();
 	preg_match('/^(.*)\.local/', $url, $matches);

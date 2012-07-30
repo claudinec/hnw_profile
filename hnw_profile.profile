@@ -5,7 +5,7 @@
  */
 
 !function_exists('profiler_v2') ? require_once('libraries/profiler/profiler.inc') : FALSE;
-profiler_v2('moat_standard');
+profiler_v2('hnw_profile');
 
 
 /**
@@ -13,7 +13,7 @@ profiler_v2('moat_standard');
  *
  * Allows the profile to alter the site configuration form.
  */
-function moat_standard_form_install_configure_form_alter(&$form, $form_state) {
+function hnw_profile_form_install_configure_form_alter(&$form, $form_state) {
   // Pre-populate the site name with the server name.
   $form['site_information']['site_name']['#default_value'] = $_SERVER['SERVER_NAME'];
 }

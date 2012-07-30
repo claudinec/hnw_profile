@@ -1,6 +1,6 @@
-name = Moat Standard
-description = Standard core Moat Media installation profile.
-version = VERSION
+name = Hurll Nu-Way
+description = Hurll Nu-Way installation profile.
+version = 0.1
 core = 7.x
 
 ; -----------------------------------------------------------------------------
