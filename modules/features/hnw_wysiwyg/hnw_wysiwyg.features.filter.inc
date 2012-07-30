@@ -1,18 +1,18 @@
 <?php
 /**
  * @file
- * moat_wysiwyg.features.filter.inc
+ * hnw_wysiwyg.features.filter.inc
  */
 
 /**
  * Implements hook_filter_default_formats().
  */
-function moat_wysiwyg_filter_default_formats() {
+function hnw_wysiwyg_filter_default_formats() {
   $formats = array();
 
   // Exported format: Moat WYSIWYG
-  $formats['moat_wysiwyg'] = array(
-    'format' => 'moat_wysiwyg',
+  $formats['hnw_wysiwyg'] = array(
+    'format' => 'hnw_wysiwyg',
     'name' => 'Moat WYSIWYG',
     'cache' => '1',
     'status' => '1',

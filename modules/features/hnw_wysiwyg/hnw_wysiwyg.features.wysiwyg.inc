@@ -1,18 +1,18 @@
 <?php
 /**
  * @file
- * moat_wysiwyg.features.wysiwyg.inc
+ * hnw_wysiwyg.features.wysiwyg.inc
  */
 
 /**
  * Implements hook_wysiwyg_default_profiles().
  */
-function moat_wysiwyg_wysiwyg_default_profiles() {
+function hnw_wysiwyg_wysiwyg_default_profiles() {
   $profiles = array();
 
-  // Exported profile: moat_wysiwyg
-  $profiles['moat_wysiwyg'] = array(
-    'format' => 'moat_wysiwyg',
+  // Exported profile: hnw_wysiwyg
+  $profiles['hnw_wysiwyg'] = array(
+    'format' => 'hnw_wysiwyg',
     'editor' => 'tinymce',
     'settings' => array(
       'default' => 1,

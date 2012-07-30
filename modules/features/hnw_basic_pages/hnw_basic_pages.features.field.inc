@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * moat_basic_pages.features.field.inc
+ * hnw_basic_pages.features.field.inc
  */
 
 /**
  * Implements hook_field_default_fields().
  */
-function moat_basic_pages_field_default_fields() {
+function hnw_basic_pages_field_default_fields() {
   $fields = array();
 
   // Exported field: 'node-page-body'

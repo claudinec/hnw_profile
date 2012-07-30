@@ -1,17 +1,17 @@
 <?php
 /**
  * @file
- * moat_banner.features.field.inc
+ * hnw_banner.features.field.inc
  */
 
 /**
  * Implements hook_field_default_fields().
  */
-function moat_banner_field_default_fields() {
+function hnw_banner_field_default_fields() {
   $fields = array();
 
-  // Exported field: 'node-moat_banner_slide-field_background_colour'
-  $fields['node-moat_banner_slide-field_background_colour'] = array(
+  // Exported field: 'node-hnw_banner_slide-field_background_colour'
+  $fields['node-hnw_banner_slide-field_background_colour'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
@@ -26,7 +26,7 @@ function moat_banner_field_default_fields() {
       'type' => 'jquery_colorpicker',
     ),
     'field_instance' => array(
-      'bundle' => 'moat_banner_slide',
+      'bundle' => 'hnw_banner_slide',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -62,8 +62,8 @@ function moat_banner_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-moat_banner_slide-field_front'
-  $fields['node-moat_banner_slide-field_front'] = array(
+  // Exported field: 'node-hnw_banner_slide-field_front'
+  $fields['node-hnw_banner_slide-field_front'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
@@ -88,7 +88,7 @@ function moat_banner_field_default_fields() {
       'type' => 'list_boolean',
     ),
     'field_instance' => array(
-      'bundle' => 'moat_banner_slide',
+      'bundle' => 'hnw_banner_slide',
       'default_value' => array(
         0 => array(
           'value' => 0,
@@ -130,8 +130,8 @@ function moat_banner_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-moat_banner_slide-field_image'
-  $fields['node-moat_banner_slide-field_image'] = array(
+  // Exported field: 'node-hnw_banner_slide-field_image'
+  $fields['node-hnw_banner_slide-field_image'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
@@ -160,7 +160,7 @@ function moat_banner_field_default_fields() {
       'type' => 'image',
     ),
     'field_instance' => array(
-      'bundle' => 'moat_banner_slide',
+      'bundle' => 'hnw_banner_slide',
       'deleted' => '0',
       'description' => '',
       'display' => array(
@@ -209,8 +209,8 @@ function moat_banner_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-moat_banner_slide-field_link'
-  $fields['node-moat_banner_slide-field_link'] = array(
+  // Exported field: 'node-hnw_banner_slide-field_link'
+  $fields['node-hnw_banner_slide-field_link'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
@@ -254,7 +254,7 @@ function moat_banner_field_default_fields() {
       'type' => 'entityreference',
     ),
     'field_instance' => array(
-      'bundle' => 'moat_banner_slide',
+      'bundle' => 'hnw_banner_slide',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -296,8 +296,8 @@ function moat_banner_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-moat_banner_slide-field_link_text'
-  $fields['node-moat_banner_slide-field_link_text'] = array(
+  // Exported field: 'node-hnw_banner_slide-field_link_text'
+  $fields['node-hnw_banner_slide-field_link_text'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
@@ -325,7 +325,7 @@ function moat_banner_field_default_fields() {
       'type' => 'text',
     ),
     'field_instance' => array(
-      'bundle' => 'moat_banner_slide',
+      'bundle' => 'hnw_banner_slide',
       'default_value' => array(
         0 => array(
           'value' => 'Read more',
@@ -368,8 +368,8 @@ function moat_banner_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-moat_banner_slide-field_other_pages'
-  $fields['node-moat_banner_slide-field_other_pages'] = array(
+  // Exported field: 'node-hnw_banner_slide-field_other_pages'
+  $fields['node-hnw_banner_slide-field_other_pages'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
@@ -413,7 +413,7 @@ function moat_banner_field_default_fields() {
       'type' => 'entityreference',
     ),
     'field_instance' => array(
-      'bundle' => 'moat_banner_slide',
+      'bundle' => 'hnw_banner_slide',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -455,8 +455,8 @@ function moat_banner_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-moat_banner_slide-field_text'
-  $fields['node-moat_banner_slide-field_text'] = array(
+  // Exported field: 'node-hnw_banner_slide-field_text'
+  $fields['node-hnw_banner_slide-field_text'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
@@ -482,7 +482,7 @@ function moat_banner_field_default_fields() {
       'type' => 'text_long',
     ),
     'field_instance' => array(
-      'bundle' => 'moat_banner_slide',
+      'bundle' => 'hnw_banner_slide',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',

@@ -1,17 +1,17 @@
 <?php
 /**
  * @file
- * moat_banner.views_default.inc
+ * hnw_banner.views_default.inc
  */
 
 /**
  * Implements hook_views_default_views().
  */
-function moat_banner_views_default_views() {
+function hnw_banner_views_default_views() {
   $export = array();
 
   $view = new view;
-  $view->name = 'moat_banner';
+  $view->name = 'hnw_banner';
   $view->description = '';
   $view->tag = 'default';
   $view->base_table = 'node';
@@ -90,7 +90,7 @@ function moat_banner_views_default_views() {
   $handler->display->display_options['fields']['field_image']['hide_alter_empty'] = 1;
   $handler->display->display_options['fields']['field_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_image']['settings'] = array(
-    'image_style' => 'moat_banner_slide',
+    'image_style' => 'hnw_banner_slide',
     'image_link' => '',
   );
   $handler->display->display_options['fields']['field_image']['field_api_classes'] = 0;
@@ -215,7 +215,7 @@ function moat_banner_views_default_views() {
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
-    'moat_banner_slide' => 'moat_banner_slide',
+    'hnw_banner_slide' => 'hnw_banner_slide',
   );
 
   /* Display: Block - Front Page */
@@ -233,7 +233,7 @@ function moat_banner_views_default_views() {
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
-    'moat_banner_slide' => 'moat_banner_slide',
+    'hnw_banner_slide' => 'hnw_banner_slide',
   );
   /* Filter criterion: Content: Front page (field_front) */
   $handler->display->display_options['filters']['field_front_value']['id'] = 'field_front_value';
@@ -258,7 +258,7 @@ function moat_banner_views_default_views() {
   $handler->display->display_options['arguments']['field_other_pages_target_id']['summary_options']['items_per_page'] = '25';
   $handler->display->display_options['arguments']['field_other_pages_target_id']['break_phrase'] = 0;
   $handler->display->display_options['arguments']['field_other_pages_target_id']['not'] = 0;
-  $export['moat_banner'] = $view;
+  $export['hnw_banner'] = $view;
 
   return $export;
 }

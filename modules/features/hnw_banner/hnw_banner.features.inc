@@ -1,32 +1,32 @@
 <?php
 /**
  * @file
- * moat_banner.features.inc
+ * hnw_banner.features.inc
  */
 
 /**
  * Implements hook_ctools_plugin_api().
  */
-function moat_banner_ctools_plugin_api() {
+function hnw_banner_ctools_plugin_api() {
   return array("version" => "1");
 }
 
 /**
  * Implements hook_views_api().
  */
-function moat_banner_views_api() {
+function hnw_banner_views_api() {
   return array("version" => "3.0");
 }
 
 /**
  * Implements hook_image_default_styles().
  */
-function moat_banner_image_default_styles() {
+function hnw_banner_image_default_styles() {
   $styles = array();
 
-  // Exported image style: moat_banner_slide
-  $styles['moat_banner_slide'] = array(
-    'name' => 'moat_banner_slide',
+  // Exported image style: hnw_banner_slide
+  $styles['hnw_banner_slide'] = array(
+    'name' => 'hnw_banner_slide',
     'effects' => array(
       1 => array(
         'label' => 'Scale and crop',
@@ -52,9 +52,9 @@ function moat_banner_image_default_styles() {
 /**
  * Implements hook_node_info().
  */
-function moat_banner_node_info() {
+function hnw_banner_node_info() {
   $items = array(
-    'moat_banner_slide' => array(
+    'hnw_banner_slide' => array(
       'name' => t('Banner Slide'),
       'base' => 'node_content',
       'description' => t('Create a banner slide'),

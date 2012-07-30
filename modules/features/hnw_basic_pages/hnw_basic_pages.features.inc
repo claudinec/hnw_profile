@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * moat_basic_pages.features.inc
+ * hnw_basic_pages.features.inc
  */
 
 /**
  * Implements hook_ctools_plugin_api().
  */
-function moat_basic_pages_ctools_plugin_api() {
+function hnw_basic_pages_ctools_plugin_api() {
   list($module, $api) = func_get_args();
   if ($module == "strongarm" && $api == "strongarm") {
     return array("version" => "1");
@@ -17,7 +17,7 @@ function moat_basic_pages_ctools_plugin_api() {
 /**
  * Implements hook_node_info().
  */
-function moat_basic_pages_node_info() {
+function hnw_basic_pages_node_info() {
   $items = array(
     'page' => array(
       'name' => t('Basic page'),
