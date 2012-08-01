@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the HNW Media feature.
+ */
+
+include_once 'hnw_media.features.inc';
