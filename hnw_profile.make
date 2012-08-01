@@ -33,6 +33,9 @@ projects[drupal][version] = 7
   
 ; Modules
 ; --------
+projects[addressfield][version] = 1.0-beta3
+projects[addressfield][type] = "module"
+projects[addressfield][subdir] = "contrib"
 projects[backup_migrate][subdir] = "contrib"
 projects[boxes][subdir] = "contrib"
 projects[custom_formatters][subdir] = "contrib"

@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the HNW Events feature.
+ */
+
+include_once 'hnw_events.features.inc';
