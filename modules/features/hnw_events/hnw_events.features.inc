@@ -12,6 +12,13 @@ function hnw_events_ctools_plugin_api() {
 }
 
 /**
+ * Implements hook_views_api().
+ */
+function hnw_events_views_api() {
+  return array("version" => "3.0");
+}
+
+/**
  * Implements hook_node_info().
  */
 function hnw_events_node_info() {
