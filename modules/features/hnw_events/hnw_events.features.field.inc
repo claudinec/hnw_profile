@@ -49,7 +49,7 @@ function hnw_events_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => 0,
+          'weight' => '2',
         ),
         'teaser' => array(
           'label' => 'hidden',
@@ -207,7 +207,7 @@ function hnw_events_field_default_fields() {
             'multiple_to' => '',
           ),
           'type' => 'date_default',
-          'weight' => 1,
+          'weight' => '3',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -284,10 +284,10 @@ function hnw_events_field_default_fields() {
           'module' => 'image',
           'settings' => array(
             'image_link' => '',
-            'image_style' => '',
+            'image_style' => 'medium',
           ),
           'type' => 'image',
-          'weight' => 2,
+          'weight' => '0',
         ),
         'teaser' => array(
           'label' => 'above',

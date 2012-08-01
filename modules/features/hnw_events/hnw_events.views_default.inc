@@ -63,7 +63,7 @@ function hnw_events_views_default_views() {
   $handler->display->display_options['fields']['field_event_image']['hide_alter_empty'] = 1;
   $handler->display->display_options['fields']['field_event_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_event_image']['settings'] = array(
-    'image_style' => '',
+    'image_style' => 'medium',
     'image_link' => '',
   );
   $handler->display->display_options['fields']['field_event_image']['field_api_classes'] = 0;
