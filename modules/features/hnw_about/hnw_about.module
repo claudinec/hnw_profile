@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the HNW About feature.
- */
-
-include_once 'hnw_about.features.inc';
