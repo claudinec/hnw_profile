@@ -69,12 +69,17 @@ projects[libraries][subdir] = "contrib"
 projects[link][version] = 1.0
 projects[link][type] = "module"
 projects[link][subdir] = "contrib"
+projects[module_filter][subdir] = "contrib"
 projects[mollom][version] = 2.1
 projects[mollom][type] = "module"
 projects[mollom][subdir] = "contrib"
+projects[omega_tools][subdir] = "contrib"
 projects[panels][version]= 3.2
 projects[panels][type] = "module"
 projects[panels][subdir] = "contrib"
+projects[profiler][version]= 2.0-beta1
+projects[profiler][type] = "module"
+projects[profiler][subdir] = "contrib"
 projects[strongarm][version] = 2.0-rc1
 projects[strongarm][type] = "module"
 projects[strongarm][subdir] = "contrib"
@@ -86,8 +91,6 @@ projects[views_slideshow][subdir] = "contrib"
 projects[webform][version] = 3.18
 projects[webform][type] = "module"
 projects[webform][subdir] = "contrib"
-projects[omega_tools][subdir] = "contrib"
-projects[module_filter][subdir] = "contrib"
 
 ; Download a specific Git commit as Features exportability has been committed
 ; but no stable build has been released.
