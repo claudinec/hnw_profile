@@ -84,19 +84,6 @@ projects[strongarm][version] = 2.0-rc1
 projects[strongarm][type] = "module"
 projects[strongarm][subdir] = "contrib"
 projects[token][subdir] = "contrib"
-
-; Restore uuid_features() compatibility with uuid.
-projects[uuid][type] = "module"
-projects[uuid][download][type] = "git"
-projects[uuid][download][url] = "http://git.drupal.org/project/uuid.git"
-projects[uuid][download][revision] = "806c3011accaa93a835b6d0849b3dfde04c9e139"
-projects[uuid][subdir] = "contrib"
-projects[uuid_features][type] = "module"
-projects[uuid_features][download][type] = "git"
-projects[uuid_features][download][url] = "http://git.drupal.org/project/uuid_features.git"
-projects[uuid_features][download][revision] = "924559bcf71e39c15374fb2b9623df16075f3ccf"
-projects[uuid_features][subdir] = "contrib"
-
 projects[views][version] = 3.3
 projects[views][type] = "module"
 projects[views][subdir] = "contrib"
