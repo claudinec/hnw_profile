@@ -16,6 +16,6 @@ profiler_v2('hnw_profile');
 function hnw_profile_form_install_configure_form_alter(&$form, $form_state) {
   // Pre-populate the site name with the server name.
   $form['site_information']['site_name']['#default_value'] = 'Hurll Nu-Way';
-  $form['site_information']['site_default_country']['#default_value'] = 'Australia';
+  $form['site_information']['default_country']['#default_value'] = 'Australia';
 }
 
