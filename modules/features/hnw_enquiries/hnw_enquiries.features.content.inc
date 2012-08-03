@@ -225,10 +225,10 @@ function hnw_enquiries_content_defaults() {
     'body' => array(
       'und' => array(
         0 => array(
-          'value' => '<p>Toffee marzipan marshmallow toffee tiramisu. Donut dessert cookie. Jelly brownie jelly beans. Muffin chocolate bar cookie jelly-o. Fruitcake dragée muffin chupa chups cake lollipop. Caramels faworki dragée. Ice cream chupa chups wafer gummies. Apple pie applicake oat cake cake lemon drops muffin chupa chups toffee.</p>',
+          'value' => '<p>Toffee marzipan marshmallow toffee tiramisu. Donut dessert cookie. Jelly brownie jelly beans. Muffin chocolate bar cookie jelly-o. Fruitcake dragée muffin chupa chups cake lollipop.</p><p>Caramels faworki dragée. Ice cream chupa chups wafer gummies. Apple pie applicake oat cake cake lemon drops muffin chupa chups toffee.</p>',
           'summary' => '',
           'format' => 'hnw_wysiwyg',
-          'safe_value' => '<p>Toffee marzipan marshmallow toffee tiramisu. Donut dessert cookie. Jelly brownie jelly beans. Muffin chocolate bar cookie jelly-o. Fruitcake dragée muffin chupa chups cake lollipop. Caramels faworki dragée. Ice cream chupa chups wafer gummies. Apple pie applicake oat cake cake lemon drops muffin chupa chups toffee.</p>
+          'safe_value' => '<p>Toffee marzipan marshmallow toffee tiramisu. Donut dessert cookie. Jelly brownie jelly beans. Muffin chocolate bar cookie jelly-o. Fruitcake dragée muffin chupa chups cake lollipop.Caramels faworki dragée. Ice cream chupa chups wafer gummies. Apple pie applicake oat cake cake lemon drops muffin chupa chups toffee.</p>
   ',
           'safe_summary' => '',
         ),
