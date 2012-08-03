@@ -53,3 +53,5 @@ dependencies[] = hnw_wysiwyg
 nodes[contact][type] = enquiry
 nodes[contact][title] = "Contact Us"
 nodes[contact][uid] = 1
+nodes[contact][nid] = 1
+nodes[contact][node-path] = "contact-us"
