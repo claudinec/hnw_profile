@@ -17,6 +17,7 @@ files/
 robots.txt
 sites/all/README.txt
 sites/all/modules/README.txt
+sites/all/libraries/README.txt
 sites/all/themes/README.txt
 .htaccess
 
@@ -28,8 +29,13 @@ install.php
 update.php
 xmlrpc.php
 /includes
+/libraries
 /misc
 /modules     
 /profiles
 /scripts
 /themes
+
+libraries/*
+modules/contrib/*
+themes/*
