@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the HNW Enquiries feature.
- */
-
-include_once 'hnw_enquiries.features.inc';
