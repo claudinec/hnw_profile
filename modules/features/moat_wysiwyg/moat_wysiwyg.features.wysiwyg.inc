@@ -1,18 +1,18 @@
 <?php
 /**
  * @file
- * hnw_banner.features.wysiwyg.inc
+ * moat_wysiwyg.features.wysiwyg.inc
  */
 
 /**
  * Implements hook_wysiwyg_default_profiles().
  */
-function hnw_banner_wysiwyg_default_profiles() {
+function moat_wysiwyg_wysiwyg_default_profiles() {
   $profiles = array();
 
-  // Exported profile: hnw_banner
-  $profiles['hnw_banner'] = array(
-    'format' => 'hnw_banner',
+  // Exported profile: moat_wysiwyg
+  $profiles['moat_wysiwyg'] = array(
+    'format' => 'moat_wysiwyg',
     'editor' => 'tinymce',
     'settings' => array(
       'default' => 1,
@@ -25,9 +25,17 @@ function hnw_banner_wysiwyg_default_profiles() {
           'bold' => 1,
           'italic' => 1,
           'underline' => 1,
+          'strikethrough' => 1,
+          'bullist' => 1,
+          'numlist' => 1,
+          'outdent' => 1,
+          'indent' => 1,
+          'link' => 1,
+          'unlink' => 1,
           'removeformat' => 1,
         ),
         'font' => array(
+          'formatselect' => 1,
           'styleselect' => 1,
         ),
         'paste' => array(
@@ -44,10 +52,10 @@ function hnw_banner_wysiwyg_default_profiles() {
       'remove_linebreaks' => 1,
       'apply_source_formatting' => 0,
       'paste_auto_cleanup_on_paste' => 0,
-      'block_formats' => 'p',
-      'css_setting' => 'self',
-      'css_path' => '%bprofiles/moat_standard/modules/features/hnw_banner/css/banner-typography.css',
-      'css_classes' => '**Test Class**=test-class',
+      'block_formats' => 'p,address,pre,h2,h3,h4,h5,h6,div',
+      'css_setting' => 'theme',
+      'css_path' => '',
+      'css_classes' => '',
     ),
   );
 

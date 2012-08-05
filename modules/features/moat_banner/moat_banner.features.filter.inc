@@ -1,18 +1,18 @@
 <?php
 /**
  * @file
- * hnw_banner.features.filter.inc
+ * moat_banner.features.filter.inc
  */
 
 /**
  * Implements hook_filter_default_formats().
  */
-function hnw_banner_filter_default_formats() {
+function moat_banner_filter_default_formats() {
   $formats = array();
 
   // Exported format: Moat Banner
-  $formats['hnw_banner'] = array(
-    'format' => 'hnw_banner',
+  $formats['moat_banner'] = array(
+    'format' => 'moat_banner',
     'name' => 'Moat Banner',
     'cache' => '1',
     'status' => '1',
