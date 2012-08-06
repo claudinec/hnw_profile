@@ -28,6 +28,7 @@ dependencies[] = custom_formatters
 dependencies[] = devel
 dependencies[] = devel_generate
 dependencies[] = diff
+dependencies[] = domain
 dependencies[] = ds
 dependencies[] = field_group
 dependencies[] = features
