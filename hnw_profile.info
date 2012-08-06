@@ -1,6 +1,6 @@
 name = Hurll Nu-Way
 description = Hurll Nu-Way installation profile.
-version = 0.1
+version = 0.6
 core = 7.x
 
 ; -----------------------------------------------------------------------------
