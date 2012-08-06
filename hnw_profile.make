@@ -94,7 +94,7 @@ projects[views][version] = 3.3
 projects[views][type] = "module"
 projects[views][subdir] = "contrib"
 projects[views_slideshow][subdir] = "contrib"
-projects[webform][version] = 3.18
+projects[webform][version] = 4.0-alpha4
 projects[webform][type] = "module"
 projects[webform][subdir] = "contrib"
 
