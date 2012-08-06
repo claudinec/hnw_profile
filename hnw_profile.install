@@ -80,11 +80,7 @@ function _hnw_profile_add_subtheme_omega() {
   omega_tools_subtheme_process($subtheme);
 }
 
-function hnw_profile_update_7100() {
-    _hnw_profile_flush_revert();
-}
-
-function _hnw_profile_flush_revert() {
+function hnw_profile_update_7101() {
     drupal_flush_all_caches();
     features_revert();
 }
