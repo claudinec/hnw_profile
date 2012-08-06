@@ -111,8 +111,6 @@ projects[wysiwyg][subdir] = "contrib"
 ; Themes
 ; --------
 projects[] = omega
-projects[] = rubik
-projects[] = tao
 
   
   

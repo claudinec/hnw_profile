@@ -20,7 +20,7 @@ function hnw_profile_install() {
   module_disable(array('omega_tools'));
 
 	// Enable some standard blocks.
-  $default_theme = variable_get('theme_default', 'bartik');
+  $default_theme = variable_get('theme_default', 'omega');
   $values = array(
     array(
       'module' => 'system',
@@ -58,7 +58,7 @@ function hnw_profile_install() {
   user_role_grant_permissions(DRUPAL_AUTHENTICATED_RID, array('access content'));
 
 	// Set Admin theme & enable for node editing.
-	variable_set('admin_theme', 'rubik');
+	variable_set('admin_theme', 'seven');
 	variable_set('node_admin_theme', 1);
 }
 
