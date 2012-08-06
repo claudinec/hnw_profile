@@ -38,7 +38,7 @@ function hnw_ds_fields_ds_custom_fields_info() {
   $ds_field->properties = array(
     'code' => array(
       'value' => '<p><iframe src="https://maps.google.com.au/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=14+Aristoc+Road,+Glen+Waverley,+VIC,+3150,+Australia&amp;aq=0&amp;oq=14+Aristoc+Road,+Glen+Waverley,+VIC,+3150,+australi&amp;sll=-37.886319,145.158485&amp;sspn=0.007553,0.010664&amp;ie=UTF8&amp;hq=&amp;hnear=14+Aristoc+Rd,+Glen+Waverley+Victoria+3150&amp;t=m&amp;view=map&amp;ll=-37.886302,145.158491&amp;spn=0.020322,0.025749&amp;z=14&amp;iwloc=A&amp;output=embed" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" width="300" height="300"></iframe><br /><small><a style="color: #0000ff; text-align: left;" href="https://maps.google.com.au/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=14+Aristoc+Road,+Glen+Waverley,+VIC,+3150,+Australia&amp;aq=0&amp;oq=14+Aristoc+Road,+Glen+Waverley,+VIC,+3150,+australi&amp;sll=-37.886319,145.158485&amp;sspn=0.007553,0.010664&amp;ie=UTF8&amp;hq=&amp;hnear=14+Aristoc+Rd,+Glen+Waverley+Victoria+3150&amp;t=m&amp;view=map&amp;ll=-37.886302,145.158491&amp;spn=0.020322,0.025749&amp;z=14&amp;iwloc=A">View Larger Map</a></small></p>',
-      'format' => 'hnw_wysiwyg',
+      'format' => 'ds_code',
     ),
     'use_token' => 0,
   );

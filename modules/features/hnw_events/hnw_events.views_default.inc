@@ -36,7 +36,7 @@ function hnw_events_views_default_views() {
   $handler->display->display_options['header']['area']['field'] = 'area';
   $handler->display->display_options['header']['area']['empty'] = FALSE;
   $handler->display->display_options['header']['area']['content'] = 'Here is a list of events.';
-  $handler->display->display_options['header']['area']['format'] = 'hnw_wysiwyg';
+  $handler->display->display_options['header']['area']['format'] = 'moat_wysiwyg';
   $handler->display->display_options['header']['area']['tokenize'] = 0;
   /* Field: Content: Event image */
   $handler->display->display_options['fields']['field_event_image']['id'] = 'field_event_image';
