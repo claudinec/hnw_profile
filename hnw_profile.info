@@ -43,8 +43,9 @@ dependencies[] = backup_migrate
 dependencies[] = entity
 dependencies[] = entityreference
 
-; Custom
-
 ; Features
+dependencies[] = hnw_domains
+dependencies[] = hnw_events
+dependencies[] = hnw_media
 dependencies[] = moat_basic_pages
 dependencies[] = moat_wysiwyg
