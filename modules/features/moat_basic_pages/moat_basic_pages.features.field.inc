@@ -1,17 +1,17 @@
 <?php
 /**
  * @file
- * hnw_enquiries.features.field.inc
+ * moat_basic_pages.features.field.inc
  */
 
 /**
  * Implements hook_field_default_fields().
  */
-function hnw_enquiries_field_default_fields() {
+function moat_basic_pages_field_default_fields() {
   $fields = array();
 
-  // Exported field: 'node-enquiry-body'
-  $fields['node-enquiry-body'] = array(
+  // Exported field: 'node-page-body'
+  $fields['node-page-body'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
@@ -39,7 +39,7 @@ function hnw_enquiries_field_default_fields() {
       'type' => 'text_with_summary',
     ),
     'field_instance' => array(
-      'bundle' => 'enquiry',
+      'bundle' => 'page',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -49,7 +49,7 @@ function hnw_enquiries_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '1',
+          'weight' => 0,
         ),
         'teaser' => array(
           'label' => 'hidden',

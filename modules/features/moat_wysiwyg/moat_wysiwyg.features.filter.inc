@@ -1,18 +1,18 @@
 <?php
 /**
  * @file
- * hnw_wysiwyg.features.filter.inc
+ * moat_wysiwyg.features.filter.inc
  */
 
 /**
  * Implements hook_filter_default_formats().
  */
-function hnw_wysiwyg_filter_default_formats() {
+function moat_wysiwyg_filter_default_formats() {
   $formats = array();
 
   // Exported format: Moat WYSIWYG
-  $formats['hnw_wysiwyg'] = array(
-    'format' => 'hnw_wysiwyg',
+  $formats['moat_wysiwyg'] = array(
+    'format' => 'moat_wysiwyg',
     'name' => 'Moat WYSIWYG',
     'cache' => '1',
     'status' => '1',
@@ -22,7 +22,7 @@ function hnw_wysiwyg_filter_default_formats() {
         'weight' => '-10',
         'status' => '1',
         'settings' => array(
-          'allowed_html' => '<a> <em> <strong> <cite> <blockquote> <code> <ul> <ol> <li> <dl> <dt> <dd> <img> <iframe>',
+          'allowed_html' => '<a> <em> <strong> <cite> <blockquote> <code> <ul> <ol> <li> <dl> <dt> <dd>',
           'filter_html_help' => 1,
           'filter_html_nofollow' => 0,
         ),

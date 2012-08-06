@@ -33,6 +33,8 @@ dependencies[] = field_group
 dependencies[] = features
 dependencies[] = diff
 dependencies[] = module_filter
+dependencies[] = mollom
+dependencies[] = panels
 dependencies[] = strongarm
 dependencies[] = views_ui
 dependencies[] = backup_migrate
@@ -42,5 +44,5 @@ dependencies[] = entityreference
 ; Custom
 
 ; Features
-dependencies[] = hnw_basic_pages
-dependencies[] = hnw_wysiwyg
+dependencies[] = moat_basic_pages
+dependencies[] = moat_wysiwyg

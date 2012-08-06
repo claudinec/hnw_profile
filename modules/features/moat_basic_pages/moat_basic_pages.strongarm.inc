@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * hnw_basic_pages.strongarm.inc
+ * moat_basic_pages.strongarm.inc
  */
 
 /**
  * Implements hook_strongarm().
  */
-function hnw_basic_pages_strongarm() {
+function moat_basic_pages_strongarm() {
   $export = array();
 
   $strongarm = new stdClass();

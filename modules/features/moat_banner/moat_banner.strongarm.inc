@@ -1,19 +1,19 @@
 <?php
 /**
  * @file
- * hnw_banner.strongarm.inc
+ * moat_banner.strongarm.inc
  */
 
 /**
  * Implements hook_strongarm().
  */
-function hnw_banner_strongarm() {
+function moat_banner_strongarm() {
   $export = array();
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'field_bundle_settings_node__hnw_banner_slide';
+  $strongarm->name = 'field_bundle_settings_node__moat_banner_slide';
   $strongarm->value = array(
     'view_modes' => array(),
     'extra_fields' => array(
@@ -25,46 +25,46 @@ function hnw_banner_strongarm() {
       'display' => array(),
     ),
   );
-  $export['field_bundle_settings_node__hnw_banner_slide'] = $strongarm;
+  $export['field_bundle_settings_node__moat_banner_slide'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'menu_options_hnw_banner_slide';
+  $strongarm->name = 'menu_options_moat_banner_slide';
   $strongarm->value = array(
     0 => 'main-menu',
   );
-  $export['menu_options_hnw_banner_slide'] = $strongarm;
+  $export['menu_options_moat_banner_slide'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'menu_parent_hnw_banner_slide';
+  $strongarm->name = 'menu_parent_moat_banner_slide';
   $strongarm->value = 'main-menu:0';
-  $export['menu_parent_hnw_banner_slide'] = $strongarm;
+  $export['menu_parent_moat_banner_slide'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'node_options_hnw_banner_slide';
+  $strongarm->name = 'node_options_moat_banner_slide';
   $strongarm->value = array(
     0 => 'status',
   );
-  $export['node_options_hnw_banner_slide'] = $strongarm;
+  $export['node_options_moat_banner_slide'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'node_preview_hnw_banner_slide';
+  $strongarm->name = 'node_preview_moat_banner_slide';
   $strongarm->value = '0';
-  $export['node_preview_hnw_banner_slide'] = $strongarm;
+  $export['node_preview_moat_banner_slide'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'node_submitted_hnw_banner_slide';
+  $strongarm->name = 'node_submitted_moat_banner_slide';
   $strongarm->value = 1;
-  $export['node_submitted_hnw_banner_slide'] = $strongarm;
+  $export['node_submitted_moat_banner_slide'] = $strongarm;
 
   return $export;
 }
