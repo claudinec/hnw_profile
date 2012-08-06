@@ -22,29 +22,34 @@ dependencies[] = toolbar
 
 ; Contrib
 dependencies[] = admin_menu
+dependencies[] = backup_migrate
 dependencies[] = boxes
-dependencies[] = omega_tools
 dependencies[] = ctools
 dependencies[] = custom_formatters
-dependencies[] = devel
-dependencies[] = devel_generate
 dependencies[] = diff
 dependencies[] = domain
 dependencies[] = ds
+dependencies[] = entity
+dependencies[] = entityreference
 dependencies[] = field_group
 dependencies[] = features
 dependencies[] = diff
 dependencies[] = module_filter
 dependencies[] = mollom
+dependencies[] = omega_tools
 dependencies[] = panels
 dependencies[] = strongarm
 dependencies[] = views_ui
-dependencies[] = backup_migrate
-dependencies[] = entity
-dependencies[] = entityreference
+dependencies[] = webform
+
+; Development
+dependencies[] = coder
+dependencies[] = devel
+dependencies[] = devel_generate
 
 ; Features
 dependencies[] = hnw_domains
+dependencies[] = hnw_ds_fields
 dependencies[] = hnw_events
 dependencies[] = hnw_media
 dependencies[] = moat_basic_pages
