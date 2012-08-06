@@ -16,12 +16,12 @@ dependencies[] = list
 dependencies[] = menu
 dependencies[] = number
 dependencies[] = options
-dependencies[] = overlay
 dependencies[] = path
 dependencies[] = taxonomy
 dependencies[] = toolbar
 
 ; Contrib
+dependencies[] = admin_menu
 dependencies[] = boxes
 dependencies[] = omega_tools
 dependencies[] = ctools
