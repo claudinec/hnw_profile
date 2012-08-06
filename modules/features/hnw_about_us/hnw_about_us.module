@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the HNW About Us feature.
+ */
+
+include_once 'hnw_about_us.features.inc';
