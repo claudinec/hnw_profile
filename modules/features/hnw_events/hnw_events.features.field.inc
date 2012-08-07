@@ -193,6 +193,7 @@ function hnw_events_field_default_fields() {
     ),
     'field_instance' => array(
       'bundle' => 'event',
+      'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
       'display' => array(
@@ -239,7 +240,7 @@ function hnw_events_field_default_fields() {
           'text_parts' => array(),
           'year_range' => '-3:+3',
         ),
-        'type' => 'date_popup',
+        'type' => 'date_select',
         'weight' => '-3',
       ),
     ),
