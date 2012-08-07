@@ -15,7 +15,7 @@ function hnw_products_taxonomy_default_vocabularies() {
       'description' => '',
       'hierarchy' => '0',
       'module' => 'taxonomy',
-      'weight' => '0',
+      'weight' => '-9',
     ),
     'industries' => array(
       'name' => 'Industries',
@@ -23,7 +23,15 @@ function hnw_products_taxonomy_default_vocabularies() {
       'description' => '',
       'hierarchy' => '0',
       'module' => 'taxonomy',
-      'weight' => '0',
+      'weight' => '-8',
+    ),
+    'product_categories' => array(
+      'name' => 'Product Categories',
+      'machine_name' => 'product_categories',
+      'description' => '',
+      'hierarchy' => '0',
+      'module' => 'taxonomy',
+      'weight' => '-10',
     ),
   );
 }

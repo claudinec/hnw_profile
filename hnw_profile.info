@@ -22,8 +22,11 @@ dependencies[] = toolbar
 
 ; Contrib
 dependencies[] = admin_menu
+dependencies[] = apachesolr
 dependencies[] = backup_migrate
 dependencies[] = boxes
+dependencies[] = context
+dependencies[] = context_ui
 dependencies[] = ctools
 dependencies[] = custom_formatters
 dependencies[] = diff
@@ -31,6 +34,7 @@ dependencies[] = domain
 dependencies[] = ds
 dependencies[] = entity
 dependencies[] = entityreference
+dependencies[] = facetapi
 dependencies[] = field_group
 dependencies[] = features
 dependencies[] = diff

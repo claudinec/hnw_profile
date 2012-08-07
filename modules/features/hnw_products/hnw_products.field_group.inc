@@ -21,7 +21,7 @@ function hnw_products_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Applications and Industries',
-    'weight' => '3',
+    'weight' => '4',
     'children' => array(
       0 => 'field_product_applications',
       1 => 'field_product_industries',
