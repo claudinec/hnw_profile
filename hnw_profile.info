@@ -55,3 +55,9 @@ dependencies[] = hnw_media
 dependencies[] = hnw_products
 dependencies[] = moat_basic_pages
 dependencies[] = moat_wysiwyg
+
+; -----------------------------------------------------------------------------
+;                                   Themes
+; -----------------------------------------------------------------------------
+
+dependencies[] = omega
