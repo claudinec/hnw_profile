@@ -1,8 +1,3 @@
-; ----------------
-; Generated makefile from http://drushmake.me
-; Permanent URL: http://drushmake.me/file.php?token=1d453d721792
-; ----------------
-;
 ; This is a working makefile - try it! Any line starting with a `;` is a comment.
   
 ; Core version
@@ -47,7 +42,7 @@ projects[boxes][subdir] = "contrib"
 projects[context][version] = 3.0-beta2
 projects[context][type] = "module"
 projects[context][subdir] = "contrib"
-projects[ctools][version] = 1.0
+projects[ctools][version] = 1.1
 projects[ctools][type] = "module"
 projects[ctools][subdir] = "contrib"
 projects[custom_formatters][subdir] = "contrib"
