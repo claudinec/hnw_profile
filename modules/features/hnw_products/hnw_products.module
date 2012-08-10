@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the HNW Products feature.
+ */
+
+include_once 'hnw_products.features.inc';

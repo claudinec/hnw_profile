@@ -1,6 +1,6 @@
 name = Hurll Nu-Way
 description = Hurll Nu-Way installation profile.
-version = 0.1
+version = 0.6
 core = 7.x
 
 ; -----------------------------------------------------------------------------
@@ -22,29 +22,40 @@ dependencies[] = toolbar
 
 ; Contrib
 dependencies[] = admin_menu
+dependencies[] = apachesolr
+dependencies[] = backup_migrate
 dependencies[] = boxes
-dependencies[] = omega_tools
+dependencies[] = context
+dependencies[] = context_ui
 dependencies[] = ctools
 dependencies[] = custom_formatters
-dependencies[] = devel
-dependencies[] = devel_generate
 dependencies[] = diff
 dependencies[] = domain
 dependencies[] = ds
+dependencies[] = entity
+dependencies[] = entityreference
+dependencies[] = facetapi
 dependencies[] = field_group
 dependencies[] = features
 dependencies[] = diff
 dependencies[] = module_filter
 dependencies[] = mollom
+dependencies[] = omega_tools
 dependencies[] = panels
 dependencies[] = strongarm
 dependencies[] = views_ui
-dependencies[] = backup_migrate
-dependencies[] = entity
-dependencies[] = entityreference
+dependencies[] = webform
 
-; Custom
+; Development
+dependencies[] = coder
+dependencies[] = devel
+dependencies[] = devel_generate
 
 ; Features
+dependencies[] = hnw_domains
+dependencies[] = hnw_ds_fields
+dependencies[] = hnw_events
+dependencies[] = hnw_media
+dependencies[] = hnw_products
 dependencies[] = moat_basic_pages
 dependencies[] = moat_wysiwyg

@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the HNW DS Fields feature.
+ */
+
+include_once 'hnw_ds_fields.features.inc';

@@ -1,8 +1,3 @@
-; ----------------
-; Generated makefile from http://drushmake.me
-; Permanent URL: http://drushmake.me/file.php?token=1d453d721792
-; ----------------
-;
 ; This is a working makefile - try it! Any line starting with a `;` is a comment.
   
 ; Core version
@@ -39,15 +34,18 @@ projects[addressfield][subdir] = "contrib"
 projects[admin_menu][version] = 3.0-rc3
 projects[admin_menu][type] = "module"
 projects[admin_menu][subdir] = "contrib"
+projects[apachesolr][version] = 1.0-rc2
+projects[apachesolr][type] = "module"
+projects[apachesolr][subdir] = "contrib"
 projects[backup_migrate][subdir] = "contrib"
 projects[boxes][subdir] = "contrib"
-projects[custom_formatters][subdir] = "contrib"
-projects[ctools][version] = 1.0
-projects[ctools][type] = "module"
-projects[ctools][subdir] = "contrib"
 projects[context][version] = 3.0-beta2
 projects[context][type] = "module"
 projects[context][subdir] = "contrib"
+projects[ctools][version] = 1.1
+projects[ctools][type] = "module"
+projects[ctools][subdir] = "contrib"
+projects[custom_formatters][subdir] = "contrib"
 projects[date][version] = 2.5
 projects[date][type] = "module"
 projects[date][subdir] = "contrib"
@@ -59,6 +57,9 @@ projects[domain][type] = "module"
 projects[domain][subdir] = "contrib"
 projects[entity][subdir] = "contrib"
 projects[entityreference][subdir] = "contrib"
+projects[facetapi][version] = 1.1
+projects[facetapi][type] = "module"
+projects[facetapi][subdir] = "contrib"
 projects[features][version] = 1.0-rc1
 projects[features][type] = "module"
 projects[features][subdir] = "contrib"
@@ -94,7 +95,7 @@ projects[views][version] = 3.3
 projects[views][type] = "module"
 projects[views][subdir] = "contrib"
 projects[views_slideshow][subdir] = "contrib"
-projects[webform][version] = 3.18
+projects[webform][version] = 4.0-alpha4
 projects[webform][type] = "module"
 projects[webform][subdir] = "contrib"
 
@@ -111,8 +112,6 @@ projects[wysiwyg][subdir] = "contrib"
 ; Themes
 ; --------
 projects[] = omega
-projects[] = rubik
-projects[] = tao
 
   
   
