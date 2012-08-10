@@ -16,7 +16,10 @@ function hnw_search_apachesolr_environments() {
   $environment->name = 'localhost server';
   $environment->url = 'http://localhost:8983/solr';
   $environment->service_class = '';
-  $environment->conf = array();
+  $environment->conf = array(
+    'apachesolr_search_facet_pages' => '',
+    'apachesolr_search_show_facets' => 0,
+  );
   $export['solr'] = $environment;
 
   return $export;
