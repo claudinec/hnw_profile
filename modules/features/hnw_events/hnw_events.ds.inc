@@ -18,7 +18,7 @@ function hnw_events_ds_field_settings_info() {
   $ds_fieldsetting->view_mode = 'default';
   $ds_fieldsetting->settings = array(
     'title' => array(
-      'weight' => '4',
+      'weight' => '3',
       'label' => 'hidden',
       'format' => 'default',
     ),
@@ -52,17 +52,17 @@ function hnw_events_ds_layout_settings_info() {
         3 => 'field_event_address',
       ),
       'right' => array(
-        0 => 'body',
-        1 => 'field_event_date',
-        2 => 'title',
+        0 => 'field_event_date',
+        1 => 'title',
+        2 => 'body',
       ),
     ),
     'fields' => array(
       'field_event_image' => 'left',
       'group_event_info' => 'left',
-      'body' => 'right',
       'field_event_date' => 'right',
       'title' => 'right',
+      'body' => 'right',
       'field_event_link' => 'left',
       'field_event_address' => 'left',
     ),
