@@ -11,7 +11,7 @@ function hnw_domains_domain_default_domains() {
 $domains = array();
   $domains['wipe-domain-tables'] = 'wipe-domain-tables';
   $domains['hnw_au_claudinechionh_net'] = array(
-  'subdomain' => 'hnw-au.claudinechionh.net',
+  'subdomain' => 'dev-hnw-au.moatdev.com',
   'sitename' => 'Hurll Nu-Way Australia',
   'scheme' => 'http',
   'valid' => '1',
@@ -20,7 +20,7 @@ $domains = array();
   'machine_name' => 'hnw_au_claudinechionh_net',
 );
   $domains['hnw_nz_claudinechionh_net'] = array(
-  'subdomain' => 'hnw-nz.claudinechionh.net',
+  'subdomain' => 'dev-hnw-nz.moatdev.com',
   'sitename' => 'Hurll Nu-Way New Zealand',
   'scheme' => 'http',
   'valid' => '1',
