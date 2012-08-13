@@ -49,7 +49,7 @@ function hnw_events_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '2',
+          'weight' => '4',
         ),
         'teaser' => array(
           'label' => 'hidden',
@@ -198,17 +198,11 @@ function hnw_events_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
-          'module' => 'date',
-          'settings' => array(
-            'format_type' => 'long',
-            'fromto' => 'both',
-            'multiple_from' => '',
-            'multiple_number' => '',
-            'multiple_to' => '',
-          ),
-          'type' => 'date_default',
-          'weight' => '3',
+          'label' => 'hidden',
+          'module' => 'custom_formatters',
+          'settings' => array(),
+          'type' => 'custom_formatters_listing_date',
+          'weight' => '2',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -281,11 +275,11 @@ function hnw_events_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'module' => 'image',
           'settings' => array(
             'image_link' => '',
-            'image_style' => 'medium',
+            'image_style' => 'hnw_event_326x422',
           ),
           'type' => 'image',
           'weight' => '0',

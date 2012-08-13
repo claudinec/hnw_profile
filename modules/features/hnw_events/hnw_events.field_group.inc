@@ -23,16 +23,21 @@ function hnw_events_field_group_info() {
     'label' => 'Further information',
     'weight' => '1',
     'children' => array(
-      0 => 'field_event_link',
-      1 => 'field_event_address',
+      0 => 'field_event_address',
+      1 => 'field_event_link',
     ),
-    'format_type' => 'fieldset',
+    'format_type' => 'div',
     'format_settings' => array(
-      'formatter' => 'collapsible',
+      'label' => 'Further information',
       'instance_settings' => array(
-        'description' => '',
         'classes' => '',
+        'description' => '',
+        'show_label' => '1',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
       ),
+      'formatter' => 'open',
     ),
   );
   $export['group_event_info|node|event|default'] = $field_group;
