@@ -24,3 +24,4 @@ sites/all/themes/README.txt
 libraries/*
 modules/contrib/*
 themes/*
+!themes/custom
