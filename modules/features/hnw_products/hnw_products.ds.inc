@@ -18,7 +18,7 @@ function hnw_products_ds_field_settings_info() {
   $ds_fieldsetting->view_mode = 'default';
   $ds_fieldsetting->settings = array(
     'title' => array(
-      'weight' => '3',
+      'weight' => '2',
       'label' => 'hidden',
       'format' => 'default',
     ),
@@ -80,23 +80,21 @@ function hnw_products_ds_layout_settings_info() {
         1 => 'field_product_download',
       ),
       'right' => array(
-        0 => 'field_product_categories',
-        1 => 'title',
+        0 => 'title',
+        1 => 'group_apps_ind',
         2 => 'field_product_applications',
-        3 => 'group_apps_ind',
+        3 => 'body',
         4 => 'field_product_industries',
-        5 => 'body',
       ),
     ),
     'fields' => array(
       'field_product_image' => 'left',
       'field_product_download' => 'left',
-      'field_product_categories' => 'right',
       'title' => 'right',
-      'field_product_applications' => 'right',
       'group_apps_ind' => 'right',
-      'field_product_industries' => 'right',
+      'field_product_applications' => 'right',
       'body' => 'right',
+      'field_product_industries' => 'right',
     ),
     'classes' => array(),
   );
