@@ -52,10 +52,12 @@ dependencies[] = devel
 dependencies[] = devel_generate
 
 ; Features
+dependencies[] = hnw_appearance
 dependencies[] = hnw_domains
 dependencies[] = hnw_ds_fields
 dependencies[] = hnw_events
 dependencies[] = hnw_media
 dependencies[] = hnw_products
+dependencies[] = hnw_search
 dependencies[] = moat_basic_pages
 dependencies[] = moat_wysiwyg

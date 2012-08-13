@@ -13,8 +13,8 @@ function hnw_search_apachesolr_environments() {
   $environment = new stdClass();
   $environment->api_version = 1;
   $environment->env_id = 'solr';
-  $environment->name = 'localhost server';
-  $environment->url = 'http://localhost:8983/solr';
+  $environment->name = 'redmine server';
+  $environment->url = 'http://redmine.moatmedia.com.au/:8983/solr';
   $environment->service_class = '';
   $environment->conf = array(
     'apachesolr_search_facet_pages' => '',
