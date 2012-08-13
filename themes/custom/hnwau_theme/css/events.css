@@ -28,7 +28,7 @@
 	line-height: 20px;
 }
 
-.view-events .date-month{
+.view-events .views-field-field-event-date .date-month{
 	text-transform: uppercase;
 	font-size:24px;
 	font-weight: bold;
