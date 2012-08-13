@@ -1,0 +1,26 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color:#333333;
+}
+
+a:link, a:visited {
+	color:#F77219;
+}
+
+h2,
+h2.block-title,
+h2.node-title
+{
+	font-size: 25px;
+}
+
+h2.node-title a{
+	color:#333;
+	text-decoration: none;
+}

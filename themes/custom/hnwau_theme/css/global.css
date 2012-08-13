@@ -1,0 +1,47 @@
+/* This file will hold styles for the mobile version of your website (mobile first). */
+/* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
+
+#section-header,
+#section-content
+{
+	background:#d3d3d3;
+}
+
+#zone-branding{
+	background:url(../images/banner_overlay.png);
+	height:175px;
+}
+
+#zone-menu{
+	background:#334470;
+}
+
+#region-menu{
+	margin:0;
+}
+
+.logo-img{
+	margin-top:35px;
+	margin-left:27px;
+}
+
+#zone-user,
+#zone-branding,
+#zone-postscript,
+#zone-header,
+#zone-preface,
+#zone-content
+{
+	background-color:white;
+}
+
+#zone-content{
+	margin-bottom:24px;
+}
+
+/* Footer styles */
+
+#region-footer-first{
+	margin:0px;
+	width:960px;
+}

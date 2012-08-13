@@ -1,0 +1,77 @@
+.view-events .views-row{
+	float:left;
+	background:url(../images/date_background.png) #f9f9f9 top right no-repeat;
+	margin-bottom:10px;
+	padding:22px 17px;
+}
+
+.view-events .views-field-title,
+.view-events .views-field-body,
+.view-events .views-field-view-node
+{
+	margin-left:148px;
+}
+
+.view-events .views-field-field-event-image{
+	float:left;
+	width: 132px;
+	height: 116px;
+}
+
+.view-events .views-field-field-event-date{
+	float:right;
+	color:white;
+	width:70px;
+	text-align: center;
+	margin-top:-20px;
+	margin-right:-17px;
+	font-size:18px;
+	line-height: 20px;
+}
+
+.view-events .date-month{
+	text-transform: uppercase;
+	font-size:24px;
+	font-weight: bold;
+}
+
+.view-events .views-field-title a{
+	color:#333;
+	text-decoration: none;
+}
+
+.node-type-event #page-title{
+	display:none;
+}
+
+.group-right{
+	background:#f9f9f9;
+	width:394px;
+	padding:38px;
+	background:url(../images/date_background.png) #f9f9f9 top right no-repeat;
+}
+
+.field-name-field-event-date{
+	float:right;
+	color:white;
+	width:70px;
+	text-align: center;
+	margin-top:-35px;
+	margin-right:-38px;
+	font-size:18px;
+	line-height: 20px;
+}
+
+.field-name-field-event-date .date-month{
+	text-transform: uppercase;
+	font-size:24px;
+	font-weight: bold;
+}
+
+.group-event-info{
+	background:#f9f9f9;
+	padding:16px 18px;
+	margin-top:16px;
+	width:422px;
+}
+

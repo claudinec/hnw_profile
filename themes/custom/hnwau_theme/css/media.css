@@ -1,0 +1,35 @@
+.view-media .views-row{
+	float:left;
+	margin-bottom:10px;
+	background:#f9f9f9;
+	padding:22px 17px;
+}
+
+.view-media .views-field-field-media-publication-date,
+.view-media .views-field-body,
+.view-media .views-field-view-node
+{
+	margin-left:148px;
+}
+
+.view-media .views-field-field-media-publication-date h2 a{
+	text-decoration: none;
+	color:#333;
+}
+
+.view-media .views-field-field-media-image{
+	float:left;
+	width: 132px;
+	height: 116px;
+}
+
+.view-media .views-field-title a{
+	color:#333;
+	text-decoration: none;
+}
+
+
+.view-media .archive-link{
+	float:right;
+	margin-bottom:30px;
+}
