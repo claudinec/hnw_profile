@@ -65,6 +65,9 @@ css[events.css][options][weight] = 10
 css[media.css][name] = Your custom media styles
 css[media.css][description] = This file holds all the media CSS of your theme.
 css[media.css][options][weight] = 10
+css[products.css][name] = Your custom product styles
+css[products.css][description] = This file holds all the product CSS of your theme.
+css[products.css][options][weight] = 10
 
 ; THEME SETTINGS (DEFAULTS)
 
