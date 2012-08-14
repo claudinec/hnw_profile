@@ -4,11 +4,22 @@
 	padding:22px 17px;
 }
 
+.view-media .view-header{
+	margin-bottom:10px;
+	margin-top:25px;
+	background:#f9f9f9;
+	padding:22px 17px 22px 17px;
+}
+
 .view-media .views-field-field-media-publication-date,
 .view-media .views-field-body,
 .view-media .views-field-view-node
 {
 	margin-left:148px;
+}
+
+.page-media #page-title{
+	display:none;
 }
 
 .view-media .views-field-field-media-publication-date h2 a{
