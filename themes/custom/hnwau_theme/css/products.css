@@ -11,6 +11,11 @@
 	margin-left:148px;
 }
 
+
+.page-product-list #page-title{
+	display:none;
+}
+
 .view-product-list .views-field-field-product-image{
 	float:left;
 	width: 132px;
