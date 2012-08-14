@@ -108,6 +108,7 @@ function hnw_appearance_strongarm() {
       'navigation.css' => 'navigation.css',
       'events.css' => 'events.css',
       'media.css' => 'media.css',
+      'products.css' => 'products.css',
     ),
     'alpha_exclude' => array(
       'profiles/hnw_profile/modules/contrib/date/date_api/date.css' => 0,
