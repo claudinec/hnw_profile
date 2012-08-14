@@ -26,7 +26,7 @@ function hnw_products_field_group_info() {
       0 => 'field_product_applications',
       1 => 'field_product_industries',
     ),
-    'format_type' => 'fieldset',
+    'format_type' => 'div',
     'format_settings' => array(
       'formatter' => 'collapsible',
       'instance_settings' => array(

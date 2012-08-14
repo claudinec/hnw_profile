@@ -279,7 +279,7 @@ function hnw_products_field_default_fields() {
           'module' => 'image',
           'settings' => array(
             'image_link' => '',
-            'image_style' => 'medium',
+            'image_style' => 'hnw_event_326x422',
           ),
           'type' => 'image',
           'weight' => '0',

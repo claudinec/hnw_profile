@@ -31,11 +31,10 @@
 	display:none;
 }
 
-.view-product-list .group-right{
+.node-type-product .group-right{
 	background:#f9f9f9;
 	width:394px;
 	padding:38px;
-	background:url(../images/date_background.png) #f9f9f9 top right no-repeat;
 }
 
 .field-name-field-event-date{
