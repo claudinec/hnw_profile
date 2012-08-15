@@ -17,6 +17,11 @@ function hnw_media_ds_field_settings_info() {
   $ds_fieldsetting->bundle = 'media_item';
   $ds_fieldsetting->view_mode = 'default';
   $ds_fieldsetting->settings = array(
+    'download_as_pdf_link' => array(
+      'weight' => '2',
+      'label' => 'hidden',
+      'format' => 'default',
+    ),
     'media_back_button' => array(
       'weight' => '6',
       'label' => 'hidden',
@@ -38,6 +43,23 @@ function hnw_media_ds_field_settings_info() {
  */
 function hnw_media_ds_custom_fields_info() {
   $export = array();
+
+  $ds_field = new stdClass();
+  $ds_field->api_version = 1;
+  $ds_field->field = 'download_as_pdf_link';
+  $ds_field->label = 'Download as PDF link';
+  $ds_field->field_type = 5;
+  $ds_field->entities = array(
+    'node' => 'node',
+  );
+  $ds_field->properties = array(
+    'code' => array(
+      'value' => '<a href="[node:field_media_pdf]" class="download-as-pdf">Download as PDF</a>',
+      'format' => 'ds_code',
+    ),
+    'use_token' => 1,
+  );
+  $export['download_as_pdf_link'] = $ds_field;
 
   $ds_field = new stdClass();
   $ds_field->api_version = 1;
@@ -73,7 +95,7 @@ function hnw_media_ds_layout_settings_info() {
   $ds_layout->entity_type = 'node';
   $ds_layout->bundle = 'media_item';
   $ds_layout->view_mode = 'default';
-  $ds_layout->layout = 'panels-omega_12_twocol_3_9';
+  $ds_layout->layout = 'ds_2col';
   $ds_layout->settings = array(
     'hide_empty_regions' => 0,
     'hide_sidebars' => 0,
@@ -81,7 +103,7 @@ function hnw_media_ds_layout_settings_info() {
       'left' => array(
         0 => 'field_media_image',
         1 => 'field_media_link',
-        2 => 'field_media_pdf',
+        2 => 'download_as_pdf_link',
       ),
       'right' => array(
         0 => 'title',
@@ -93,13 +115,22 @@ function hnw_media_ds_layout_settings_info() {
     'fields' => array(
       'field_media_image' => 'left',
       'field_media_link' => 'left',
-      'field_media_pdf' => 'left',
+      'download_as_pdf_link' => 'left',
       'title' => 'right',
       'field_media_publication_date' => 'right',
       'body' => 'right',
       'media_back_button' => 'right',
     ),
-    'classes' => array(),
+    'classes' => array(
+      'left' => array(
+        'grid-4' => 'grid-4',
+        'alpha' => 'alpha',
+      ),
+      'right' => array(
+        'grid-8' => 'grid-8',
+        'alpha' => 'alpha',
+      ),
+    ),
   );
   $export['node|media_item|default'] = $ds_layout;
 
