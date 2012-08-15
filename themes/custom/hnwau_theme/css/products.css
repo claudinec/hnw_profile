@@ -37,6 +37,13 @@
 	padding:38px;
 }
 
+.node-type-product .container-12 .grid-8{
+	background:#f9f9f9;
+	padding:22px 17px 22px 17px;
+	width:586px;
+	margin-bottom:22px;
+}
+
 .field-name-field-event-date{
 	float:right;
 	color:white;
