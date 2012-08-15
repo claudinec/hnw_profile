@@ -2,12 +2,7 @@ name = "HNW Media"
 description = "Media items - type and view"
 core = "7.x"
 package = "HNW"
-<<<<<<< HEAD
 version = "7.x-0.3"
-=======
-php = "5.2.4"
-version = "7.x-0.4"
->>>>>>> c853c6a9213b47412cfb9ced28b5bd9d91bf3847
 project = "hnw_media"
 dependencies[] = "ctools"
 dependencies[] = "date"
