@@ -17,6 +17,11 @@ function hnw_media_ds_field_settings_info() {
   $ds_fieldsetting->bundle = 'media_item';
   $ds_fieldsetting->view_mode = 'default';
   $ds_fieldsetting->settings = array(
+    'media_back_button' => array(
+      'weight' => '6',
+      'label' => 'hidden',
+      'format' => 'default',
+    ),
     'title' => array(
       'weight' => '3',
       'label' => 'hidden',
@@ -24,6 +29,34 @@ function hnw_media_ds_field_settings_info() {
     ),
   );
   $export['node|media_item|default'] = $ds_fieldsetting;
+
+  return $export;
+}
+
+/**
+ * Implements hook_ds_custom_fields_info().
+ */
+function hnw_media_ds_custom_fields_info() {
+  $export = array();
+
+  $ds_field = new stdClass();
+  $ds_field->api_version = 1;
+  $ds_field->field = 'media_back_button';
+  $ds_field->label = 'Media back button';
+  $ds_field->field_type = 5;
+  $ds_field->entities = array(
+    'node' => 'node',
+  );
+  $ds_field->properties = array(
+    'code' => array(
+      'value' => '<?php
+echo l(t(\'Back\'), \'media\', array(\'attributes\' => array(\'class\' => array(\'back-link\'))));
+?>',
+      'format' => 'ds_code',
+    ),
+    'use_token' => 0,
+  );
+  $export['media_back_button'] = $ds_field;
 
   return $export;
 }
@@ -54,6 +87,7 @@ function hnw_media_ds_layout_settings_info() {
         0 => 'title',
         1 => 'field_media_publication_date',
         2 => 'body',
+        3 => 'media_back_button',
       ),
     ),
     'fields' => array(
@@ -63,6 +97,7 @@ function hnw_media_ds_layout_settings_info() {
       'title' => 'right',
       'field_media_publication_date' => 'right',
       'body' => 'right',
+      'media_back_button' => 'right',
     ),
     'classes' => array(),
   );
