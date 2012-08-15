@@ -17,6 +17,11 @@ function hnw_products_ds_field_settings_info() {
   $ds_fieldsetting->bundle = 'product';
   $ds_fieldsetting->view_mode = 'default';
   $ds_fieldsetting->settings = array(
+    'products_like_this' => array(
+      'weight' => '6',
+      'label' => 'hidden',
+      'format' => 'default',
+    ),
     'title' => array(
       'weight' => '2',
       'label' => 'hidden',
@@ -59,6 +64,30 @@ function hnw_products_ds_field_settings_info() {
 }
 
 /**
+ * Implements hook_ds_custom_fields_info().
+ */
+function hnw_products_ds_custom_fields_info() {
+  $export = array();
+
+  $ds_field = new stdClass();
+  $ds_field->api_version = 1;
+  $ds_field->field = 'products_like_this';
+  $ds_field->label = 'Products like this';
+  $ds_field->field_type = 6;
+  $ds_field->entities = array(
+    'node' => 'node',
+  );
+  $ds_field->ui_limit = '';
+  $ds_field->properties = array(
+    'block' => 'apachesolr_search|mlt-001',
+    'block_render' => '1',
+  );
+  $export['products_like_this'] = $ds_field;
+
+  return $export;
+}
+
+/**
  * Implements hook_ds_layout_settings_info().
  */
 function hnw_products_ds_layout_settings_info() {
@@ -72,31 +101,40 @@ function hnw_products_ds_layout_settings_info() {
   $ds_layout->view_mode = 'default';
   $ds_layout->layout = 'ds_2col';
   $ds_layout->settings = array(
-    'hide_empty_regions' => 0,
-    'hide_sidebars' => 0,
     'regions' => array(
       'left' => array(
         0 => 'field_product_image',
         1 => 'field_product_download',
       ),
       'right' => array(
-        0 => 'title',
-        1 => 'group_apps_ind',
-        2 => 'field_product_applications',
-        3 => 'body',
+        2 => 'title',
+        3 => 'field_product_categories',
         4 => 'field_product_industries',
+        5 => 'group_apps_ind',
+        6 => 'field_product_applications',
+        7 => 'body',
+        8 => 'products_like_this',
       ),
     ),
     'fields' => array(
       'field_product_image' => 'left',
       'field_product_download' => 'left',
       'title' => 'right',
+      'field_product_categories' => 'right',
+      'field_product_industries' => 'right',
       'group_apps_ind' => 'right',
       'field_product_applications' => 'right',
       'body' => 'right',
-      'field_product_industries' => 'right',
+      'products_like_this' => 'right',
     ),
     'classes' => array(),
+    'wrappers' => array(
+      'left' => 'div',
+      'right' => 'div',
+    ),
+    'layout_wrapper' => 'div',
+    'layout_attributes' => '',
+    'layout_attributes_merge' => 1,
   );
   $export['node|product|default'] = $ds_layout;
 
