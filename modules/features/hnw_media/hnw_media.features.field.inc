@@ -121,7 +121,7 @@ function hnw_media_field_default_fields() {
           'module' => 'image',
           'settings' => array(
             'image_link' => '',
-            'image_style' => 'medium',
+            'image_style' => 'hnw_4-cols_300w',
           ),
           'type' => 'image',
           'weight' => '0',
@@ -280,10 +280,9 @@ function hnw_media_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'file',
           'settings' => array(),
-          'type' => 'file_default',
-          'weight' => '2',
+          'type' => 'hidden',
+          'weight' => '7',
         ),
         'teaser' => array(
           'label' => 'above',
