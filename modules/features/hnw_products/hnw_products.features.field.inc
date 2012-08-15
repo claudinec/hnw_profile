@@ -83,51 +83,38 @@ function hnw_products_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-product-field_product_applications'
-  $fields['node-product-field_product_applications'] = array(
+  // Exported field: 'node-product-field_applications'
+  $fields['node-product-field_applications'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '-1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_product_applications',
+      'field_name' => 'field_applications',
       'foreign keys' => array(
-        'node' => array(
+        'tid' => array(
           'columns' => array(
-            'target_id' => 'nid',
+            'tid' => 'tid',
           ),
-          'table' => 'node',
+          'table' => 'taxonomy_term_data',
         ),
       ),
       'indexes' => array(
-        'target_id' => array(
-          0 => 'target_id',
+        'tid' => array(
+          0 => 'tid',
         ),
       ),
-      'module' => 'entityreference',
+      'module' => 'taxonomy',
       'settings' => array(
-        'handler' => 'base',
-        'handler_settings' => array(
-          'behaviors' => array(
-            'views-select-list' => array(
-              'status' => 0,
-            ),
-          ),
-          'sort' => array(
-            'direction' => 'ASC',
-            'field' => 'property',
-            'property' => 'name',
-            'type' => 'property',
-          ),
-          'target_bundles' => array(
-            'applications' => 'applications',
+        'allowed_values' => array(
+          0 => array(
+            'vocabulary' => 'applications',
+            'parent' => '0',
           ),
         ),
-        'handler_submit' => 'Change handler',
-        'target_type' => 'taxonomy_term',
       ),
       'translatable' => '0',
-      'type' => 'entityreference',
+      'type' => 'taxonomy_term_reference',
     ),
     'field_instance' => array(
       'bundle' => 'product',
@@ -137,12 +124,10 @@ function hnw_products_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'entityreference',
-          'settings' => array(
-            'link' => 1,
-          ),
-          'type' => 'entityreference_label',
-          'weight' => '5',
+          'module' => 'taxonomy',
+          'settings' => array(),
+          'type' => 'taxonomy_term_reference_link',
+          'weight' => '18',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -152,8 +137,8 @@ function hnw_products_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_product_applications',
-      'label' => 'Featured applications',
+      'field_name' => 'field_applications',
+      'label' => 'Applications',
       'required' => 0,
       'settings' => array(
         'user_register_form' => FALSE,
@@ -168,51 +153,38 @@ function hnw_products_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-product-field_product_categories'
-  $fields['node-product-field_product_categories'] = array(
+  // Exported field: 'node-product-field_industries'
+  $fields['node-product-field_industries'] = array(
     'field_config' => array(
       'active' => '1',
-      'cardinality' => '1',
+      'cardinality' => '-1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_product_categories',
+      'field_name' => 'field_industries',
       'foreign keys' => array(
-        'node' => array(
+        'tid' => array(
           'columns' => array(
-            'target_id' => 'nid',
+            'tid' => 'tid',
           ),
-          'table' => 'node',
+          'table' => 'taxonomy_term_data',
         ),
       ),
       'indexes' => array(
-        'target_id' => array(
-          0 => 'target_id',
+        'tid' => array(
+          0 => 'tid',
         ),
       ),
-      'module' => 'entityreference',
+      'module' => 'taxonomy',
       'settings' => array(
-        'handler' => 'base',
-        'handler_settings' => array(
-          'behaviors' => array(
-            'views-select-list' => array(
-              'status' => 0,
-            ),
-          ),
-          'sort' => array(
-            'direction' => 'ASC',
-            'field' => 'property',
-            'property' => 'name',
-            'type' => 'property',
-          ),
-          'target_bundles' => array(
-            'product_categories' => 'product_categories',
+        'allowed_values' => array(
+          0 => array(
+            'vocabulary' => 'industries',
+            'parent' => '0',
           ),
         ),
-        'handler_submit' => 'Change handler',
-        'target_type' => 'taxonomy_term',
       ),
       'translatable' => '0',
-      'type' => 'entityreference',
+      'type' => 'taxonomy_term_reference',
     ),
     'field_instance' => array(
       'bundle' => 'product',
@@ -222,30 +194,80 @@ function hnw_products_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'entityreference',
-          'settings' => array(
-            'link' => 1,
+          'module' => 'taxonomy',
+          'settings' => array(),
+          'type' => 'taxonomy_term_reference_link',
+          'weight' => '17',
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_industries',
+      'label' => 'Industries',
+      'required' => 0,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'options',
+        'settings' => array(),
+        'type' => 'options_select',
+        'weight' => '4',
+      ),
+    ),
+  );
+
+  // Exported field: 'node-product-field_product_categories'
+  $fields['node-product-field_product_categories'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '-1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_product_categories',
+      'foreign keys' => array(
+        'tid' => array(
+          'columns' => array(
+            'tid' => 'tid',
           ),
-          'type' => 'entityreference_label',
+          'table' => 'taxonomy_term_data',
+        ),
+      ),
+      'indexes' => array(
+        'tid' => array(
+          0 => 'tid',
+        ),
+      ),
+      'module' => 'taxonomy',
+      'settings' => array(
+        'allowed_values' => array(
+          0 => array(
+            'vocabulary' => 'product_categories',
+            'parent' => '0',
+          ),
+        ),
+      ),
+      'translatable' => '0',
+      'type' => 'taxonomy_term_reference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'product',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'taxonomy',
+          'settings' => array(),
+          'type' => 'taxonomy_term_reference_link',
           'weight' => '3',
-        ),
-        'search_index' => array(
-          'label' => 'above',
-          'module' => 'entityreference',
-          'settings' => array(
-            'link' => FALSE,
-          ),
-          'type' => 'entityreference_label',
-          'weight' => '2',
-        ),
-        'search_result' => array(
-          'label' => 'above',
-          'module' => 'entityreference',
-          'settings' => array(
-            'link' => FALSE,
-          ),
-          'type' => 'entityreference_label',
-          'weight' => '2',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -257,7 +279,7 @@ function hnw_products_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_product_categories',
       'label' => 'Product categories',
-      'required' => 1,
+      'required' => 0,
       'settings' => array(
         'user_register_form' => FALSE,
       ),
@@ -266,7 +288,7 @@ function hnw_products_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_select',
-        'weight' => '2',
+        'weight' => '3',
       ),
     ),
   );
@@ -338,7 +360,7 @@ function hnw_products_field_default_fields() {
           'progress_indicator' => 'throbber',
         ),
         'type' => 'file_generic',
-        'weight' => '4',
+        'weight' => '7',
       ),
     ),
   );
@@ -417,91 +439,6 @@ function hnw_products_field_default_fields() {
           'progress_indicator' => 'throbber',
         ),
         'type' => 'image_image',
-        'weight' => '3',
-      ),
-    ),
-  );
-
-  // Exported field: 'node-product-field_product_industries'
-  $fields['node-product-field_product_industries'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '-1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_product_industries',
-      'foreign keys' => array(
-        'node' => array(
-          'columns' => array(
-            'target_id' => 'nid',
-          ),
-          'table' => 'node',
-        ),
-      ),
-      'indexes' => array(
-        'target_id' => array(
-          0 => 'target_id',
-        ),
-      ),
-      'module' => 'entityreference',
-      'settings' => array(
-        'handler' => 'base',
-        'handler_settings' => array(
-          'behaviors' => array(
-            'views-select-list' => array(
-              'status' => 0,
-            ),
-          ),
-          'sort' => array(
-            'direction' => 'ASC',
-            'field' => 'property',
-            'property' => 'name',
-            'type' => 'property',
-          ),
-          'target_bundles' => array(
-            'industries' => 'industries',
-          ),
-        ),
-        'handler_submit' => 'Change handler',
-        'target_type' => 'taxonomy_term',
-      ),
-      'translatable' => '0',
-      'type' => 'entityreference',
-    ),
-    'field_instance' => array(
-      'bundle' => 'product',
-      'default_value' => NULL,
-      'deleted' => '0',
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'entityreference',
-          'settings' => array(
-            'link' => 1,
-          ),
-          'type' => 'entityreference_label',
-          'weight' => '4',
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_product_industries',
-      'label' => 'Industries',
-      'required' => 0,
-      'settings' => array(
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'options',
-        'settings' => array(),
-        'type' => 'options_select',
         'weight' => '6',
       ),
     ),
@@ -559,7 +496,7 @@ function hnw_products_field_default_fields() {
         'module' => 'number',
         'settings' => array(),
         'type' => 'number',
-        'weight' => '7',
+        'weight' => '8',
       ),
     ),
   );
@@ -645,8 +582,8 @@ function hnw_products_field_default_fields() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Applications');
   t('Description');
-  t('Featured applications');
   t('Industries');
   t('Parent industries');
   t('Product categories');

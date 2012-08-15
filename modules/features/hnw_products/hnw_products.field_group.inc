@@ -23,8 +23,8 @@ function hnw_products_field_group_info() {
     'label' => 'Applications and Industries',
     'weight' => '4',
     'children' => array(
-      0 => 'field_product_applications',
-      1 => 'field_product_industries',
+      0 => 'field_industries',
+      1 => 'field_applications',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(

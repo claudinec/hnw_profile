@@ -22,11 +22,6 @@ function hnw_products_ds_field_settings_info() {
       'label' => 'hidden',
       'format' => 'default',
     ),
-    'title' => array(
-      'weight' => '2',
-      'label' => 'hidden',
-      'format' => 'default',
-    ),
   );
   $export['node|product|default'] = $ds_fieldsetting;
 
@@ -107,25 +102,23 @@ function hnw_products_ds_layout_settings_info() {
         1 => 'field_product_download',
       ),
       'right' => array(
-        2 => 'title',
-        3 => 'field_product_categories',
-        4 => 'field_product_industries',
-        5 => 'group_apps_ind',
-        6 => 'field_product_applications',
-        7 => 'body',
-        8 => 'products_like_this',
+        2 => 'field_product_categories',
+        3 => 'group_apps_ind',
+        4 => 'body',
+        5 => 'products_like_this',
+        6 => 'field_industries',
+        7 => 'field_applications',
       ),
     ),
     'fields' => array(
       'field_product_image' => 'left',
       'field_product_download' => 'left',
-      'title' => 'right',
       'field_product_categories' => 'right',
-      'field_product_industries' => 'right',
       'group_apps_ind' => 'right',
-      'field_product_applications' => 'right',
       'body' => 'right',
       'products_like_this' => 'right',
+      'field_industries' => 'right',
+      'field_applications' => 'right',
     ),
     'classes' => array(),
     'wrappers' => array(
@@ -144,21 +137,25 @@ function hnw_products_ds_layout_settings_info() {
   $ds_layout->entity_type = 'taxonomy_term';
   $ds_layout->bundle = 'applications';
   $ds_layout->view_mode = 'default';
-  $ds_layout->layout = 'ds_2col';
+  $ds_layout->layout = 'ds_1col';
   $ds_layout->settings = array(
-    'hide_empty_regions' => 0,
-    'hide_sidebars' => 0,
     'regions' => array(
-      'right' => array(
-        0 => 'title',
-        1 => 'description',
+      'ds_content' => array(
+        0 => 'description',
+        1 => 'field_parent_industries',
       ),
     ),
     'fields' => array(
-      'title' => 'right',
-      'description' => 'right',
+      'description' => 'ds_content',
+      'field_parent_industries' => 'ds_content',
     ),
     'classes' => array(),
+    'wrappers' => array(
+      'ds_content' => 'div',
+    ),
+    'layout_wrapper' => 'div',
+    'layout_attributes' => '',
+    'layout_attributes_merge' => 1,
   );
   $export['taxonomy_term|applications|default'] = $ds_layout;
 
@@ -168,21 +165,23 @@ function hnw_products_ds_layout_settings_info() {
   $ds_layout->entity_type = 'taxonomy_term';
   $ds_layout->bundle = 'industries';
   $ds_layout->view_mode = 'default';
-  $ds_layout->layout = 'ds_2col';
+  $ds_layout->layout = 'ds_1col';
   $ds_layout->settings = array(
-    'hide_empty_regions' => 0,
-    'hide_sidebars' => 0,
     'regions' => array(
-      'right' => array(
-        0 => 'title',
-        1 => 'description',
+      'ds_content' => array(
+        0 => 'description',
       ),
     ),
     'fields' => array(
-      'title' => 'right',
-      'description' => 'right',
+      'description' => 'ds_content',
     ),
     'classes' => array(),
+    'wrappers' => array(
+      'ds_content' => 'div',
+    ),
+    'layout_wrapper' => 'div',
+    'layout_attributes' => '',
+    'layout_attributes_merge' => 1,
   );
   $export['taxonomy_term|industries|default'] = $ds_layout;
 

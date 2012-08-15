@@ -15,7 +15,7 @@ function hnw_products_taxonomy_default_vocabularies() {
       'description' => '',
       'hierarchy' => '0',
       'module' => 'taxonomy',
-      'weight' => '-9',
+      'weight' => '-8',
     ),
     'industries' => array(
       'name' => 'Industries',
@@ -23,7 +23,7 @@ function hnw_products_taxonomy_default_vocabularies() {
       'description' => '',
       'hierarchy' => '0',
       'module' => 'taxonomy',
-      'weight' => '-8',
+      'weight' => '-9',
     ),
     'product_categories' => array(
       'name' => 'Product Categories',

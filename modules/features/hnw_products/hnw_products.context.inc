@@ -17,9 +17,28 @@ function hnw_products_context_default_contexts() {
   $context->description = '';
   $context->tag = 'products';
   $context->conditions = array(
-    'sitewide' => array(
+    'node' => array(
       'values' => array(
-        1 => 1,
+        'product' => 'product',
+      ),
+      'options' => array(
+        'node_form' => '1',
+      ),
+    ),
+    'taxonomy_term' => array(
+      'values' => array(
+        'applications' => 'applications',
+        'industries' => 'industries',
+        'product_categories' => 'product_categories',
+      ),
+      'options' => array(
+        'term_form' => '1',
+      ),
+    ),
+    'views' => array(
+      'values' => array(
+        'product_list' => 'product_list',
+        'product_list:page' => 'product_list:page',
       ),
     ),
   );
@@ -38,23 +57,29 @@ function hnw_products_context_default_contexts() {
           'region' => 'sidebar_first',
           'weight' => '-9',
         ),
-        'facetapi-XxA9XHVRRtXATf2foNeI3ymu0Zn7xiQn' => array(
-          'module' => 'facetapi',
-          'delta' => 'XxA9XHVRRtXATf2foNeI3ymu0Zn7xiQn',
+        'apachesolr_search-sort' => array(
+          'module' => 'apachesolr_search',
+          'delta' => 'sort',
+          'region' => 'sidebar_first',
+          'weight' => '-8',
+        ),
+        'menu-menu-product-range' => array(
+          'module' => 'menu',
+          'delta' => 'menu-product-range',
+          'region' => 'sidebar_first',
+          'weight' => '-7',
+        ),
+        'menu-menu-industries' => array(
+          'module' => 'menu',
+          'delta' => 'menu-industries',
           'region' => 'sidebar_first',
           'weight' => '-6',
         ),
-        'facetapi-XFjj5Xqm4rU5JykWirAQCcJpcGUrL9Ok' => array(
-          'module' => 'facetapi',
-          'delta' => 'XFjj5Xqm4rU5JykWirAQCcJpcGUrL9Ok',
+        'menu-menu-applications' => array(
+          'module' => 'menu',
+          'delta' => 'menu-applications',
           'region' => 'sidebar_first',
           'weight' => '-5',
-        ),
-        'facetapi-peZvRdBjumTJFOqV3vP9Drb5AKZfLWRP' => array(
-          'module' => 'facetapi',
-          'delta' => 'peZvRdBjumTJFOqV3vP9Drb5AKZfLWRP',
-          'region' => 'sidebar_first',
-          'weight' => '-4',
         ),
       ),
     ),
