@@ -49,7 +49,7 @@ function hnw_products_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '3',
+          'weight' => '5',
         ),
         'teaser' => array(
           'label' => 'hidden',
@@ -329,11 +329,11 @@ function hnw_products_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'hidden',
+          'label' => 'above',
           'module' => 'file',
           'settings' => array(),
           'type' => 'file_default',
-          'weight' => '4',
+          'weight' => '1',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -400,11 +400,11 @@ function hnw_products_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'hidden',
+          'label' => 'above',
           'module' => 'image',
           'settings' => array(
             'image_link' => '',
-            'image_style' => 'hnw_4-cols_300w',
+            'image_style' => 'medium',
           ),
           'type' => 'image',
           'weight' => '0',

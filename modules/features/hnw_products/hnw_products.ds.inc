@@ -72,6 +72,7 @@ function hnw_products_ds_custom_fields_info() {
   $ds_field->entities = array(
     'node' => 'node',
   );
+  $ds_field->ui_limit = '';
   $ds_field->properties = array(
     'block' => 'apachesolr_search|mlt-001',
     'block_render' => '1',
