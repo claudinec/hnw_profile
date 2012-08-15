@@ -96,6 +96,12 @@ projects[search_api][subdir] = "contrib"
 projects[strongarm][version] = 2.0-rc1
 projects[strongarm][type] = "module"
 projects[strongarm][subdir] = "contrib"
+projects[taxonomy_menu][version] = 1.3
+projects[taxonomy_menu][type] = "module"
+projects[taxonomy_menu][subdir] = "contrib"
+projects[taxonomy_menu_trails][version] = 2.3
+projects[taxonomy_menu_trails][type] = "module"
+projects[taxonomy_menu_trails][subdir] = "contrib"
 projects[themekey][version] = 2.3
 projects[themekey][type] = "module"
 projects[themekey][subdir] = "contrib"
@@ -141,5 +147,4 @@ libraries[editarea][download][url] = "http://downloads.sourceforge.net/project/e
 libraries[jquery.cycle][type] = "libraries"
 libraries[jquery.cycle][download][type] = "file"
 libraries[jquery.cycle][download][url] = "http://malsup.github.com/jquery.cycle.all.js"
-
 
