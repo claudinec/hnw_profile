@@ -27,7 +27,8 @@
 	text-decoration: none;
 }
 
-.view-product-list #page-title{
+.view-product-list #page-title,
+.node-type-product #page-title{
 	display:none;
 }
 
@@ -38,10 +39,29 @@
 }
 
 .node-type-product .container-12 .grid-8{
-	background:#f9f9f9;
-	padding:22px 17px 22px 17px;
+	background:white;
+	/* padding:22px 17px 22px 17px; */
+	padding:0;
 	width:586px;
 	margin-bottom:22px;
+}
+
+.node-type-product .field-group-div .field-name-field-product-applications,
+.node-type-product .field-group-div .field-name-field-product-industries{
+	background:#f9f9f9;
+	width:289px;
+	float:left;
+	margin-left:0px;
+}
+
+.node-type-product .field-group-div .field-name-field-product-industries{
+	margin-left:8px;
+}
+
+.node-type-product .field-name-title h2{
+	background:#ececec url(../images/orange-arrow.png) no-repeat 27px 16px;
+	padding:5px 0px 5px 46px;
+	margin-bottom:8px;
 }
 
 .field-name-field-event-date{
