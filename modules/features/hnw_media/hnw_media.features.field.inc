@@ -10,7 +10,7 @@
 function hnw_media_field_default_fields() {
   $fields = array();
 
-  // Exported field: 'node-media_item-body'
+  // Exported field: 'node-media_item-body'.
   $fields['node-media_item-body'] = array(
     'field_config' => array(
       'active' => '1',
@@ -33,6 +33,7 @@ function hnw_media_field_default_fields() {
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(),
       'translatable' => '0',
@@ -82,7 +83,7 @@ function hnw_media_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-media_item-field_media_image'
+  // Exported field: 'node-media_item-field_media_image'.
   $fields['node-media_item-field_media_image'] = array(
     'field_config' => array(
       'active' => '1',
@@ -103,6 +104,7 @@ function hnw_media_field_default_fields() {
           0 => 'fid',
         ),
       ),
+      'locked' => '0',
       'module' => 'image',
       'settings' => array(
         'default_image' => 0,
@@ -161,7 +163,7 @@ function hnw_media_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-media_item-field_media_link'
+  // Exported field: 'node-media_item-field_media_link'.
   $fields['node-media_item-field_media_link'] = array(
     'field_config' => array(
       'active' => '1',
@@ -171,6 +173,7 @@ function hnw_media_field_default_fields() {
       'field_name' => 'field_media_link',
       'foreign keys' => array(),
       'indexes' => array(),
+      'locked' => '0',
       'module' => 'link',
       'settings' => array(
         'attributes' => array(
@@ -243,7 +246,7 @@ function hnw_media_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-media_item-field_media_pdf'
+  // Exported field: 'node-media_item-field_media_pdf'.
   $fields['node-media_item-field_media_pdf'] = array(
     'field_config' => array(
       'active' => '1',
@@ -264,6 +267,7 @@ function hnw_media_field_default_fields() {
           0 => 'fid',
         ),
       ),
+      'locked' => '0',
       'module' => 'file',
       'settings' => array(
         'display_default' => 0,
@@ -314,7 +318,7 @@ function hnw_media_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-media_item-field_media_publication_date'
+  // Exported field: 'node-media_item-field_media_publication_date'.
   $fields['node-media_item-field_media_publication_date'] = array(
     'field_config' => array(
       'active' => '1',
@@ -324,6 +328,7 @@ function hnw_media_field_default_fields() {
       'field_name' => 'field_media_publication_date',
       'foreign keys' => array(),
       'indexes' => array(),
+      'locked' => '0',
       'module' => 'date',
       'settings' => array(
         'cache_count' => '4',

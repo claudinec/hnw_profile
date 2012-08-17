@@ -10,7 +10,7 @@
 function hnw_events_field_default_fields() {
   $fields = array();
 
-  // Exported field: 'node-event-body'
+  // Exported field: 'node-event-body'.
   $fields['node-event-body'] = array(
     'field_config' => array(
       'active' => '1',
@@ -33,6 +33,7 @@ function hnw_events_field_default_fields() {
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(),
       'translatable' => '0',
@@ -83,7 +84,7 @@ function hnw_events_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-event-field_event_address'
+  // Exported field: 'node-event-field_event_address'.
   $fields['node-event-field_event_address'] = array(
     'field_config' => array(
       'active' => '1',
@@ -93,6 +94,7 @@ function hnw_events_field_default_fields() {
       'field_name' => 'field_event_address',
       'foreign keys' => array(),
       'indexes' => array(),
+      'locked' => '0',
       'module' => 'addressfield',
       'settings' => array(),
       'translatable' => '0',
@@ -162,7 +164,7 @@ function hnw_events_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-event-field_event_date'
+  // Exported field: 'node-event-field_event_date'.
   $fields['node-event-field_event_date'] = array(
     'field_config' => array(
       'active' => '1',
@@ -172,6 +174,7 @@ function hnw_events_field_default_fields() {
       'field_name' => 'field_event_date',
       'foreign keys' => array(),
       'indexes' => array(),
+      'locked' => '0',
       'module' => 'date',
       'settings' => array(
         'cache_count' => '4',
@@ -240,7 +243,7 @@ function hnw_events_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-event-field_event_image'
+  // Exported field: 'node-event-field_event_image'.
   $fields['node-event-field_event_image'] = array(
     'field_config' => array(
       'active' => '1',
@@ -261,6 +264,7 @@ function hnw_events_field_default_fields() {
           0 => 'fid',
         ),
       ),
+      'locked' => '0',
       'module' => 'image',
       'settings' => array(
         'default_image' => 0,
@@ -319,7 +323,7 @@ function hnw_events_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-event-field_event_link'
+  // Exported field: 'node-event-field_event_link'.
   $fields['node-event-field_event_link'] = array(
     'field_config' => array(
       'active' => '1',
@@ -329,6 +333,7 @@ function hnw_events_field_default_fields() {
       'field_name' => 'field_event_link',
       'foreign keys' => array(),
       'indexes' => array(),
+      'locked' => '0',
       'module' => 'link',
       'settings' => array(
         'attributes' => array(

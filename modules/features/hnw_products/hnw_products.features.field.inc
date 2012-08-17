@@ -10,7 +10,7 @@
 function hnw_products_field_default_fields() {
   $fields = array();
 
-  // Exported field: 'node-product-body'
+  // Exported field: 'node-product-body'.
   $fields['node-product-body'] = array(
     'field_config' => array(
       'active' => '1',
@@ -33,6 +33,7 @@ function hnw_products_field_default_fields() {
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(),
       'translatable' => '0',
@@ -83,7 +84,7 @@ function hnw_products_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-product-field_applications'
+  // Exported field: 'node-product-field_applications'.
   $fields['node-product-field_applications'] = array(
     'field_config' => array(
       'active' => '1',
@@ -104,6 +105,7 @@ function hnw_products_field_default_fields() {
           0 => 'tid',
         ),
       ),
+      'locked' => '0',
       'module' => 'taxonomy',
       'settings' => array(
         'allowed_values' => array(
@@ -153,7 +155,7 @@ function hnw_products_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-product-field_industries'
+  // Exported field: 'node-product-field_industries'.
   $fields['node-product-field_industries'] = array(
     'field_config' => array(
       'active' => '1',
@@ -174,6 +176,7 @@ function hnw_products_field_default_fields() {
           0 => 'tid',
         ),
       ),
+      'locked' => '0',
       'module' => 'taxonomy',
       'settings' => array(
         'allowed_values' => array(
@@ -223,7 +226,7 @@ function hnw_products_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-product-field_product_categories'
+  // Exported field: 'node-product-field_product_categories'.
   $fields['node-product-field_product_categories'] = array(
     'field_config' => array(
       'active' => '1',
@@ -244,6 +247,7 @@ function hnw_products_field_default_fields() {
           0 => 'tid',
         ),
       ),
+      'locked' => '0',
       'module' => 'taxonomy',
       'settings' => array(
         'allowed_values' => array(
@@ -293,7 +297,7 @@ function hnw_products_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-product-field_product_download'
+  // Exported field: 'node-product-field_product_download'.
   $fields['node-product-field_product_download'] = array(
     'field_config' => array(
       'active' => '1',
@@ -314,6 +318,7 @@ function hnw_products_field_default_fields() {
           0 => 'fid',
         ),
       ),
+      'locked' => '0',
       'module' => 'file',
       'settings' => array(
         'display_default' => 0,
@@ -365,7 +370,7 @@ function hnw_products_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-product-field_product_image'
+  // Exported field: 'node-product-field_product_image'.
   $fields['node-product-field_product_image'] = array(
     'field_config' => array(
       'active' => '1',
@@ -386,6 +391,7 @@ function hnw_products_field_default_fields() {
           0 => 'fid',
         ),
       ),
+      'locked' => '0',
       'module' => 'image',
       'settings' => array(
         'default_image' => 0,
@@ -444,7 +450,7 @@ function hnw_products_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-product-field_product_price'
+  // Exported field: 'node-product-field_product_price'.
   $fields['node-product-field_product_price'] = array(
     'field_config' => array(
       'active' => '1',
@@ -454,6 +460,7 @@ function hnw_products_field_default_fields() {
       'field_name' => 'field_product_price',
       'foreign keys' => array(),
       'indexes' => array(),
+      'locked' => '0',
       'module' => 'number',
       'settings' => array(
         'decimal_separator' => '.',
@@ -501,7 +508,7 @@ function hnw_products_field_default_fields() {
     ),
   );
 
-  // Exported field: 'taxonomy_term-applications-field_parent_industries'
+  // Exported field: 'taxonomy_term-applications-field_parent_industries'.
   $fields['taxonomy_term-applications-field_parent_industries'] = array(
     'field_config' => array(
       'active' => '1',
@@ -522,6 +529,7 @@ function hnw_products_field_default_fields() {
           0 => 'target_id',
         ),
       ),
+      'locked' => '0',
       'module' => 'entityreference',
       'settings' => array(
         'handler' => 'base',
