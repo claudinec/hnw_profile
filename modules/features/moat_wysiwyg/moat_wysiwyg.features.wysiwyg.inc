@@ -41,6 +41,9 @@ function moat_wysiwyg_wysiwyg_default_profiles() {
         'paste' => array(
           'pastetext' => 1,
         ),
+        'media' => array(
+          'media' => 1,
+        ),
       ),
       'toolbar_loc' => 'top',
       'toolbar_align' => 'left',
