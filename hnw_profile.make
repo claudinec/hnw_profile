@@ -61,6 +61,9 @@ projects[diff][subdir] = "contrib"
 projects[domain][version] = 3.4
 projects[domain][type] = "module"
 projects[domain][subdir] = "contrib"
+projects[domaincontext][version] = 1.0-alpha1
+projects[domaincontext][type] = "module"
+projects[domaincontext][subdir] = "contrib"
 projects[ds][version] = 2.0-beta2
 projects[ds][type] = "module"
 projects[ds][subdir] = "contrib"
@@ -147,4 +150,3 @@ libraries[editarea][download][url] = "http://downloads.sourceforge.net/project/e
 libraries[jquery.cycle][type] = "libraries"
 libraries[jquery.cycle][download][type] = "file"
 libraries[jquery.cycle][download][url] = "http://malsup.github.com/jquery.cycle.all.js"
-
