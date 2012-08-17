@@ -64,6 +64,7 @@ projects[domain][subdir] = "contrib"
 projects[domaincontext][version] = 1.0-alpha1
 projects[domaincontext][type] = "module"
 projects[domaincontext][subdir] = "contrib"
+projects[domaincontext][patch][] = "http://drupal.org/files/1542406-5-domain-machine-names.patch"
 projects[ds][version] = 2.0-beta2
 projects[ds][type] = "module"
 projects[ds][subdir] = "contrib"
