@@ -11,5 +11,7 @@ dependencies[] = themekey
 features[context][] = domains_contactus_au
 features[context][] = domains_contactus_nz
 features[ctools][] = context:context:3
+features[domain][] = dev_hnw_au
+features[domain][] = dev_hnw_nz
 features[domain][] = wipe-domain-tables
 features[features_api][] = api:1

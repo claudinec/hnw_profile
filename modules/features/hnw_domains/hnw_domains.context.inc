@@ -18,7 +18,9 @@ function hnw_domains_context_default_contexts() {
   $context->tag = 'domains';
   $context->conditions = array(
     'domain' => array(
-      'values' => array('dev_hnw_au'),
+      'values' => array(
+        'dev_hnw_au' => 'dev_hnw_au',
+      ),
     ),
     'path' => array(
       'values' => array(
@@ -54,7 +56,9 @@ function hnw_domains_context_default_contexts() {
   $context->tag = 'domains';
   $context->conditions = array(
     'domain' => array(
-      'values' => array('dev_hnw_nz'),
+      'values' => array(
+        'dev_hnw_nz' => 'dev_hnw_nz',
+      ),
     ),
     'path' => array(
       'values' => array(
