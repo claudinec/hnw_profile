@@ -53,15 +53,15 @@ function hnw_products_context_default_contexts() {
           'region' => 'sidebar_first',
           'weight' => '-8',
         ),
-        'menu-menu-industries' => array(
-          'module' => 'menu',
-          'delta' => 'menu-industries',
+        'facetapi-IHSAQCg0Y6NK339STNmphi8fsJlKIu9f' => array(
+          'module' => 'facetapi',
+          'delta' => 'IHSAQCg0Y6NK339STNmphi8fsJlKIu9f',
           'region' => 'sidebar_first',
           'weight' => '-7',
         ),
-        'menu-menu-applications' => array(
-          'module' => 'menu',
-          'delta' => 'menu-applications',
+        'facetapi-hl8vfjKwt4Yz9Yia20lh1qTuYy1GYRlZ' => array(
+          'module' => 'facetapi',
+          'delta' => 'hl8vfjKwt4Yz9Yia20lh1qTuYy1GYRlZ',
           'region' => 'sidebar_first',
           'weight' => '-6',
         ),
@@ -117,9 +117,9 @@ function hnw_products_context_default_contexts() {
           'region' => 'sidebar_first',
           'weight' => '-8',
         ),
-        'menu-menu-product-range' => array(
-          'module' => 'menu',
-          'delta' => 'menu-product-range',
+        'facetapi-mkMgGMz0RZSwrDpH7Gcb81EPTl2kz5fO' => array(
+          'module' => 'facetapi',
+          'delta' => 'mkMgGMz0RZSwrDpH7Gcb81EPTl2kz5fO',
           'region' => 'sidebar_first',
           'weight' => '-7',
         ),

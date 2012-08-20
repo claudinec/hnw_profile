@@ -10,26 +10,12 @@
 function hnw_products_menu_default_menu_links() {
   $menu_links = array();
 
-  // Exported menu link: main-menu:industries-and-applications
-  $menu_links['main-menu:industries-and-applications'] = array(
+  // Exported menu link: main-menu:product-list
+  $menu_links['main-menu:product-list'] = array(
     'menu_name' => 'main-menu',
-    'link_path' => 'industries-and-applications',
-    'router_path' => 'industries-and-applications',
-    'link_title' => 'Industries and Applications',
-    'options' => array(),
-    'module' => 'system',
-    'hidden' => '0',
-    'external' => '0',
-    'has_children' => '0',
-    'expanded' => '0',
-    'weight' => '0',
-  );
-  // Exported menu link: main-menu:product-range
-  $menu_links['main-menu:product-range'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'product-range',
-    'router_path' => 'product-range',
-    'link_title' => 'Product Range',
+    'link_path' => 'product-list',
+    'router_path' => 'product-list',
+    'link_title' => 'Product List',
     'options' => array(),
     'module' => 'system',
     'hidden' => '0',
@@ -40,8 +26,7 @@ function hnw_products_menu_default_menu_links() {
   );
   // Translatables
   // Included for use with string extractors like potx.
-  t('Industries and Applications');
-  t('Product Range');
+  t('Product List');
 
 
   return $menu_links;
