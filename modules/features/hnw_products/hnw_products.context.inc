@@ -17,14 +17,6 @@ function hnw_products_context_default_contexts() {
   $context->description = '';
   $context->tag = 'products';
   $context->conditions = array(
-    'node' => array(
-      'values' => array(
-        'product' => 'product',
-      ),
-      'options' => array(
-        'node_form' => '1',
-      ),
-    ),
     'taxonomy_term' => array(
       'values' => array(
         'applications' => 'applications',
@@ -90,14 +82,6 @@ function hnw_products_context_default_contexts() {
   $context->description = '';
   $context->tag = 'products';
   $context->conditions = array(
-    'node' => array(
-      'values' => array(
-        'product' => 'product',
-      ),
-      'options' => array(
-        'node_form' => '1',
-      ),
-    ),
     'taxonomy_term' => array(
       'values' => array(
         'product_categories' => 'product_categories',
