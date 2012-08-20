@@ -34,6 +34,11 @@
 	height: 116px;
 }
 
+.view-media .views-field-field-media-image img{
+	width: 132px;
+	height: 116px;
+}
+
 .view-media .views-field-title a{
 	color:#333;
 	text-decoration: none;

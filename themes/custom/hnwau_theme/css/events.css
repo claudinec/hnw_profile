@@ -17,6 +17,11 @@
 	height: 116px;
 }
 
+.view-events .views-field-field-event-image img{
+	width: 132px;
+	height: 116px;
+}
+
 .view-events .views-field-field-event-date{
 	float:right;
 	color:white;

@@ -22,6 +22,11 @@
 	height: 116px;
 }
 
+.view-product-list .views-field-field-product-image img{
+	width: 132px;
+	height: 116px;
+}
+
 .view-product-list .views-field-title a{
 	color:#333;
 	text-decoration: none;
