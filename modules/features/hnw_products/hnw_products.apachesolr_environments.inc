@@ -20,7 +20,8 @@ function hnw_products_apachesolr_environments() {
     'apachesolr_read_only' => '0',
     'apachesolr_search_facet_pages' => 'industries-and-applications
 product-range
-taxonomy/term/*',
+taxonomy/term/*
+',
     'apachesolr_search_show_facets' => 1,
   );
   $export['redmine_server'] = $environment;
