@@ -338,7 +338,7 @@ function hnw_products_field_default_fields() {
           'module' => 'file',
           'settings' => array(),
           'type' => 'file_default',
-          'weight' => '1',
+          'weight' => '2',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -478,7 +478,7 @@ function hnw_products_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '16',
+          'weight' => '18',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -546,10 +546,12 @@ function hnw_products_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'file',
-          'settings' => array(),
-          'type' => 'file_default',
-          'weight' => 19,
+          'module' => 'file_entity',
+          'settings' => array(
+            'file_view_mode' => 'media_original',
+          ),
+          'type' => 'file_rendered',
+          'weight' => '1',
         ),
         'teaser' => array(
           'label' => 'above',

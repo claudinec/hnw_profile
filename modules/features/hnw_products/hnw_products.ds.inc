@@ -99,19 +99,21 @@ function hnw_products_ds_layout_settings_info() {
     'regions' => array(
       'left' => array(
         0 => 'field_product_image',
-        1 => 'field_product_download',
+        1 => 'field_product_video',
+        2 => 'field_product_download',
       ),
       'right' => array(
-        2 => 'field_product_categories',
-        3 => 'group_apps_ind',
-        4 => 'body',
-        5 => 'products_like_this',
-        6 => 'field_industries',
-        7 => 'field_applications',
+        3 => 'field_product_categories',
+        4 => 'group_apps_ind',
+        5 => 'body',
+        6 => 'products_like_this',
+        7 => 'field_industries',
+        8 => 'field_applications',
       ),
     ),
     'fields' => array(
       'field_product_image' => 'left',
+      'field_product_video' => 'left',
       'field_product_download' => 'left',
       'field_product_categories' => 'right',
       'group_apps_ind' => 'right',
