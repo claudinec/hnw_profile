@@ -11,7 +11,6 @@
 	margin-left:148px;
 }
 
-
 .page-product-list #page-title{
 	display:none;
 }
@@ -38,9 +37,11 @@
 }
 
 .node-type-product .group-right{
+/* 
 	background:#f9f9f9;
 	width:394px;
 	padding:38px;
+ */
 }
 
 .node-type-product .container-12 .grid-8{
@@ -51,12 +52,35 @@
 	margin-bottom:22px;
 }
 
-.node-type-product .field-group-div .field-name-field-product-applications,
-.node-type-product .field-group-div .field-name-field-product-industries{
+.node-type-product .field-name-field-applications,
+.node-type-product .field-name-field-industries{
 	background:#f9f9f9;
-	width:289px;
+	width:240px;
 	float:left;
+	padding:14px 14px 14px 34px;   
 	margin-left:0px;
+}
+
+.node-type-product .field-name-field-industries{
+	
+	margin-right:10px;
+}
+
+.node-type-product .field-name-field-product-download{
+	background:#f9f9f9;
+	padding:14px 14px 14px 34px; 
+}
+
+.node-type-product .field-name-field-product-download a{
+	color:#0a1f4c;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.node-type-product .field-name-field-applications a,
+.node-type-product .field-name-field-industries a{
+	color:#333;
+	text-decoration: none;
 }
 
 .node-type-product .field-group-div .field-name-field-product-industries{
