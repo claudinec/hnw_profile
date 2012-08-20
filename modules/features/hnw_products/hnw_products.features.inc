@@ -9,6 +9,10 @@
  */
 function hnw_products_ctools_plugin_api() {
   list($module, $api) = func_get_args();
+  if ($module == "apachesolr" && $api == "apachesolr_environments") {
+    return array("version" => "1");
+  }
+  list($module, $api) = func_get_args();
   if ($module == "context" && $api == "context") {
     return array("version" => "3");
   }
