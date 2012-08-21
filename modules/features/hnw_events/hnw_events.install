@@ -1,0 +1,16 @@
+<?php
+
+/**
+ * Changes to hnw_events feature
+ */
+function hnw_events_update_7100() {
+  _hnw_events_flush_revert();
+}
+
+/**
+ * helper function: flush caches and revert features.
+ */
+function _hnw_events_flush_revert() {
+  drupal_flush_all_caches();
+  features_revert(array('hnw_events'));
+}

@@ -1,0 +1,16 @@
+<?php
+
+/**
+ * Changes to appearance feature
+ */
+function hnw_appearance_update_7100() {
+  _hnw_appearance_flush_revert();
+}
+
+/**
+ * helper function: flush caches and revert features.
+ */
+function _hnw_appearance_flush_revert() {
+  drupal_flush_all_caches();
+  features_revert(array('hnw_appearance'));
+}
