@@ -9,7 +9,6 @@
  */
 function hnw_domains_domain_default_domains() {
 $domains = array();
-  $domains['wipe-domain-tables'] = 'wipe-domain-tables';
   $domains['dev_hnw_au'] = array(
   'subdomain' => 'dev-hnw-au.moatdev.com',
   'sitename' => 'Hurll Nu-Way Australia',
