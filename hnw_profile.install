@@ -82,8 +82,4 @@ function _hnw_profile_add_subtheme_omega() {
 
 function hnw_profile_update_7101() {
   theme_enable(array('omega'));
-  // how to force contexts?
-  module_enable(array('context', 'hnw_products'));
-  drupal_flush_all_caches();
-  features_revert();
 }
