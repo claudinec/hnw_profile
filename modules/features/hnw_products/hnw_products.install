@@ -1,4 +1,8 @@
 <?php
+/**
+ * @file
+ * Hurll Nu-Way Products content types, views and search settings.
+ */
 
 /**
  * Changes to hnw_products feature

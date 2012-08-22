@@ -1,4 +1,8 @@
 <?php
+/**
+ * @file
+ * Hurll Nu-Way Display Suite fields.
+ */
 
 /**
  * Changes to hnw_ds_fields feature

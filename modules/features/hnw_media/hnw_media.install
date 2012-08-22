@@ -1,4 +1,8 @@
 <?php
+/**
+ * @file
+ * Hurll Nu-Way Media type and view.
+ */
 
 /**
  * Changes to hnw_media feature
