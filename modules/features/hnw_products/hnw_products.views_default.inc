@@ -22,7 +22,7 @@ function hnw_products_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Product Range';
+  $handler->display->display_options['title'] = 'Product List';
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
@@ -68,25 +68,12 @@ function hnw_products_views_default_views() {
     'product' => 'product',
   );
 
-  /* Display: Product Range */
-  $handler = $view->new_display('page', 'Product Range', 'page_1');
-  $handler->display->display_options['path'] = 'product-range';
+  /* Display: Page */
+  $handler = $view->new_display('page', 'Page', 'page');
+  $handler->display->display_options['path'] = 'product-list';
   $handler->display->display_options['menu']['type'] = 'normal';
-  $handler->display->display_options['menu']['title'] = 'Product Range';
-  $handler->display->display_options['menu']['weight'] = '0';
+  $handler->display->display_options['menu']['title'] = 'Product List';
   $handler->display->display_options['menu']['name'] = 'main-menu';
-  $handler->display->display_options['menu']['context'] = 0;
-
-  /* Display: Industries and Applications */
-  $handler = $view->new_display('page', 'Industries and Applications', 'page_2');
-  $handler->display->display_options['defaults']['title'] = FALSE;
-  $handler->display->display_options['title'] = 'Industries and Applications';
-  $handler->display->display_options['path'] = 'industries-and-applications';
-  $handler->display->display_options['menu']['type'] = 'normal';
-  $handler->display->display_options['menu']['title'] = 'Industries and Applications';
-  $handler->display->display_options['menu']['weight'] = '0';
-  $handler->display->display_options['menu']['name'] = 'main-menu';
-  $handler->display->display_options['menu']['context'] = 0;
   $export['product_list'] = $view;
 
   return $export;
