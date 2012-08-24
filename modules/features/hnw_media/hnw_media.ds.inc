@@ -17,18 +17,18 @@ function hnw_media_ds_field_settings_info() {
   $ds_fieldsetting->bundle = 'media_item';
   $ds_fieldsetting->view_mode = 'default';
   $ds_fieldsetting->settings = array(
+    'media_title' => array(
+      'weight' => '3',
+      'label' => 'hidden',
+      'format' => 'default',
+    ),
     'download_as_pdf_link' => array(
       'weight' => '2',
       'label' => 'hidden',
       'format' => 'default',
     ),
     'media_back_button' => array(
-      'weight' => '6',
-      'label' => 'hidden',
-      'format' => 'default',
-    ),
-    'title' => array(
-      'weight' => '3',
+      'weight' => '5',
       'label' => 'hidden',
       'format' => 'default',
     ),
@@ -82,6 +82,27 @@ echo l(t(\'Back\'), \'media\', array(\'attributes\' => array(\'class\' => array(
   );
   $export['media_back_button'] = $ds_field;
 
+  $ds_field = new stdClass();
+  $ds_field->api_version = 1;
+  $ds_field->field = 'media_title';
+  $ds_field->label = 'Media title';
+  $ds_field->field_type = 5;
+  $ds_field->entities = array(
+    'node' => 'node',
+  );
+  $ds_field->ui_limit = '';
+  $ds_field->properties = array(
+    'code' => array(
+      'value' => '<?php
+$media_title = "<h2>" . $entity->title . ", " . format_date($entity->field_media_publication_date[\'und\'][0][\'value\'],\'medium\',\'jS M Y\') . "</h2>";
+print $media_title;
+?>',
+      'format' => 'ds_code',
+    ),
+    'use_token' => 0,
+  );
+  $export['media_title'] = $ds_field;
+
   return $export;
 }
 
@@ -99,8 +120,6 @@ function hnw_media_ds_layout_settings_info() {
   $ds_layout->view_mode = 'default';
   $ds_layout->layout = 'ds_2col';
   $ds_layout->settings = array(
-    'hide_empty_regions' => 0,
-    'hide_sidebars' => 0,
     'regions' => array(
       'left' => array(
         0 => 'field_media_image',
@@ -108,18 +127,16 @@ function hnw_media_ds_layout_settings_info() {
         2 => 'download_as_pdf_link',
       ),
       'right' => array(
-        0 => 'title',
-        1 => 'field_media_publication_date',
-        2 => 'body',
-        3 => 'media_back_button',
+        3 => 'media_title',
+        4 => 'body',
+        5 => 'media_back_button',
       ),
     ),
     'fields' => array(
       'field_media_image' => 'left',
       'field_media_link' => 'left',
       'download_as_pdf_link' => 'left',
-      'title' => 'right',
-      'field_media_publication_date' => 'right',
+      'media_title' => 'right',
       'body' => 'right',
       'media_back_button' => 'right',
     ),
@@ -131,8 +148,16 @@ function hnw_media_ds_layout_settings_info() {
       'right' => array(
         'grid-8' => 'grid-8',
         'alpha' => 'alpha',
+        'omega' => 'omega',
       ),
     ),
+    'wrappers' => array(
+      'left' => 'div',
+      'right' => 'div',
+    ),
+    'layout_wrapper' => 'div',
+    'layout_attributes' => '',
+    'layout_attributes_merge' => 1,
   );
   $export['node|media_item|default'] = $ds_layout;
 
