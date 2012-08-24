@@ -155,6 +155,70 @@ function hnw_products_field_default_fields() {
     ),
   );
 
+  // Exported field: 'node-product-field_flow_rate_l_min_'.
+  $fields['node-product-field_flow_rate_l_min_'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_flow_rate_l_min_',
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'locked' => '0',
+      'module' => 'number',
+      'settings' => array(
+        'decimal_separator' => '.',
+      ),
+      'translatable' => '0',
+      'type' => 'number_float',
+    ),
+    'field_instance' => array(
+      'bundle' => 'product',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'number',
+          'settings' => array(
+            'decimal_separator' => '.',
+            'prefix_suffix' => TRUE,
+            'scale' => 2,
+            'thousand_separator' => ' ',
+          ),
+          'type' => 'number_decimal',
+          'weight' => '20',
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_flow_rate_l_min_',
+      'label' => 'Max flow rate (l/min)',
+      'required' => 0,
+      'settings' => array(
+        'max' => '',
+        'min' => '',
+        'prefix' => '',
+        'suffix' => 'l/min',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 0,
+        'module' => 'number',
+        'settings' => array(),
+        'type' => 'number',
+        'weight' => '11',
+      ),
+    ),
+  );
+
   // Exported field: 'node-product-field_industries'.
   $fields['node-product-field_industries'] = array(
     'field_config' => array(
@@ -222,6 +286,134 @@ function hnw_products_field_default_fields() {
         'settings' => array(),
         'type' => 'options_select',
         'weight' => '4',
+      ),
+    ),
+  );
+
+  // Exported field: 'node-product-field_max_diff_pressure'.
+  $fields['node-product-field_max_diff_pressure'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_max_diff_pressure',
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'locked' => '0',
+      'module' => 'number',
+      'settings' => array(
+        'decimal_separator' => '.',
+      ),
+      'translatable' => '0',
+      'type' => 'number_float',
+    ),
+    'field_instance' => array(
+      'bundle' => 'product',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'number',
+          'settings' => array(
+            'decimal_separator' => '.',
+            'prefix_suffix' => TRUE,
+            'scale' => 2,
+            'thousand_separator' => ' ',
+          ),
+          'type' => 'number_decimal',
+          'weight' => '22',
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_max_diff_pressure',
+      'label' => 'Max diff pressure',
+      'required' => 0,
+      'settings' => array(
+        'max' => '',
+        'min' => '',
+        'prefix' => '',
+        'suffix' => 'bar',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 0,
+        'module' => 'number',
+        'settings' => array(),
+        'type' => 'number',
+        'weight' => '12',
+      ),
+    ),
+  );
+
+  // Exported field: 'node-product-field_max_temp'.
+  $fields['node-product-field_max_temp'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_max_temp',
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'locked' => '0',
+      'module' => 'number',
+      'settings' => array(
+        'decimal_separator' => '.',
+      ),
+      'translatable' => '0',
+      'type' => 'number_float',
+    ),
+    'field_instance' => array(
+      'bundle' => 'product',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'number',
+          'settings' => array(
+            'decimal_separator' => '.',
+            'prefix_suffix' => TRUE,
+            'scale' => 2,
+            'thousand_separator' => ' ',
+          ),
+          'type' => 'number_decimal',
+          'weight' => '19',
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_max_temp',
+      'label' => 'Maximum temperature',
+      'required' => 0,
+      'settings' => array(
+        'max' => '',
+        'min' => '',
+        'prefix' => '',
+        'suffix' => 'ºC',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 0,
+        'module' => 'number',
+        'settings' => array(),
+        'type' => 'number',
+        'weight' => '10',
       ),
     ),
   );
@@ -478,7 +670,7 @@ function hnw_products_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '18',
+          'weight' => '17',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -679,6 +871,9 @@ function hnw_products_field_default_fields() {
   t('Applications');
   t('Description');
   t('Industries');
+  t('Max diff pressure');
+  t('Max flow rate (l/min)');
+  t('Maximum temperature');
   t('Parent industries');
   t('Product categories');
   t('Product download');
