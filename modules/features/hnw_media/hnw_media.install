@@ -11,6 +11,17 @@ function hnw_media_update_7100() {
   _hnw_media_flush_revert();
 }
 
+/* --------------------------
+   DEPLOYED TO DEV: 22/8/12
+   -------------------------- */
+
+/**
+ * Added custom title/date to media page
+ */
+function hnw_media_update_7101() {
+  _hnw_media_flush_revert();
+}
+
 /**
  * helper function: flush caches and revert features.
  */
