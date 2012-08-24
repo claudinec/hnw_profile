@@ -53,10 +53,10 @@ dependencies[] = devel_generate
 
 ; Features
 dependencies[] = hnw_appearance
-dependencies[] = hnw_domains
-dependencies[] = hnw_ds_fields
+; dependencies[] = hnw_domains
+; dependencies[] = hnw_ds_fields
 dependencies[] = hnw_events
-dependencies[] = hnw_enquiry
+; dependencies[] = hnw_enquiry
 dependencies[] = hnw_layout
 dependencies[] = hnw_media
 dependencies[] = hnw_products
