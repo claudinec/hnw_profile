@@ -20,15 +20,13 @@ function _hnw_products_flush_revert() {
 }
 
 /**
- * Added 2012-08-24.
+ * Manually create default taxonomy terms for product categories.
  */
-function hnw_products_update_7101() {
+function hnw_products_update_7106() {
   _hnw_products_create_categories();
 }
 
 /**
- * Manually create default product categories taxonomy terms.
- *
  * Manually create categories and assign tid (term ID number) in code so
  * that we know what tids to use for dependees in conditional fields.
  */
@@ -50,14 +48,21 @@ function _hnw_products_create_categories() {
     'Silencers',
   );
 
-  $i = 31;  // Start incrementing at 31 just to be safe.
-  foreach ($category in $product_categories) {
-    taxonomy_term_save(array(
-      'vid' => 'product_categories',
-      'name' => $category,
+  // What vocabulary id does product_categories have?
+  $product_categories_vocab = taxonomy_vocabulary_machine_name_load('product_categories');
+  $vid = $product_categories_vocab['vid'];
+
+  
+  // Manually save product categories.
+  $i = 1;
+  foreach ($product_categories as &$product_category) {
+    $category = array(
+      'vid' => $vid,
+      'name' => $product_category,
       'tid' => $i,
-      )
     );
+    $category = (object) $category;
+    taxonomy_term_save($category);
     $i = $i + 1;
   }
 }
