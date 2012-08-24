@@ -42,19 +42,17 @@ function hnw_events_ds_layout_settings_info() {
   $ds_layout->view_mode = 'default';
   $ds_layout->layout = 'ds_2col';
   $ds_layout->settings = array(
-    'hide_empty_regions' => 0,
-    'hide_sidebars' => 0,
     'regions' => array(
       'left' => array(
         0 => 'field_event_image',
         1 => 'group_event_info',
-        2 => 'field_event_link',
-        3 => 'field_event_address',
+        5 => 'field_event_link',
+        6 => 'field_event_address',
       ),
       'right' => array(
-        0 => 'field_event_date',
-        1 => 'title',
-        2 => 'body',
+        2 => 'field_event_date',
+        3 => 'title',
+        4 => 'body',
       ),
     ),
     'fields' => array(
@@ -66,7 +64,25 @@ function hnw_events_ds_layout_settings_info() {
       'field_event_link' => 'left',
       'field_event_address' => 'left',
     ),
-    'classes' => array(),
+    'classes' => array(
+      'left' => array(
+        'grid-4' => 'grid-4',
+        'alpha' => 'alpha',
+      ),
+      'right' => array(
+        '' => '',
+        'grid-8' => 'grid-8',
+        'alpha' => 'alpha',
+        'omega' => 'omega',
+      ),
+    ),
+    'wrappers' => array(
+      'left' => 'div',
+      'right' => 'div',
+    ),
+    'layout_wrapper' => 'div',
+    'layout_attributes' => '',
+    'layout_attributes_merge' => 1,
   );
   $export['node|event|default'] = $ds_layout;
 

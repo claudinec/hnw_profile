@@ -23,8 +23,8 @@ function hnw_events_field_group_info() {
     'label' => 'Further information',
     'weight' => '1',
     'children' => array(
-      0 => 'field_event_address',
-      1 => 'field_event_link',
+      0 => 'field_event_link',
+      1 => 'field_event_address',
     ),
     'format_type' => 'div',
     'format_settings' => array(

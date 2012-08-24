@@ -11,6 +11,17 @@ function hnw_events_update_7100() {
   _hnw_events_flush_revert();
 }
 
+/* --------------------------
+   DEPLOYED TO DEV: 22/8/12
+   -------------------------- */
+
+/**
+ * Formatting of the events page via display suite
+ */
+function hnw_events_update_7101() {
+  _hnw_events_flush_revert();
+}
+
 /**
  * helper function: flush caches and revert features.
  */

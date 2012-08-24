@@ -283,7 +283,7 @@ function hnw_events_field_default_fields() {
           'module' => 'image',
           'settings' => array(
             'image_link' => '',
-            'image_style' => 'hnw_event_326x422',
+            'image_style' => 'hnw_4-cols_300w',
           ),
           'type' => 'image',
           'weight' => '0',

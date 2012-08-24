@@ -94,8 +94,9 @@ echo l(t(\'Back\'), \'media\', array(\'attributes\' => array(\'class\' => array(
   $ds_field->properties = array(
     'code' => array(
       'value' => '<?php
-$media_title = "<h2>" . $entity->title . ", " . format_date($entity->field_media_publication_date[\'und\'][0][\'value\'],\'medium\',\'jS M Y\') . "</h2>";
-print $media_title;
+$date_object = strtotime($entity->field_media_publication_date[\'und\'][0][\'value\']);
+$date = format_date($date_object , \'medium\' , \'jS M Y\');
+print $media_title = "<h2>" . $entity->title . ", " . $date . "</h2>";
 ?>',
       'format' => 'ds_code',
     ),

@@ -8,7 +8,10 @@
  * Implements hook_ctools_plugin_api().
  */
 function hnw_appearance_ctools_plugin_api() {
-  return array("version" => "1");
+  list($module, $api) = func_get_args();
+  if ($module == "strongarm" && $api == "strongarm") {
+    return array("version" => "1");
+  }
 }
 
 /**
@@ -17,7 +20,7 @@ function hnw_appearance_ctools_plugin_api() {
 function hnw_appearance_image_default_styles() {
   $styles = array();
 
-  // Exported image style: hnw_4-cols_300w
+  // Exported image style: hnw_4-cols_300w.
   $styles['hnw_4-cols_300w'] = array(
     'name' => 'hnw_4-cols_300w',
     'effects' => array(
