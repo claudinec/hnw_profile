@@ -50,7 +50,6 @@ dependencies[] = webform
 dependencies[] = coder
 dependencies[] = devel
 dependencies[] = devel_generate
-dependencies[] = profiler
 
 ; Features
 dependencies[] = hnw_appearance
