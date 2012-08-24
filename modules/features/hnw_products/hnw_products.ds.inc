@@ -18,7 +18,7 @@ function hnw_products_ds_field_settings_info() {
   $ds_fieldsetting->view_mode = 'default';
   $ds_fieldsetting->settings = array(
     'products_like_this' => array(
-      'weight' => '6',
+      'weight' => '7',
       'label' => 'hidden',
       'format' => 'default',
     ),
@@ -106,9 +106,13 @@ function hnw_products_ds_layout_settings_info() {
         3 => 'field_product_categories',
         4 => 'group_apps_ind',
         5 => 'body',
-        6 => 'products_like_this',
-        7 => 'field_industries',
-        8 => 'field_applications',
+        6 => 'group_product_parameters',
+        7 => 'products_like_this',
+        8 => 'field_industries',
+        9 => 'field_applications',
+        10 => 'field_max_temp',
+        11 => 'field_flow_rate_l_min_',
+        12 => 'field_max_diff_pressure',
       ),
     ),
     'fields' => array(
@@ -118,9 +122,13 @@ function hnw_products_ds_layout_settings_info() {
       'field_product_categories' => 'right',
       'group_apps_ind' => 'right',
       'body' => 'right',
+      'group_product_parameters' => 'right',
       'products_like_this' => 'right',
       'field_industries' => 'right',
       'field_applications' => 'right',
+      'field_max_temp' => 'right',
+      'field_flow_rate_l_min_' => 'right',
+      'field_max_diff_pressure' => 'right',
     ),
     'classes' => array(),
     'wrappers' => array(
