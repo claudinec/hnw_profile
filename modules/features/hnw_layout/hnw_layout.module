@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the HNW Layout feature.
+ */
+
+include_once 'hnw_layout.features.inc';
