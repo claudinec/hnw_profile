@@ -1,6 +1,6 @@
 name = HNW Layout
 core = 7.x
-package = Features
+package = HNW
 dependencies[] = ctools
 dependencies[] = strongarm
 features[ctools][] = strongarm:strongarm:1
