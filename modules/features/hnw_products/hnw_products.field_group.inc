@@ -51,7 +51,7 @@ function hnw_products_field_group_info() {
     'weight' => '6',
     'children' => array(
       0 => 'field_max_temp',
-      1 => 'field_flow_rate_l_min_',
+      1 => 'field_max_flow_rate',
       2 => 'field_max_diff_pressure',
       3 => 'field_capacity',
       4 => 'field_net_capacity',
@@ -88,7 +88,7 @@ function hnw_products_field_group_info() {
     'weight' => '12',
     'children' => array(
       0 => 'field_max_temp',
-      1 => 'field_flow_rate_l_min_',
+      1 => 'field_max_flow_rate',
       2 => 'field_max_diff_pressure',
       3 => 'field_capacity',
       4 => 'field_net_capacity',

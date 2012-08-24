@@ -411,14 +411,14 @@ function hnw_products_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-product-field_flow_rate_l_min_'.
-  $fields['node-product-field_flow_rate_l_min_'] = array(
+  // Exported field: 'node-product-field_max_flow_rate'.
+  $fields['node-product-field_max_flow_rate'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_flow_rate_l_min_',
+      'field_name' => 'field_max_flow_rate',
       'foreign keys' => array(),
       'indexes' => array(),
       'locked' => '0',
@@ -455,7 +455,7 @@ function hnw_products_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_flow_rate_l_min_',
+      'field_name' => 'field_max_flow_rate',
       'label' => 'Max flow rate (l/min)',
       'required' => 0,
       'settings' => array(

@@ -163,7 +163,7 @@ function hnw_products_conditional_fields_default_fields() {
   $items[] = array(
     'entity' => 'node',
     'bundle' => 'product',
-    'dependent' => 'field_flow_rate_l_min_',
+    'dependent' => 'field_max_flow_rate',
     'dependee' => 'field_product_categories',
     'options' => array(
       'state' => 'visible',
@@ -238,7 +238,7 @@ function hnw_products_conditional_fields_default_fields() {
   $items[] = array(
     'entity' => 'node',
     'bundle' => 'product',
-    'dependent' => 'field_flow_rate_l_min_',
+    'dependent' => 'field_max_flow_rate',
     'dependee' => 'field_product_categories',
     'options' => array(
       'state' => 'visible',
@@ -313,7 +313,7 @@ function hnw_products_conditional_fields_default_fields() {
   $items[] = array(
     'entity' => 'node',
     'bundle' => 'product',
-    'dependent' => 'field_flow_rate_l_min_',
+    'dependent' => 'field_max_flow_rate',
     'dependee' => 'field_product_categories',
     'options' => array(
       'state' => 'visible',
