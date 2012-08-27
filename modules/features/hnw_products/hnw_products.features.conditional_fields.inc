@@ -13,6 +13,156 @@ function hnw_products_conditional_fields_default_fields() {
   $items[] = array(
     'entity' => 'node',
     'bundle' => 'product',
+    'dependent' => 'field_max_diff_pressure',
+    'dependee' => 'field_product_categories',
+    'options' => array(
+      'state' => 'visible',
+      'condition' => 'value',
+      'grouping' => 'OR',
+      'effect' => 'show',
+      'effect_options' => array(),
+      'element_view' => array(
+        1 => '1',
+        2 => '2',
+        5 => 0,
+        3 => 0,
+        4 => 0,
+      ),
+      'element_view_per_role' => 0,
+      'element_view_roles' => array(
+        1 => array(
+          1 => '1',
+          2 => '2',
+          5 => 0,
+          3 => 0,
+          4 => 0,
+        ),
+        2 => array(
+          1 => '1',
+          2 => '2',
+          5 => 0,
+          3 => 0,
+          4 => 0,
+        ),
+        3 => array(
+          1 => '1',
+          2 => '2',
+          5 => 0,
+          3 => 0,
+          4 => 0,
+        ),
+      ),
+      'element_edit' => array(
+        1 => '1',
+        3 => 0,
+      ),
+      'element_edit_per_role' => 0,
+      'element_edit_roles' => array(
+        1 => array(
+          1 => '1',
+          3 => 0,
+        ),
+        2 => array(
+          1 => '1',
+          3 => 0,
+        ),
+        3 => array(
+          1 => '1',
+          3 => 0,
+        ),
+      ),
+      'selector' => '',
+      'values_set' => '1',
+      'value_form' => array(
+        0 => '12',
+      ),
+      'value' => array(
+        0 => array(
+          'tid' => '12',
+        ),
+      ),
+      'values' => array(),
+    ),
+  );
+
+  $items[] = array(
+    'entity' => 'node',
+    'bundle' => 'product',
+    'dependent' => 'field_max_diff_pressure',
+    'dependee' => 'field_product_categories',
+    'options' => array(
+      'state' => 'visible',
+      'condition' => 'value',
+      'grouping' => 'OR',
+      'effect' => 'show',
+      'effect_options' => array(),
+      'element_view' => array(
+        1 => '1',
+        2 => '2',
+        5 => 0,
+        3 => 0,
+        4 => 0,
+      ),
+      'element_view_per_role' => 0,
+      'element_view_roles' => array(
+        1 => array(
+          1 => '1',
+          2 => '2',
+          5 => 0,
+          3 => 0,
+          4 => 0,
+        ),
+        2 => array(
+          1 => '1',
+          2 => '2',
+          5 => 0,
+          3 => 0,
+          4 => 0,
+        ),
+        3 => array(
+          1 => '1',
+          2 => '2',
+          5 => 0,
+          3 => 0,
+          4 => 0,
+        ),
+      ),
+      'element_edit' => array(
+        1 => '1',
+        3 => 0,
+      ),
+      'element_edit_per_role' => 0,
+      'element_edit_roles' => array(
+        1 => array(
+          1 => '1',
+          3 => 0,
+        ),
+        2 => array(
+          1 => '1',
+          3 => 0,
+        ),
+        3 => array(
+          1 => '1',
+          3 => 0,
+        ),
+      ),
+      'selector' => '',
+      'values_set' => '1',
+      'value_form' => array(
+        0 => '25',
+      ),
+      'value' => array(
+        0 => array(
+          'tid' => '25',
+        ),
+      ),
+      'values' => array(),
+    ),
+  );
+
+  $items[] = array(
+    'entity' => 'node',
+    'bundle' => 'product',
     'dependent' => 'field_max_temp',
     'dependee' => 'field_product_categories',
     'options' => array(
@@ -154,6 +304,306 @@ function hnw_products_conditional_fields_default_fields() {
       'value' => array(
         0 => array(
           'tid' => '2',
+        ),
+      ),
+      'values' => array(),
+    ),
+  );
+
+  $items[] = array(
+    'entity' => 'node',
+    'bundle' => 'product',
+    'dependent' => 'field_backpressure',
+    'dependee' => 'field_product_categories',
+    'options' => array(
+      'state' => 'visible',
+      'condition' => 'value',
+      'grouping' => 'OR',
+      'effect' => 'show',
+      'effect_options' => array(),
+      'element_view' => array(
+        1 => '1',
+        2 => '2',
+        5 => 0,
+        3 => 0,
+        4 => 0,
+      ),
+      'element_view_per_role' => 0,
+      'element_view_roles' => array(
+        1 => array(
+          1 => '1',
+          2 => '2',
+          5 => 0,
+          3 => 0,
+          4 => 0,
+        ),
+        2 => array(
+          1 => '1',
+          2 => '2',
+          5 => 0,
+          3 => 0,
+          4 => 0,
+        ),
+        3 => array(
+          1 => '1',
+          2 => '2',
+          5 => 0,
+          3 => 0,
+          4 => 0,
+        ),
+      ),
+      'element_edit' => array(
+        1 => '1',
+        3 => 0,
+      ),
+      'element_edit_per_role' => 0,
+      'element_edit_roles' => array(
+        1 => array(
+          1 => '1',
+          3 => 0,
+        ),
+        2 => array(
+          1 => '1',
+          3 => 0,
+        ),
+        3 => array(
+          1 => '1',
+          3 => 0,
+        ),
+      ),
+      'selector' => '',
+      'values_set' => '1',
+      'value_form' => array(
+        0 => '22',
+      ),
+      'value' => array(
+        0 => array(
+          'tid' => '22',
+        ),
+      ),
+      'values' => array(),
+    ),
+  );
+
+  $items[] = array(
+    'entity' => 'node',
+    'bundle' => 'product',
+    'dependent' => 'field_capacity',
+    'dependee' => 'field_product_categories',
+    'options' => array(
+      'state' => 'visible',
+      'condition' => 'value',
+      'grouping' => 'OR',
+      'effect' => 'show',
+      'effect_options' => array(),
+      'element_view' => array(
+        1 => '1',
+        2 => '2',
+        5 => 0,
+        3 => 0,
+        4 => 0,
+      ),
+      'element_view_per_role' => 0,
+      'element_view_roles' => array(
+        1 => array(
+          1 => '1',
+          2 => '2',
+          5 => 0,
+          3 => 0,
+          4 => 0,
+        ),
+        2 => array(
+          1 => '1',
+          2 => '2',
+          5 => 0,
+          3 => 0,
+          4 => 0,
+        ),
+        3 => array(
+          1 => '1',
+          2 => '2',
+          5 => 0,
+          3 => 0,
+          4 => 0,
+        ),
+      ),
+      'element_edit' => array(
+        1 => '1',
+        3 => 0,
+      ),
+      'element_edit_per_role' => 0,
+      'element_edit_roles' => array(
+        1 => array(
+          1 => '1',
+          3 => 0,
+        ),
+        2 => array(
+          1 => '1',
+          3 => 0,
+        ),
+        3 => array(
+          1 => '1',
+          3 => 0,
+        ),
+      ),
+      'selector' => '',
+      'values_set' => '1',
+      'value_form' => array(
+        0 => '21',
+      ),
+      'value' => array(
+        0 => array(
+          'tid' => '21',
+        ),
+      ),
+      'values' => array(),
+    ),
+  );
+
+  $items[] = array(
+    'entity' => 'node',
+    'bundle' => 'product',
+    'dependent' => 'field_coverage_m2',
+    'dependee' => 'field_product_categories',
+    'options' => array(
+      'state' => 'visible',
+      'condition' => 'value',
+      'grouping' => 'OR',
+      'effect' => 'show',
+      'effect_options' => array(),
+      'element_view' => array(
+        1 => '1',
+        2 => '2',
+        5 => 0,
+        3 => 0,
+        4 => 0,
+      ),
+      'element_view_per_role' => 0,
+      'element_view_roles' => array(
+        1 => array(
+          1 => '1',
+          2 => '2',
+          5 => 0,
+          3 => 0,
+          4 => 0,
+        ),
+        2 => array(
+          1 => '1',
+          2 => '2',
+          5 => 0,
+          3 => 0,
+          4 => 0,
+        ),
+        3 => array(
+          1 => '1',
+          2 => '2',
+          5 => 0,
+          3 => 0,
+          4 => 0,
+        ),
+      ),
+      'element_edit' => array(
+        1 => '1',
+        3 => 0,
+      ),
+      'element_edit_per_role' => 0,
+      'element_edit_roles' => array(
+        1 => array(
+          1 => '1',
+          3 => 0,
+        ),
+        2 => array(
+          1 => '1',
+          3 => 0,
+        ),
+        3 => array(
+          1 => '1',
+          3 => 0,
+        ),
+      ),
+      'selector' => '',
+      'values_set' => '1',
+      'value_form' => array(
+        0 => '23',
+      ),
+      'value' => array(
+        0 => array(
+          'tid' => '23',
+        ),
+      ),
+      'values' => array(),
+    ),
+  );
+
+  $items[] = array(
+    'entity' => 'node',
+    'bundle' => 'product',
+    'dependent' => 'field_coverage_m3',
+    'dependee' => 'field_product_categories',
+    'options' => array(
+      'state' => 'visible',
+      'condition' => 'value',
+      'grouping' => 'OR',
+      'effect' => 'show',
+      'effect_options' => array(),
+      'element_view' => array(
+        1 => '1',
+        2 => '2',
+        5 => 0,
+        3 => 0,
+        4 => 0,
+      ),
+      'element_view_per_role' => 0,
+      'element_view_roles' => array(
+        1 => array(
+          1 => '1',
+          2 => '2',
+          5 => 0,
+          3 => 0,
+          4 => 0,
+        ),
+        2 => array(
+          1 => '1',
+          2 => '2',
+          5 => 0,
+          3 => 0,
+          4 => 0,
+        ),
+        3 => array(
+          1 => '1',
+          2 => '2',
+          5 => 0,
+          3 => 0,
+          4 => 0,
+        ),
+      ),
+      'element_edit' => array(
+        1 => '1',
+        3 => 0,
+      ),
+      'element_edit_per_role' => 0,
+      'element_edit_roles' => array(
+        1 => array(
+          1 => '1',
+          3 => 0,
+        ),
+        2 => array(
+          1 => '1',
+          3 => 0,
+        ),
+        3 => array(
+          1 => '1',
+          3 => 0,
+        ),
+      ),
+      'selector' => '',
+      'values_set' => '1',
+      'value_form' => array(
+        0 => '24',
+      ),
+      'value' => array(
+        0 => array(
+          'tid' => '24',
         ),
       ),
       'values' => array(),
@@ -388,232 +838,7 @@ function hnw_products_conditional_fields_default_fields() {
   $items[] = array(
     'entity' => 'node',
     'bundle' => 'product',
-    'dependent' => 'field_max_diff_pressure',
-    'dependee' => 'field_product_categories',
-    'options' => array(
-      'state' => 'visible',
-      'condition' => 'value',
-      'grouping' => 'OR',
-      'effect' => 'show',
-      'effect_options' => array(),
-      'element_view' => array(
-        1 => '1',
-        2 => '2',
-        5 => 0,
-        3 => 0,
-        4 => 0,
-      ),
-      'element_view_per_role' => 0,
-      'element_view_roles' => array(
-        1 => array(
-          1 => '1',
-          2 => '2',
-          5 => 0,
-          3 => 0,
-          4 => 0,
-        ),
-        2 => array(
-          1 => '1',
-          2 => '2',
-          5 => 0,
-          3 => 0,
-          4 => 0,
-        ),
-        3 => array(
-          1 => '1',
-          2 => '2',
-          5 => 0,
-          3 => 0,
-          4 => 0,
-        ),
-      ),
-      'element_edit' => array(
-        1 => '1',
-        3 => 0,
-      ),
-      'element_edit_per_role' => 0,
-      'element_edit_roles' => array(
-        1 => array(
-          1 => '1',
-          3 => 0,
-        ),
-        2 => array(
-          1 => '1',
-          3 => 0,
-        ),
-        3 => array(
-          1 => '1',
-          3 => 0,
-        ),
-      ),
-      'selector' => '',
-      'values_set' => '1',
-      'value_form' => array(
-        0 => '12',
-      ),
-      'value' => array(
-        0 => array(
-          'tid' => '12',
-        ),
-      ),
-      'values' => array(),
-    ),
-  );
-
-  $items[] = array(
-    'entity' => 'node',
-    'bundle' => 'product',
-    'dependent' => 'field_max_diff_pressure',
-    'dependee' => 'field_product_categories',
-    'options' => array(
-      'state' => 'visible',
-      'condition' => 'value',
-      'grouping' => 'OR',
-      'effect' => 'show',
-      'effect_options' => array(),
-      'element_view' => array(
-        1 => '1',
-        2 => '2',
-        5 => 0,
-        3 => 0,
-        4 => 0,
-      ),
-      'element_view_per_role' => 0,
-      'element_view_roles' => array(
-        1 => array(
-          1 => '1',
-          2 => '2',
-          5 => 0,
-          3 => 0,
-          4 => 0,
-        ),
-        2 => array(
-          1 => '1',
-          2 => '2',
-          5 => 0,
-          3 => 0,
-          4 => 0,
-        ),
-        3 => array(
-          1 => '1',
-          2 => '2',
-          5 => 0,
-          3 => 0,
-          4 => 0,
-        ),
-      ),
-      'element_edit' => array(
-        1 => '1',
-        3 => 0,
-      ),
-      'element_edit_per_role' => 0,
-      'element_edit_roles' => array(
-        1 => array(
-          1 => '1',
-          3 => 0,
-        ),
-        2 => array(
-          1 => '1',
-          3 => 0,
-        ),
-        3 => array(
-          1 => '1',
-          3 => 0,
-        ),
-      ),
-      'selector' => '',
-      'values_set' => '1',
-      'value_form' => array(
-        0 => '25',
-      ),
-      'value' => array(
-        0 => array(
-          'tid' => '25',
-        ),
-      ),
-      'values' => array(),
-    ),
-  );
-
-  $items[] = array(
-    'entity' => 'node',
-    'bundle' => 'product',
     'dependent' => 'field_height',
-    'dependee' => 'field_product_categories',
-    'options' => array(
-      'state' => 'visible',
-      'condition' => 'value',
-      'grouping' => 'OR',
-      'effect' => 'show',
-      'effect_options' => array(),
-      'element_view' => array(
-        1 => '1',
-        2 => '2',
-        5 => 0,
-        3 => 0,
-        4 => 0,
-      ),
-      'element_view_per_role' => 0,
-      'element_view_roles' => array(
-        1 => array(
-          1 => '1',
-          2 => '2',
-          5 => 0,
-          3 => 0,
-          4 => 0,
-        ),
-        2 => array(
-          1 => '1',
-          2 => '2',
-          5 => 0,
-          3 => 0,
-          4 => 0,
-        ),
-        3 => array(
-          1 => '1',
-          2 => '2',
-          5 => 0,
-          3 => 0,
-          4 => 0,
-        ),
-      ),
-      'element_edit' => array(
-        1 => '1',
-        3 => 0,
-      ),
-      'element_edit_per_role' => 0,
-      'element_edit_roles' => array(
-        1 => array(
-          1 => '1',
-          3 => 0,
-        ),
-        2 => array(
-          1 => '1',
-          3 => 0,
-        ),
-        3 => array(
-          1 => '1',
-          3 => 0,
-        ),
-      ),
-      'selector' => '',
-      'values_set' => '1',
-      'value_form' => array(
-        0 => '19',
-      ),
-      'value' => array(
-        0 => array(
-          'tid' => '19',
-        ),
-      ),
-      'values' => array(),
-    ),
-  );
-
-  $items[] = array(
-    'entity' => 'node',
-    'bundle' => 'product',
-    'dependent' => 'field_width',
     'dependee' => 'field_product_categories',
     'options' => array(
       'state' => 'visible',
@@ -754,81 +979,6 @@ function hnw_products_conditional_fields_default_fields() {
       'value' => array(
         0 => array(
           'tid' => '19',
-        ),
-      ),
-      'values' => array(),
-    ),
-  );
-
-  $items[] = array(
-    'entity' => 'node',
-    'bundle' => 'product',
-    'dependent' => 'field_capacity',
-    'dependee' => 'field_product_categories',
-    'options' => array(
-      'state' => 'visible',
-      'condition' => 'value',
-      'grouping' => 'OR',
-      'effect' => 'show',
-      'effect_options' => array(),
-      'element_view' => array(
-        1 => '1',
-        2 => '2',
-        5 => 0,
-        3 => 0,
-        4 => 0,
-      ),
-      'element_view_per_role' => 0,
-      'element_view_roles' => array(
-        1 => array(
-          1 => '1',
-          2 => '2',
-          5 => 0,
-          3 => 0,
-          4 => 0,
-        ),
-        2 => array(
-          1 => '1',
-          2 => '2',
-          5 => 0,
-          3 => 0,
-          4 => 0,
-        ),
-        3 => array(
-          1 => '1',
-          2 => '2',
-          5 => 0,
-          3 => 0,
-          4 => 0,
-        ),
-      ),
-      'element_edit' => array(
-        1 => '1',
-        3 => 0,
-      ),
-      'element_edit_per_role' => 0,
-      'element_edit_roles' => array(
-        1 => array(
-          1 => '1',
-          3 => 0,
-        ),
-        2 => array(
-          1 => '1',
-          3 => 0,
-        ),
-        3 => array(
-          1 => '1',
-          3 => 0,
-        ),
-      ),
-      'selector' => '',
-      'values_set' => '1',
-      'value_form' => array(
-        0 => '21',
-      ),
-      'value' => array(
-        0 => array(
-          'tid' => '21',
         ),
       ),
       'values' => array(),
@@ -1063,231 +1213,6 @@ function hnw_products_conditional_fields_default_fields() {
   $items[] = array(
     'entity' => 'node',
     'bundle' => 'product',
-    'dependent' => 'field_backpressure',
-    'dependee' => 'field_product_categories',
-    'options' => array(
-      'state' => 'visible',
-      'condition' => 'value',
-      'grouping' => 'OR',
-      'effect' => 'show',
-      'effect_options' => array(),
-      'element_view' => array(
-        1 => '1',
-        2 => '2',
-        5 => 0,
-        3 => 0,
-        4 => 0,
-      ),
-      'element_view_per_role' => 0,
-      'element_view_roles' => array(
-        1 => array(
-          1 => '1',
-          2 => '2',
-          5 => 0,
-          3 => 0,
-          4 => 0,
-        ),
-        2 => array(
-          1 => '1',
-          2 => '2',
-          5 => 0,
-          3 => 0,
-          4 => 0,
-        ),
-        3 => array(
-          1 => '1',
-          2 => '2',
-          5 => 0,
-          3 => 0,
-          4 => 0,
-        ),
-      ),
-      'element_edit' => array(
-        1 => '1',
-        3 => 0,
-      ),
-      'element_edit_per_role' => 0,
-      'element_edit_roles' => array(
-        1 => array(
-          1 => '1',
-          3 => 0,
-        ),
-        2 => array(
-          1 => '1',
-          3 => 0,
-        ),
-        3 => array(
-          1 => '1',
-          3 => 0,
-        ),
-      ),
-      'selector' => '',
-      'values_set' => '1',
-      'value_form' => array(
-        0 => '22',
-      ),
-      'value' => array(
-        0 => array(
-          'tid' => '22',
-        ),
-      ),
-      'values' => array(),
-    ),
-  );
-
-  $items[] = array(
-    'entity' => 'node',
-    'bundle' => 'product',
-    'dependent' => 'field_coverage_m2',
-    'dependee' => 'field_product_categories',
-    'options' => array(
-      'state' => 'visible',
-      'condition' => 'value',
-      'grouping' => 'OR',
-      'effect' => 'show',
-      'effect_options' => array(),
-      'element_view' => array(
-        1 => '1',
-        2 => '2',
-        5 => 0,
-        3 => 0,
-        4 => 0,
-      ),
-      'element_view_per_role' => 0,
-      'element_view_roles' => array(
-        1 => array(
-          1 => '1',
-          2 => '2',
-          5 => 0,
-          3 => 0,
-          4 => 0,
-        ),
-        2 => array(
-          1 => '1',
-          2 => '2',
-          5 => 0,
-          3 => 0,
-          4 => 0,
-        ),
-        3 => array(
-          1 => '1',
-          2 => '2',
-          5 => 0,
-          3 => 0,
-          4 => 0,
-        ),
-      ),
-      'element_edit' => array(
-        1 => '1',
-        3 => 0,
-      ),
-      'element_edit_per_role' => 0,
-      'element_edit_roles' => array(
-        1 => array(
-          1 => '1',
-          3 => 0,
-        ),
-        2 => array(
-          1 => '1',
-          3 => 0,
-        ),
-        3 => array(
-          1 => '1',
-          3 => 0,
-        ),
-      ),
-      'selector' => '',
-      'values_set' => '1',
-      'value_form' => array(
-        0 => '23',
-      ),
-      'value' => array(
-        0 => array(
-          'tid' => '23',
-        ),
-      ),
-      'values' => array(),
-    ),
-  );
-
-  $items[] = array(
-    'entity' => 'node',
-    'bundle' => 'product',
-    'dependent' => 'field_coverage_m3',
-    'dependee' => 'field_product_categories',
-    'options' => array(
-      'state' => 'visible',
-      'condition' => 'value',
-      'grouping' => 'OR',
-      'effect' => 'show',
-      'effect_options' => array(),
-      'element_view' => array(
-        1 => '1',
-        2 => '2',
-        5 => 0,
-        3 => 0,
-        4 => 0,
-      ),
-      'element_view_per_role' => 0,
-      'element_view_roles' => array(
-        1 => array(
-          1 => '1',
-          2 => '2',
-          5 => 0,
-          3 => 0,
-          4 => 0,
-        ),
-        2 => array(
-          1 => '1',
-          2 => '2',
-          5 => 0,
-          3 => 0,
-          4 => 0,
-        ),
-        3 => array(
-          1 => '1',
-          2 => '2',
-          5 => 0,
-          3 => 0,
-          4 => 0,
-        ),
-      ),
-      'element_edit' => array(
-        1 => '1',
-        3 => 0,
-      ),
-      'element_edit_per_role' => 0,
-      'element_edit_roles' => array(
-        1 => array(
-          1 => '1',
-          3 => 0,
-        ),
-        2 => array(
-          1 => '1',
-          3 => 0,
-        ),
-        3 => array(
-          1 => '1',
-          3 => 0,
-        ),
-      ),
-      'selector' => '',
-      'values_set' => '1',
-      'value_form' => array(
-        0 => '24',
-      ),
-      'value' => array(
-        0 => array(
-          'tid' => '24',
-        ),
-      ),
-      'values' => array(),
-    ),
-  );
-
-  $items[] = array(
-    'entity' => 'node',
-    'bundle' => 'product',
     'dependent' => 'field_product_pressure',
     'dependee' => 'field_product_categories',
     'options' => array(
@@ -1504,6 +1429,81 @@ function hnw_products_conditional_fields_default_fields() {
       'value' => array(
         0 => array(
           'tid' => '21',
+        ),
+      ),
+      'values' => array(),
+    ),
+  );
+
+  $items[] = array(
+    'entity' => 'node',
+    'bundle' => 'product',
+    'dependent' => 'field_width',
+    'dependee' => 'field_product_categories',
+    'options' => array(
+      'state' => 'visible',
+      'condition' => 'value',
+      'grouping' => 'OR',
+      'effect' => 'show',
+      'effect_options' => array(),
+      'element_view' => array(
+        1 => '1',
+        2 => '2',
+        5 => 0,
+        3 => 0,
+        4 => 0,
+      ),
+      'element_view_per_role' => 0,
+      'element_view_roles' => array(
+        1 => array(
+          1 => '1',
+          2 => '2',
+          5 => 0,
+          3 => 0,
+          4 => 0,
+        ),
+        2 => array(
+          1 => '1',
+          2 => '2',
+          5 => 0,
+          3 => 0,
+          4 => 0,
+        ),
+        3 => array(
+          1 => '1',
+          2 => '2',
+          5 => 0,
+          3 => 0,
+          4 => 0,
+        ),
+      ),
+      'element_edit' => array(
+        1 => '1',
+        3 => 0,
+      ),
+      'element_edit_per_role' => 0,
+      'element_edit_roles' => array(
+        1 => array(
+          1 => '1',
+          3 => 0,
+        ),
+        2 => array(
+          1 => '1',
+          3 => 0,
+        ),
+        3 => array(
+          1 => '1',
+          3 => 0,
+        ),
+      ),
+      'selector' => '',
+      'values_set' => '1',
+      'value_form' => array(
+        0 => '19',
+      ),
+      'value' => array(
+        0 => array(
+          'tid' => '19',
         ),
       ),
       'values' => array(),
