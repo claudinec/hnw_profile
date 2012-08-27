@@ -22,14 +22,18 @@ function hnw_products_user_default_permissions() {
   // Exported permission: delete any product content.
   $permissions['delete any product content'] = array(
     'name' => 'delete any product content',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'publisher',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: delete own product content.
   $permissions['delete own product content'] = array(
     'name' => 'delete own product content',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'publisher',
+    ),
     'module' => 'node',
   );
 
