@@ -79,7 +79,3 @@ function _hnw_profile_add_subtheme_omega() {
   omega_tools_subtheme_create($subtheme);
   omega_tools_subtheme_process($subtheme);
 }
-
-function hnw_profile_update_7101() {
-  theme_enable(array('omega'));
-}

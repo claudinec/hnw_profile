@@ -53,7 +53,6 @@ dependencies[] = module_filter
 
 ; Features
 dependencies[] = hnw_appearance
-; dependencies[] = hnw_domains
 ; dependencies[] = hnw_ds_fields
 dependencies[] = hnw_events
 ; dependencies[] = hnw_enquiry
