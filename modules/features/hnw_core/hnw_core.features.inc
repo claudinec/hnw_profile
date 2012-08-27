@@ -13,7 +13,7 @@ function hnw_core_ctools_plugin_api() {
     return array("version" => "2");
   }
   // Enable hnw_domains feature IFF we are on a domain with site aliases enabled in Aegir.
-  if (preg_match('/http:\/\/dev-hnw-(au|nz).moatdev.com/', $base)) {
+  if (preg_match('/http:\/\/dev-hnw-(au|nz).moatdev.com/', $base_url)) {
     _hnw_domains_enable();
   }
   else {
