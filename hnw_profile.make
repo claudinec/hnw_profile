@@ -125,6 +125,7 @@ projects[uuid][subdir] = "contrib"
 projects[uuid_features][version] = 1.0-alpha1
 projects[uuid_features][type] = "module"
 projects[uuid_features][subdir] = "contrib"
+projects[uuid_features][patch][] = "http://drupal.org/files/uuid_features-965450-21.patch"
 projects[views][version] = 3.3
 projects[views][type] = "module"
 projects[views][subdir] = "contrib"
