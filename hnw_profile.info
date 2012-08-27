@@ -63,10 +63,3 @@ dependencies[] = hnw_products
 ; dependencies[] = moat_basic_pages
 dependencies[] = moat_wysiwyg
 
-
-; -----------------------------------------------------------------------------
-;                                    Terms
-; -----------------------------------------------------------------------------
-
-terms[pumps][name] = Pumps
-terms[pumps][vocabulary_machine_name] = product_categories
