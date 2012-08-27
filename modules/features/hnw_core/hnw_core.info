@@ -1,0 +1,4 @@
+name = HNW Core
+description = Core module for Hurll Nu-Way
+core = 7.x
+package = HNW
