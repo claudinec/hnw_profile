@@ -3,3 +3,9 @@
  * @file
  * Hurll Nu-Way Core feature.
  */
+
+/**
+ * Features include.
+ */
+include_once('hnw_core.features.inc');
+
