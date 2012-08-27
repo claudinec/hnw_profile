@@ -1103,64 +1103,6 @@ function hnw_products_field_default_fields() {
     ),
   );
 
-  // Exported field: 'field_collection_item-field_model-field_product_price'.
-  $fields['field_collection_item-field_model-field_product_price'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_product_price',
-      'foreign keys' => array(),
-      'indexes' => array(),
-      'locked' => '0',
-      'module' => 'number',
-      'settings' => array(
-        'decimal_separator' => '.',
-      ),
-      'translatable' => '0',
-      'type' => 'number_float',
-    ),
-    'field_instance' => array(
-      'bundle' => 'field_model',
-      'default_value' => NULL,
-      'deleted' => '0',
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'number',
-          'settings' => array(
-            'decimal_separator' => '.',
-            'prefix_suffix' => TRUE,
-            'scale' => 2,
-            'thousand_separator' => ' ',
-          ),
-          'type' => 'number_decimal',
-          'weight' => 3,
-        ),
-      ),
-      'entity_type' => 'field_collection_item',
-      'field_name' => 'field_product_price',
-      'label' => 'Product price',
-      'required' => 0,
-      'settings' => array(
-        'max' => '',
-        'min' => '',
-        'prefix' => '$',
-        'suffix' => '',
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 0,
-        'module' => 'number',
-        'settings' => array(),
-        'type' => 'number',
-        'weight' => '20',
-      ),
-    ),
-  );
-
   // Exported field: 'field_collection_item-field_model-field_temperature'.
   $fields['field_collection_item-field_model-field_temperature'] = array(
     'field_config' => array(
