@@ -10,14 +10,246 @@
 function hnw_products_field_default_fields() {
   $fields = array();
 
-  // Exported field: 'field_collection_item-field_model-field_max_temp'.
-  $fields['field_collection_item-field_model-field_max_temp'] = array(
+  // Exported field: 'field_collection_item-field_model-field_backpressure_mbar'.
+  $fields['field_collection_item-field_model-field_backpressure_mbar'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_max_temp',
+      'field_name' => 'field_backpressure_mbar',
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'locked' => '0',
+      'module' => 'number',
+      'settings' => array(
+        'decimal_separator' => '.',
+      ),
+      'translatable' => '0',
+      'type' => 'number_float',
+    ),
+    'field_instance' => array(
+      'bundle' => 'field_model',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'number',
+          'settings' => array(
+            'decimal_separator' => '.',
+            'prefix_suffix' => TRUE,
+            'scale' => 2,
+            'thousand_separator' => ' ',
+          ),
+          'type' => 'number_decimal',
+          'weight' => 15,
+        ),
+      ),
+      'entity_type' => 'field_collection_item',
+      'field_name' => 'field_backpressure_mbar',
+      'label' => 'Backpressure mbar',
+      'required' => 0,
+      'settings' => array(
+        'max' => '',
+        'min' => '',
+        'prefix' => '',
+        'suffix' => 'mbar',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 0,
+        'module' => 'number',
+        'settings' => array(),
+        'type' => 'number',
+        'weight' => '10',
+      ),
+    ),
+  );
+
+  // Exported field: 'field_collection_item-field_model-field_capacity_m3_hr'.
+  $fields['field_collection_item-field_model-field_capacity_m3_hr'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_capacity_m3_hr',
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'locked' => '0',
+      'module' => 'number',
+      'settings' => array(
+        'decimal_separator' => '.',
+      ),
+      'translatable' => '0',
+      'type' => 'number_float',
+    ),
+    'field_instance' => array(
+      'bundle' => 'field_model',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'number',
+          'settings' => array(
+            'decimal_separator' => '.',
+            'prefix_suffix' => TRUE,
+            'scale' => 2,
+            'thousand_separator' => ' ',
+          ),
+          'type' => 'number_decimal',
+          'weight' => 12,
+        ),
+      ),
+      'entity_type' => 'field_collection_item',
+      'field_name' => 'field_capacity_m3_hr',
+      'label' => 'Capacity m3/hr',
+      'required' => 0,
+      'settings' => array(
+        'max' => '',
+        'min' => '',
+        'prefix' => '',
+        'suffix' => 'm3/hr',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 0,
+        'module' => 'number',
+        'settings' => array(),
+        'type' => 'number',
+        'weight' => '7',
+      ),
+    ),
+  );
+
+  // Exported field: 'field_collection_item-field_model-field_coverage_m2'.
+  $fields['field_collection_item-field_model-field_coverage_m2'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_coverage_m2',
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'locked' => '0',
+      'module' => 'number',
+      'settings' => array(
+        'decimal_separator' => '.',
+      ),
+      'translatable' => '0',
+      'type' => 'number_float',
+    ),
+    'field_instance' => array(
+      'bundle' => 'field_model',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'number',
+          'settings' => array(
+            'decimal_separator' => '.',
+            'prefix_suffix' => TRUE,
+            'scale' => 2,
+            'thousand_separator' => ' ',
+          ),
+          'type' => 'number_decimal',
+          'weight' => 17,
+        ),
+      ),
+      'entity_type' => 'field_collection_item',
+      'field_name' => 'field_coverage_m2',
+      'label' => 'Coverage m2',
+      'required' => 0,
+      'settings' => array(
+        'max' => '',
+        'min' => '',
+        'prefix' => '',
+        'suffix' => 'm2',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 0,
+        'module' => 'number',
+        'settings' => array(),
+        'type' => 'number',
+        'weight' => '12',
+      ),
+    ),
+  );
+
+  // Exported field: 'field_collection_item-field_model-field_coverage_m3'.
+  $fields['field_collection_item-field_model-field_coverage_m3'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_coverage_m3',
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'locked' => '0',
+      'module' => 'number',
+      'settings' => array(
+        'decimal_separator' => '.',
+      ),
+      'translatable' => '0',
+      'type' => 'number_float',
+    ),
+    'field_instance' => array(
+      'bundle' => 'field_model',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'number',
+          'settings' => array(
+            'decimal_separator' => '.',
+            'prefix_suffix' => TRUE,
+            'scale' => 2,
+            'thousand_separator' => ' ',
+          ),
+          'type' => 'number_decimal',
+          'weight' => 18,
+        ),
+      ),
+      'entity_type' => 'field_collection_item',
+      'field_name' => 'field_coverage_m3',
+      'label' => 'Coverage m3',
+      'required' => 0,
+      'settings' => array(
+        'max' => '',
+        'min' => '',
+        'prefix' => '',
+        'suffix' => 'm3',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 0,
+        'module' => 'number',
+        'settings' => array(),
+        'type' => 'number',
+        'weight' => '13',
+      ),
+    ),
+  );
+
+  // Exported field: 'field_collection_item-field_model-field_flow_rate_l_min'.
+  $fields['field_collection_item-field_model-field_flow_rate_l_min'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_flow_rate_l_min',
       'foreign keys' => array(),
       'indexes' => array(),
       'locked' => '0',
@@ -48,14 +280,14 @@ function hnw_products_field_default_fields() {
         ),
       ),
       'entity_type' => 'field_collection_item',
-      'field_name' => 'field_max_temp',
-      'label' => 'Maximum temperature',
+      'field_name' => 'field_flow_rate_l_min',
+      'label' => 'Flow rate l/min',
       'required' => 0,
       'settings' => array(
         'max' => '',
         'min' => '',
         'prefix' => '',
-        'suffix' => '',
+        'suffix' => 'l/min',
         'user_register_form' => FALSE,
       ),
       'widget' => array(
@@ -63,7 +295,457 @@ function hnw_products_field_default_fields() {
         'module' => 'number',
         'settings' => array(),
         'type' => 'number',
-        'weight' => '4',
+        'weight' => '2',
+      ),
+    ),
+  );
+
+  // Exported field: 'field_collection_item-field_model-field_flow_rate_m3_hr'.
+  $fields['field_collection_item-field_model-field_flow_rate_m3_hr'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_flow_rate_m3_hr',
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'locked' => '0',
+      'module' => 'number',
+      'settings' => array(
+        'decimal_separator' => '.',
+      ),
+      'translatable' => '0',
+      'type' => 'number_float',
+    ),
+    'field_instance' => array(
+      'bundle' => 'field_model',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'number',
+          'settings' => array(
+            'decimal_separator' => '.',
+            'prefix_suffix' => TRUE,
+            'scale' => 2,
+            'thousand_separator' => ' ',
+          ),
+          'type' => 'number_decimal',
+          'weight' => 2,
+        ),
+      ),
+      'entity_type' => 'field_collection_item',
+      'field_name' => 'field_flow_rate_m3_hr',
+      'label' => 'Flow rate m3/hr',
+      'required' => 0,
+      'settings' => array(
+        'max' => '',
+        'min' => '',
+        'prefix' => '',
+        'suffix' => 'm3/hr',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 0,
+        'module' => 'number',
+        'settings' => array(),
+        'type' => 'number',
+        'weight' => '3',
+      ),
+    ),
+  );
+
+  // Exported field: 'field_collection_item-field_model-field_fuel'.
+  $fields['field_collection_item-field_model-field_fuel'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_fuel',
+      'foreign keys' => array(
+        'node' => array(
+          'columns' => array(
+            'target_id' => 'nid',
+          ),
+          'table' => 'node',
+        ),
+      ),
+      'indexes' => array(
+        'target_id' => array(
+          0 => 'target_id',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'entityreference',
+      'settings' => array(
+        'handler' => 'base',
+        'handler_settings' => array(
+          'behaviors' => array(
+            'views-select-list' => array(
+              'status' => 0,
+            ),
+          ),
+          'sort' => array(
+            'direction' => 'ASC',
+            'field' => 'field_parent_industries:target_id',
+            'property' => 'tid',
+            'type' => 'none',
+          ),
+          'target_bundles' => array(
+            'fuel' => 'fuel',
+          ),
+        ),
+        'handler_submit' => 'Change handler',
+        'target_type' => 'taxonomy_term',
+      ),
+      'translatable' => '0',
+      'type' => 'entityreference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'field_model',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'entityreference',
+          'settings' => array(
+            'link' => FALSE,
+          ),
+          'type' => 'entityreference_label',
+          'weight' => 16,
+        ),
+      ),
+      'entity_type' => 'field_collection_item',
+      'field_name' => 'field_fuel',
+      'label' => 'Fuel',
+      'required' => 0,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'options',
+        'settings' => array(),
+        'type' => 'options_select',
+        'weight' => '11',
+      ),
+    ),
+  );
+
+  // Exported field: 'field_collection_item-field_model-field_height_m'.
+  $fields['field_collection_item-field_model-field_height_m'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_height_m',
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'locked' => '0',
+      'module' => 'number',
+      'settings' => array(
+        'decimal_separator' => '.',
+      ),
+      'translatable' => '0',
+      'type' => 'number_float',
+    ),
+    'field_instance' => array(
+      'bundle' => 'field_model',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'number',
+          'settings' => array(
+            'decimal_separator' => '.',
+            'prefix_suffix' => TRUE,
+            'scale' => 2,
+            'thousand_separator' => ' ',
+          ),
+          'type' => 'number_decimal',
+          'weight' => 7,
+        ),
+      ),
+      'entity_type' => 'field_collection_item',
+      'field_name' => 'field_height_m',
+      'label' => 'Height m',
+      'required' => 0,
+      'settings' => array(
+        'max' => '',
+        'min' => '',
+        'prefix' => '',
+        'suffix' => 'm',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 0,
+        'module' => 'number',
+        'settings' => array(),
+        'type' => 'number',
+        'weight' => '10',
+      ),
+    ),
+  );
+
+  // Exported field: 'field_collection_item-field_model-field_height_mm'.
+  $fields['field_collection_item-field_model-field_height_mm'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_height_mm',
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'locked' => '0',
+      'module' => 'number',
+      'settings' => array(
+        'decimal_separator' => '.',
+      ),
+      'translatable' => '0',
+      'type' => 'number_float',
+    ),
+    'field_instance' => array(
+      'bundle' => 'field_model',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'number',
+          'settings' => array(
+            'decimal_separator' => '.',
+            'prefix_suffix' => TRUE,
+            'scale' => 2,
+            'thousand_separator' => ' ',
+          ),
+          'type' => 'number_decimal',
+          'weight' => 6,
+        ),
+      ),
+      'entity_type' => 'field_collection_item',
+      'field_name' => 'field_height_mm',
+      'label' => 'Height mm',
+      'required' => 0,
+      'settings' => array(
+        'max' => '',
+        'min' => '',
+        'prefix' => '',
+        'suffix' => 'mm',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 0,
+        'module' => 'number',
+        'settings' => array(),
+        'type' => 'number',
+        'weight' => '9',
+      ),
+    ),
+  );
+
+  // Exported field: 'field_collection_item-field_model-field_length_m'.
+  $fields['field_collection_item-field_model-field_length_m'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_length_m',
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'locked' => '0',
+      'module' => 'number',
+      'settings' => array(
+        'decimal_separator' => '.',
+      ),
+      'translatable' => '0',
+      'type' => 'number_float',
+    ),
+    'field_instance' => array(
+      'bundle' => 'field_model',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'number',
+          'settings' => array(
+            'decimal_separator' => '.',
+            'prefix_suffix' => TRUE,
+            'scale' => 2,
+            'thousand_separator' => ' ',
+          ),
+          'type' => 'number_decimal',
+          'weight' => 11,
+        ),
+      ),
+      'entity_type' => 'field_collection_item',
+      'field_name' => 'field_length_m',
+      'label' => 'Length m',
+      'required' => 0,
+      'settings' => array(
+        'max' => '',
+        'min' => '',
+        'prefix' => '',
+        'suffix' => 'm',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 0,
+        'module' => 'number',
+        'settings' => array(),
+        'type' => 'number',
+        'weight' => '14',
+      ),
+    ),
+  );
+
+  // Exported field: 'field_collection_item-field_model-field_length_mm'.
+  $fields['field_collection_item-field_model-field_length_mm'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_length_mm',
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'locked' => '0',
+      'module' => 'number',
+      'settings' => array(
+        'decimal_separator' => '.',
+      ),
+      'translatable' => '0',
+      'type' => 'number_float',
+    ),
+    'field_instance' => array(
+      'bundle' => 'field_model',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'number',
+          'settings' => array(
+            'decimal_separator' => '.',
+            'prefix_suffix' => TRUE,
+            'scale' => 2,
+            'thousand_separator' => ' ',
+          ),
+          'type' => 'number_decimal',
+          'weight' => 10,
+        ),
+      ),
+      'entity_type' => 'field_collection_item',
+      'field_name' => 'field_length_mm',
+      'label' => 'Length mm',
+      'required' => 0,
+      'settings' => array(
+        'max' => '',
+        'min' => '',
+        'prefix' => '',
+        'suffix' => 'mm',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 0,
+        'module' => 'number',
+        'settings' => array(),
+        'type' => 'number',
+        'weight' => '13',
+      ),
+    ),
+  );
+
+  // Exported field: 'field_collection_item-field_model-field_medium'.
+  $fields['field_collection_item-field_model-field_medium'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_medium',
+      'foreign keys' => array(
+        'node' => array(
+          'columns' => array(
+            'target_id' => 'nid',
+          ),
+          'table' => 'node',
+        ),
+      ),
+      'indexes' => array(
+        'target_id' => array(
+          0 => 'target_id',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'entityreference',
+      'settings' => array(
+        'handler' => 'base',
+        'handler_settings' => array(
+          'behaviors' => array(
+            'views-select-list' => array(
+              'status' => 0,
+            ),
+          ),
+          'sort' => array(
+            'direction' => 'ASC',
+            'field' => 'field_parent_industries:target_id',
+            'property' => 'tid',
+            'type' => 'none',
+          ),
+          'target_bundles' => array(
+            'medium' => 'medium',
+          ),
+        ),
+        'handler_submit' => 'Change handler',
+        'target_type' => 'taxonomy_term',
+      ),
+      'translatable' => '0',
+      'type' => 'entityreference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'field_model',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'entityreference',
+          'settings' => array(
+            'link' => FALSE,
+          ),
+          'type' => 'entityreference_label',
+          'weight' => 24,
+        ),
+      ),
+      'entity_type' => 'field_collection_item',
+      'field_name' => 'field_medium',
+      'label' => 'Medium',
+      'required' => 0,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'options',
+        'settings' => array(),
+        'type' => 'options_select',
+        'weight' => '18',
       ),
     ),
   );
@@ -108,13 +790,13 @@ function hnw_products_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => 0,
+          'weight' => 19,
         ),
       ),
       'entity_type' => 'field_collection_item',
       'field_name' => 'field_model_id',
       'label' => 'Model ID',
-      'required' => 0,
+      'required' => 1,
       'settings' => array(
         'text_processing' => '0',
         'user_register_form' => FALSE,
@@ -126,7 +808,805 @@ function hnw_products_field_default_fields() {
           'size' => '60',
         ),
         'type' => 'text_textfield',
-        'weight' => '2',
+        'weight' => '0',
+      ),
+    ),
+  );
+
+  // Exported field: 'field_collection_item-field_model-field_net_capacity_kw'.
+  $fields['field_collection_item-field_model-field_net_capacity_kw'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_net_capacity_kw',
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'locked' => '0',
+      'module' => 'number',
+      'settings' => array(
+        'decimal_separator' => '.',
+      ),
+      'translatable' => '0',
+      'type' => 'number_float',
+    ),
+    'field_instance' => array(
+      'bundle' => 'field_model',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'number',
+          'settings' => array(
+            'decimal_separator' => '.',
+            'prefix_suffix' => TRUE,
+            'scale' => 2,
+            'thousand_separator' => ' ',
+          ),
+          'type' => 'number_decimal',
+          'weight' => 13,
+        ),
+      ),
+      'entity_type' => 'field_collection_item',
+      'field_name' => 'field_net_capacity_kw',
+      'label' => 'Net capacity kW',
+      'required' => 0,
+      'settings' => array(
+        'max' => '',
+        'min' => '',
+        'prefix' => '',
+        'suffix' => 'kW',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 0,
+        'module' => 'number',
+        'settings' => array(),
+        'type' => 'number',
+        'weight' => '8',
+      ),
+    ),
+  );
+
+  // Exported field: 'field_collection_item-field_model-field_pressure_difference_mbar'.
+  $fields['field_collection_item-field_model-field_pressure_difference_mbar'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_pressure_difference_mbar',
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'locked' => '0',
+      'module' => 'number',
+      'settings' => array(
+        'decimal_separator' => '.',
+      ),
+      'translatable' => '0',
+      'type' => 'number_float',
+    ),
+    'field_instance' => array(
+      'bundle' => 'field_model',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'number',
+          'settings' => array(
+            'decimal_separator' => '.',
+            'prefix_suffix' => TRUE,
+            'scale' => 2,
+            'thousand_separator' => ' ',
+          ),
+          'type' => 'number_decimal',
+          'weight' => 21,
+        ),
+      ),
+      'entity_type' => 'field_collection_item',
+      'field_name' => 'field_pressure_difference_mbar',
+      'label' => 'Pressure difference mbar',
+      'required' => 0,
+      'settings' => array(
+        'max' => '',
+        'min' => '',
+        'prefix' => '',
+        'suffix' => 'mbar',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 0,
+        'module' => 'number',
+        'settings' => array(),
+        'type' => 'number',
+        'weight' => '15',
+      ),
+    ),
+  );
+
+  // Exported field: 'field_collection_item-field_model-field_pressure_difference_mmg'.
+  $fields['field_collection_item-field_model-field_pressure_difference_mmg'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_pressure_difference_mmg',
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'locked' => '0',
+      'module' => 'number',
+      'settings' => array(
+        'decimal_separator' => '.',
+      ),
+      'translatable' => '0',
+      'type' => 'number_float',
+    ),
+    'field_instance' => array(
+      'bundle' => 'field_model',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'number',
+          'settings' => array(
+            'decimal_separator' => '.',
+            'prefix_suffix' => TRUE,
+            'scale' => 2,
+            'thousand_separator' => ' ',
+          ),
+          'type' => 'number_decimal',
+          'weight' => 25,
+        ),
+      ),
+      'entity_type' => 'field_collection_item',
+      'field_name' => 'field_pressure_difference_mmg',
+      'label' => 'Pressure difference mmg',
+      'required' => 0,
+      'settings' => array(
+        'max' => '',
+        'min' => '',
+        'prefix' => '',
+        'suffix' => 'mm/g.water',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 0,
+        'module' => 'number',
+        'settings' => array(),
+        'type' => 'number',
+        'weight' => '19',
+      ),
+    ),
+  );
+
+  // Exported field: 'field_collection_item-field_model-field_product_pressure_bar'.
+  $fields['field_collection_item-field_model-field_product_pressure_bar'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_product_pressure_bar',
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'locked' => '0',
+      'module' => 'number',
+      'settings' => array(
+        'decimal_separator' => '.',
+      ),
+      'translatable' => '0',
+      'type' => 'number_float',
+    ),
+    'field_instance' => array(
+      'bundle' => 'field_model',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'number',
+          'settings' => array(
+            'decimal_separator' => '.',
+            'prefix_suffix' => TRUE,
+            'scale' => 2,
+            'thousand_separator' => ' ',
+          ),
+          'type' => 'number_decimal',
+          'weight' => 5,
+        ),
+      ),
+      'entity_type' => 'field_collection_item',
+      'field_name' => 'field_product_pressure_bar',
+      'label' => 'Product pressure bar',
+      'required' => 0,
+      'settings' => array(
+        'max' => '',
+        'min' => '',
+        'prefix' => '',
+        'suffix' => 'bar',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 0,
+        'module' => 'number',
+        'settings' => array(),
+        'type' => 'number',
+        'weight' => '5',
+      ),
+    ),
+  );
+
+  // Exported field: 'field_collection_item-field_model-field_product_pressure_psi'.
+  $fields['field_collection_item-field_model-field_product_pressure_psi'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_product_pressure_psi',
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'locked' => '0',
+      'module' => 'number',
+      'settings' => array(
+        'decimal_separator' => '.',
+      ),
+      'translatable' => '0',
+      'type' => 'number_float',
+    ),
+    'field_instance' => array(
+      'bundle' => 'field_model',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'number',
+          'settings' => array(
+            'decimal_separator' => '.',
+            'prefix_suffix' => TRUE,
+            'scale' => 2,
+            'thousand_separator' => ' ',
+          ),
+          'type' => 'number_decimal',
+          'weight' => 4,
+        ),
+      ),
+      'entity_type' => 'field_collection_item',
+      'field_name' => 'field_product_pressure_psi',
+      'label' => 'Product pressure psi',
+      'required' => 0,
+      'settings' => array(
+        'max' => '',
+        'min' => '',
+        'prefix' => '',
+        'suffix' => 'psi',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 0,
+        'module' => 'number',
+        'settings' => array(),
+        'type' => 'number',
+        'weight' => '4',
+      ),
+    ),
+  );
+
+  // Exported field: 'field_collection_item-field_model-field_product_price'.
+  $fields['field_collection_item-field_model-field_product_price'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_product_price',
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'locked' => '0',
+      'module' => 'number',
+      'settings' => array(
+        'decimal_separator' => '.',
+      ),
+      'translatable' => '0',
+      'type' => 'number_float',
+    ),
+    'field_instance' => array(
+      'bundle' => 'field_model',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'number',
+          'settings' => array(
+            'decimal_separator' => '.',
+            'prefix_suffix' => TRUE,
+            'scale' => 2,
+            'thousand_separator' => ' ',
+          ),
+          'type' => 'number_decimal',
+          'weight' => 3,
+        ),
+      ),
+      'entity_type' => 'field_collection_item',
+      'field_name' => 'field_product_price',
+      'label' => 'Product price',
+      'required' => 0,
+      'settings' => array(
+        'max' => '',
+        'min' => '',
+        'prefix' => '$',
+        'suffix' => '',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 0,
+        'module' => 'number',
+        'settings' => array(),
+        'type' => 'number',
+        'weight' => '20',
+      ),
+    ),
+  );
+
+  // Exported field: 'field_collection_item-field_model-field_temperature'.
+  $fields['field_collection_item-field_model-field_temperature'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_temperature',
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'locked' => '0',
+      'module' => 'number',
+      'settings' => array(
+        'decimal_separator' => '.',
+      ),
+      'translatable' => '0',
+      'type' => 'number_float',
+    ),
+    'field_instance' => array(
+      'bundle' => 'field_model',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'number',
+          'settings' => array(
+            'decimal_separator' => '.',
+            'prefix_suffix' => TRUE,
+            'scale' => 2,
+            'thousand_separator' => ' ',
+          ),
+          'type' => 'number_decimal',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'field_collection_item',
+      'field_name' => 'field_temperature',
+      'label' => 'Temperature',
+      'required' => 0,
+      'settings' => array(
+        'max' => '',
+        'min' => '',
+        'prefix' => '',
+        'suffix' => 'ºC',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 0,
+        'module' => 'number',
+        'settings' => array(),
+        'type' => 'number',
+        'weight' => '1',
+      ),
+    ),
+  );
+
+  // Exported field: 'field_collection_item-field_model-field_type'.
+  $fields['field_collection_item-field_model-field_type'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '2',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_type',
+      'foreign keys' => array(
+        'node' => array(
+          'columns' => array(
+            'target_id' => 'nid',
+          ),
+          'table' => 'node',
+        ),
+      ),
+      'indexes' => array(
+        'target_id' => array(
+          0 => 'target_id',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'entityreference',
+      'settings' => array(
+        'handler' => 'base',
+        'handler_settings' => array(
+          'behaviors' => array(
+            'views-select-list' => array(
+              'status' => 0,
+            ),
+          ),
+          'sort' => array(
+            'direction' => 'ASC',
+            'field' => 'field_parent_industries:target_id',
+            'property' => 'tid',
+            'type' => 'none',
+          ),
+          'target_bundles' => array(
+            'air_handler_type' => 'air_handler_type',
+          ),
+        ),
+        'handler_submit' => 'Change handler',
+        'target_type' => 'taxonomy_term',
+      ),
+      'translatable' => '0',
+      'type' => 'entityreference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'field_model',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'entityreference',
+          'settings' => array(
+            'link' => FALSE,
+          ),
+          'type' => 'entityreference_label',
+          'weight' => 20,
+        ),
+      ),
+      'entity_type' => 'field_collection_item',
+      'field_name' => 'field_type',
+      'label' => 'Type',
+      'required' => 0,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'options',
+        'settings' => array(),
+        'type' => 'options_select',
+        'weight' => '14',
+      ),
+    ),
+  );
+
+  // Exported field: 'field_collection_item-field_model-field_type_of_control'.
+  $fields['field_collection_item-field_model-field_type_of_control'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_type_of_control',
+      'foreign keys' => array(
+        'node' => array(
+          'columns' => array(
+            'target_id' => 'nid',
+          ),
+          'table' => 'node',
+        ),
+      ),
+      'indexes' => array(
+        'target_id' => array(
+          0 => 'target_id',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'entityreference',
+      'settings' => array(
+        'handler' => 'base',
+        'handler_settings' => array(
+          'behaviors' => array(
+            'views-select-list' => array(
+              'status' => 0,
+            ),
+          ),
+          'sort' => array(
+            'direction' => 'ASC',
+            'field' => 'field_parent_industries:target_id',
+            'property' => 'tid',
+            'type' => 'none',
+          ),
+          'target_bundles' => array(
+            'type_of_control' => 'type_of_control',
+          ),
+        ),
+        'handler_submit' => 'Change handler',
+        'target_type' => 'taxonomy_term',
+      ),
+      'translatable' => '0',
+      'type' => 'entityreference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'field_model',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'entityreference',
+          'settings' => array(
+            'link' => FALSE,
+          ),
+          'type' => 'entityreference_label',
+          'weight' => 14,
+        ),
+      ),
+      'entity_type' => 'field_collection_item',
+      'field_name' => 'field_type_of_control',
+      'label' => 'Type of control',
+      'required' => 0,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'options',
+        'settings' => array(),
+        'type' => 'options_select',
+        'weight' => '9',
+      ),
+    ),
+  );
+
+  // Exported field: 'field_collection_item-field_model-field_volume_flow_cfm'.
+  $fields['field_collection_item-field_model-field_volume_flow_cfm'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_volume_flow_cfm',
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'locked' => '0',
+      'module' => 'number',
+      'settings' => array(
+        'decimal_separator' => '.',
+      ),
+      'translatable' => '0',
+      'type' => 'number_float',
+    ),
+    'field_instance' => array(
+      'bundle' => 'field_model',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'number',
+          'settings' => array(
+            'decimal_separator' => '.',
+            'prefix_suffix' => TRUE,
+            'scale' => 2,
+            'thousand_separator' => ' ',
+          ),
+          'type' => 'number_decimal',
+          'weight' => 23,
+        ),
+      ),
+      'entity_type' => 'field_collection_item',
+      'field_name' => 'field_volume_flow_cfm',
+      'label' => 'Volume flow cfm',
+      'required' => 0,
+      'settings' => array(
+        'max' => '',
+        'min' => '',
+        'prefix' => '',
+        'suffix' => 'cfm',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 0,
+        'module' => 'number',
+        'settings' => array(),
+        'type' => 'number',
+        'weight' => '17',
+      ),
+    ),
+  );
+
+  // Exported field: 'field_collection_item-field_model-field_volume_flow_m3_hr'.
+  $fields['field_collection_item-field_model-field_volume_flow_m3_hr'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_volume_flow_m3_hr',
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'locked' => '0',
+      'module' => 'number',
+      'settings' => array(
+        'decimal_separator' => '.',
+      ),
+      'translatable' => '0',
+      'type' => 'number_float',
+    ),
+    'field_instance' => array(
+      'bundle' => 'field_model',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'number',
+          'settings' => array(
+            'decimal_separator' => '.',
+            'prefix_suffix' => TRUE,
+            'scale' => 2,
+            'thousand_separator' => ' ',
+          ),
+          'type' => 'number_decimal',
+          'weight' => 22,
+        ),
+      ),
+      'entity_type' => 'field_collection_item',
+      'field_name' => 'field_volume_flow_m3_hr',
+      'label' => 'Volume flow m3/hr',
+      'required' => 0,
+      'settings' => array(
+        'max' => '',
+        'min' => '',
+        'prefix' => '',
+        'suffix' => 'm3/hr',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 0,
+        'module' => 'number',
+        'settings' => array(),
+        'type' => 'number',
+        'weight' => '16',
+      ),
+    ),
+  );
+
+  // Exported field: 'field_collection_item-field_model-field_width_m'.
+  $fields['field_collection_item-field_model-field_width_m'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_width_m',
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'locked' => '0',
+      'module' => 'number',
+      'settings' => array(
+        'decimal_separator' => '.',
+      ),
+      'translatable' => '0',
+      'type' => 'number_float',
+    ),
+    'field_instance' => array(
+      'bundle' => 'field_model',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'number',
+          'settings' => array(
+            'decimal_separator' => '.',
+            'prefix_suffix' => TRUE,
+            'scale' => 2,
+            'thousand_separator' => ' ',
+          ),
+          'type' => 'number_decimal',
+          'weight' => 9,
+        ),
+      ),
+      'entity_type' => 'field_collection_item',
+      'field_name' => 'field_width_m',
+      'label' => 'Width m',
+      'required' => 0,
+      'settings' => array(
+        'max' => '',
+        'min' => '',
+        'prefix' => '',
+        'suffix' => 'm',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 0,
+        'module' => 'number',
+        'settings' => array(),
+        'type' => 'number',
+        'weight' => '12',
+      ),
+    ),
+  );
+
+  // Exported field: 'field_collection_item-field_model-field_width_mm'.
+  $fields['field_collection_item-field_model-field_width_mm'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_width_mm',
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'locked' => '0',
+      'module' => 'number',
+      'settings' => array(
+        'decimal_separator' => '.',
+      ),
+      'translatable' => '0',
+      'type' => 'number_float',
+    ),
+    'field_instance' => array(
+      'bundle' => 'field_model',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'number',
+          'settings' => array(
+            'decimal_separator' => '.',
+            'prefix_suffix' => TRUE,
+            'scale' => 2,
+            'thousand_separator' => ' ',
+          ),
+          'type' => 'number_decimal',
+          'weight' => 8,
+        ),
+      ),
+      'entity_type' => 'field_collection_item',
+      'field_name' => 'field_width_mm',
+      'label' => 'Width mm',
+      'required' => 0,
+      'settings' => array(
+        'max' => '',
+        'min' => '',
+        'prefix' => '',
+        'suffix' => 'mm',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 0,
+        'module' => 'number',
+        'settings' => array(),
+        'type' => 'number',
+        'weight' => '11',
       ),
     ),
   );
@@ -276,390 +1756,6 @@ function hnw_products_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-product-field_backpressure'.
-  $fields['node-product-field_backpressure'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_backpressure',
-      'foreign keys' => array(),
-      'indexes' => array(),
-      'locked' => '0',
-      'module' => 'number',
-      'settings' => array(
-        'decimal_separator' => '.',
-      ),
-      'translatable' => '0',
-      'type' => 'number_float',
-    ),
-    'field_instance' => array(
-      'bundle' => 'product',
-      'default_value' => NULL,
-      'deleted' => '0',
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'number',
-          'settings' => array(
-            'decimal_separator' => '.',
-            'prefix_suffix' => TRUE,
-            'scale' => 2,
-            'thousand_separator' => ' ',
-          ),
-          'type' => 'number_decimal',
-          'weight' => '26',
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_backpressure',
-      'label' => 'Backpressure',
-      'required' => 0,
-      'settings' => array(
-        'max' => '',
-        'min' => '',
-        'prefix' => '',
-        'suffix' => 'mbar',
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 0,
-        'module' => 'number',
-        'settings' => array(),
-        'type' => 'number',
-        'weight' => '17',
-      ),
-    ),
-  );
-
-  // Exported field: 'node-product-field_capacity'.
-  $fields['node-product-field_capacity'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_capacity',
-      'foreign keys' => array(),
-      'indexes' => array(),
-      'locked' => '0',
-      'module' => 'number',
-      'settings' => array(
-        'decimal_separator' => '.',
-      ),
-      'translatable' => '0',
-      'type' => 'number_float',
-    ),
-    'field_instance' => array(
-      'bundle' => 'product',
-      'default_value' => NULL,
-      'deleted' => '0',
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'number',
-          'settings' => array(
-            'decimal_separator' => '.',
-            'prefix_suffix' => TRUE,
-            'scale' => 2,
-            'thousand_separator' => ' ',
-          ),
-          'type' => 'number_decimal',
-          'weight' => '24',
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_capacity',
-      'label' => 'Capacity',
-      'required' => 0,
-      'settings' => array(
-        'max' => '',
-        'min' => '',
-        'prefix' => '',
-        'suffix' => 'm3/hr',
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 0,
-        'module' => 'number',
-        'settings' => array(),
-        'type' => 'number',
-        'weight' => '14',
-      ),
-    ),
-  );
-
-  // Exported field: 'node-product-field_coverage_m2'.
-  $fields['node-product-field_coverage_m2'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_coverage_m2',
-      'foreign keys' => array(),
-      'indexes' => array(),
-      'locked' => '0',
-      'module' => 'number',
-      'settings' => array(
-        'decimal_separator' => '.',
-      ),
-      'translatable' => '0',
-      'type' => 'number_float',
-    ),
-    'field_instance' => array(
-      'bundle' => 'product',
-      'default_value' => NULL,
-      'deleted' => '0',
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'number',
-          'settings' => array(
-            'decimal_separator' => '.',
-            'prefix_suffix' => TRUE,
-            'scale' => 2,
-            'thousand_separator' => ' ',
-          ),
-          'type' => 'number_decimal',
-          'weight' => '27',
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_coverage_m2',
-      'label' => 'Coverage in m2',
-      'required' => 0,
-      'settings' => array(
-        'max' => '',
-        'min' => '',
-        'prefix' => '',
-        'suffix' => 'm2',
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 0,
-        'module' => 'number',
-        'settings' => array(),
-        'type' => 'number',
-        'weight' => '18',
-      ),
-    ),
-  );
-
-  // Exported field: 'node-product-field_coverage_m3'.
-  $fields['node-product-field_coverage_m3'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_coverage_m3',
-      'foreign keys' => array(),
-      'indexes' => array(),
-      'locked' => '0',
-      'module' => 'number',
-      'settings' => array(
-        'decimal_separator' => '.',
-      ),
-      'translatable' => '0',
-      'type' => 'number_float',
-    ),
-    'field_instance' => array(
-      'bundle' => 'product',
-      'default_value' => NULL,
-      'deleted' => '0',
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'number',
-          'settings' => array(
-            'decimal_separator' => '.',
-            'prefix_suffix' => TRUE,
-            'scale' => 2,
-            'thousand_separator' => ' ',
-          ),
-          'type' => 'number_decimal',
-          'weight' => '28',
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_coverage_m3',
-      'label' => 'Coverage in m3',
-      'required' => 0,
-      'settings' => array(
-        'max' => '',
-        'min' => '',
-        'prefix' => '',
-        'suffix' => 'm3',
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 0,
-        'module' => 'number',
-        'settings' => array(),
-        'type' => 'number',
-        'weight' => '19',
-      ),
-    ),
-  );
-
-  // Exported field: 'node-product-field_max_flow_rate'.
-  $fields['node-product-field_max_flow_rate'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_max_flow_rate',
-      'foreign keys' => array(),
-      'indexes' => array(),
-      'locked' => '0',
-      'module' => 'number',
-      'settings' => array(
-        'decimal_separator' => '.',
-      ),
-      'translatable' => '0',
-      'type' => 'number_float',
-    ),
-    'field_instance' => array(
-      'bundle' => 'product',
-      'default_value' => NULL,
-      'deleted' => '0',
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'number',
-          'settings' => array(
-            'decimal_separator' => '.',
-            'prefix_suffix' => TRUE,
-            'scale' => 2,
-            'thousand_separator' => ' ',
-          ),
-          'type' => 'number_decimal',
-          'weight' => '20',
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_max_flow_rate',
-      'label' => 'Max flow rate (l/min)',
-      'required' => 0,
-      'settings' => array(
-        'max' => '',
-        'min' => '',
-        'prefix' => '',
-        'suffix' => 'l/min',
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 0,
-        'module' => 'number',
-        'settings' => array(),
-        'type' => 'number',
-        'weight' => '11',
-      ),
-    ),
-  );
-
-  // Exported field: 'node-product-field_height'.
-  $fields['node-product-field_height'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_height',
-      'foreign keys' => array(),
-      'indexes' => array(),
-      'locked' => '0',
-      'module' => 'number',
-      'settings' => array(
-        'decimal_separator' => '.',
-      ),
-      'translatable' => '0',
-      'type' => 'number_float',
-    ),
-    'field_instance' => array(
-      'bundle' => 'product',
-      'default_value' => NULL,
-      'deleted' => '0',
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'number',
-          'settings' => array(
-            'decimal_separator' => '.',
-            'prefix_suffix' => TRUE,
-            'scale' => 2,
-            'thousand_separator' => ' ',
-          ),
-          'type' => 'number_decimal',
-          'weight' => '23',
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_height',
-      'label' => 'Height',
-      'required' => 0,
-      'settings' => array(
-        'max' => '',
-        'min' => '',
-        'prefix' => '',
-        'suffix' => 'mm',
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 0,
-        'module' => 'number',
-        'settings' => array(),
-        'type' => 'number',
-        'weight' => '13',
-      ),
-    ),
-  );
-
   // Exported field: 'node-product-field_industries'.
   $fields['node-product-field_industries'] = array(
     'field_config' => array(
@@ -731,262 +1827,6 @@ function hnw_products_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-product-field_length'.
-  $fields['node-product-field_length'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_length',
-      'foreign keys' => array(),
-      'indexes' => array(),
-      'locked' => '0',
-      'module' => 'number',
-      'settings' => array(
-        'decimal_separator' => '.',
-      ),
-      'translatable' => '0',
-      'type' => 'number_float',
-    ),
-    'field_instance' => array(
-      'bundle' => 'product',
-      'default_value' => NULL,
-      'deleted' => '0',
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'number',
-          'settings' => array(
-            'decimal_separator' => '.',
-            'prefix_suffix' => TRUE,
-            'scale' => 2,
-            'thousand_separator' => ' ',
-          ),
-          'type' => 'number_decimal',
-          'weight' => '25',
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_length',
-      'label' => 'Length',
-      'required' => 0,
-      'settings' => array(
-        'max' => '',
-        'min' => '',
-        'prefix' => '',
-        'suffix' => 'mm',
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 0,
-        'module' => 'number',
-        'settings' => array(),
-        'type' => 'number',
-        'weight' => '15',
-      ),
-    ),
-  );
-
-  // Exported field: 'node-product-field_max_diff_pressure'.
-  $fields['node-product-field_max_diff_pressure'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_max_diff_pressure',
-      'foreign keys' => array(),
-      'indexes' => array(),
-      'locked' => '0',
-      'module' => 'number',
-      'settings' => array(
-        'decimal_separator' => '.',
-      ),
-      'translatable' => '0',
-      'type' => 'number_float',
-    ),
-    'field_instance' => array(
-      'bundle' => 'product',
-      'default_value' => NULL,
-      'deleted' => '0',
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'number',
-          'settings' => array(
-            'decimal_separator' => '.',
-            'prefix_suffix' => TRUE,
-            'scale' => 2,
-            'thousand_separator' => ' ',
-          ),
-          'type' => 'number_decimal',
-          'weight' => '29',
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_max_diff_pressure',
-      'label' => 'Pressure difference',
-      'required' => 0,
-      'settings' => array(
-        'max' => '',
-        'min' => '',
-        'prefix' => '',
-        'suffix' => 'mbar',
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 0,
-        'module' => 'number',
-        'settings' => array(),
-        'type' => 'number',
-        'weight' => '20',
-      ),
-    ),
-  );
-
-  // Exported field: 'node-product-field_max_flow_rate'.
-  $fields['node-product-field_max_flow_rate'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_max_flow_rate',
-      'foreign keys' => array(),
-      'indexes' => array(),
-      'locked' => '0',
-      'module' => 'number',
-      'settings' => array(
-        'decimal_separator' => '.',
-      ),
-      'translatable' => '0',
-      'type' => 'number_float',
-    ),
-    'field_instance' => array(
-      'bundle' => 'product',
-      'default_value' => NULL,
-      'deleted' => '0',
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'number',
-          'settings' => array(
-            'decimal_separator' => '.',
-            'prefix_suffix' => TRUE,
-            'scale' => 2,
-            'thousand_separator' => ' ',
-          ),
-          'type' => 'number_decimal',
-          'weight' => '20',
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_max_flow_rate',
-      'label' => 'Max flow rate (l/min)',
-      'required' => 0,
-      'settings' => array(
-        'max' => '',
-        'min' => '',
-        'prefix' => '',
-        'suffix' => 'l/min',
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 0,
-        'module' => 'number',
-        'settings' => array(),
-        'type' => 'number',
-        'weight' => '11',
-      ),
-    ),
-  );
-
-  // Exported field: 'node-product-field_max_temp'.
-  $fields['node-product-field_max_temp'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_max_temp',
-      'foreign keys' => array(),
-      'indexes' => array(),
-      'locked' => '0',
-      'module' => 'number',
-      'settings' => array(
-        'decimal_separator' => '.',
-      ),
-      'translatable' => '0',
-      'type' => 'number_float',
-    ),
-    'field_instance' => array(
-      'bundle' => 'product',
-      'default_value' => NULL,
-      'deleted' => '0',
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'number',
-          'settings' => array(
-            'decimal_separator' => '.',
-            'prefix_suffix' => TRUE,
-            'scale' => 2,
-            'thousand_separator' => ' ',
-          ),
-          'type' => 'number_decimal',
-          'weight' => '19',
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_max_temp',
-      'label' => 'Maximum temperature',
-      'required' => 0,
-      'settings' => array(
-        'max' => '',
-        'min' => '',
-        'prefix' => '',
-        'suffix' => 'ºC',
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 0,
-        'module' => 'number',
-        'settings' => array(),
-        'type' => 'number',
-        'weight' => '10',
-      ),
-    ),
-  );
-
   // Exported field: 'node-product-field_model'.
   $fields['node-product-field_model'] = array(
     'field_config' => array(
@@ -1022,7 +1862,7 @@ function hnw_products_field_default_fields() {
             'view_mode' => 'full',
           ),
           'type' => 'field_collection_view',
-          'weight' => 31,
+          'weight' => 19,
         ),
         'teaser' => array(
           'label' => 'above',
@@ -1043,135 +1883,7 @@ function hnw_products_field_default_fields() {
         'module' => 'field_collection',
         'settings' => array(),
         'type' => 'field_collection_embed',
-        'weight' => '22',
-      ),
-    ),
-  );
-
-  // Exported field: 'node-product-field_net_capacity'.
-  $fields['node-product-field_net_capacity'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_net_capacity',
-      'foreign keys' => array(),
-      'indexes' => array(),
-      'locked' => '0',
-      'module' => 'number',
-      'settings' => array(
-        'decimal_separator' => '.',
-      ),
-      'translatable' => '0',
-      'type' => 'number_float',
-    ),
-    'field_instance' => array(
-      'bundle' => 'product',
-      'default_value' => NULL,
-      'deleted' => '0',
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'number',
-          'settings' => array(
-            'decimal_separator' => '.',
-            'prefix_suffix' => TRUE,
-            'scale' => 2,
-            'thousand_separator' => ' ',
-          ),
-          'type' => 'number_decimal',
-          'weight' => '23',
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_net_capacity',
-      'label' => 'Net capacity',
-      'required' => 0,
-      'settings' => array(
-        'max' => '',
-        'min' => '',
-        'prefix' => '',
-        'suffix' => 'kW',
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 0,
-        'module' => 'number',
-        'settings' => array(),
-        'type' => 'number',
-        'weight' => '15',
-      ),
-    ),
-  );
-
-  // Exported field: 'node-product-field_operating_temp'.
-  $fields['node-product-field_operating_temp'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_operating_temp',
-      'foreign keys' => array(),
-      'indexes' => array(),
-      'locked' => '0',
-      'module' => 'number',
-      'settings' => array(
-        'decimal_separator' => '.',
-      ),
-      'translatable' => '0',
-      'type' => 'number_float',
-    ),
-    'field_instance' => array(
-      'bundle' => 'product',
-      'default_value' => NULL,
-      'deleted' => '0',
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'number',
-          'settings' => array(
-            'decimal_separator' => '.',
-            'prefix_suffix' => TRUE,
-            'scale' => 2,
-            'thousand_separator' => ' ',
-          ),
-          'type' => 'number_decimal',
-          'weight' => '25',
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_operating_temp',
-      'label' => 'Operating temperature',
-      'required' => 0,
-      'settings' => array(
-        'max' => '',
-        'min' => '',
-        'prefix' => '',
-        'suffix' => 'ºC',
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 0,
-        'module' => 'number',
-        'settings' => array(),
-        'type' => 'number',
-        'weight' => '16',
+        'weight' => '10',
       ),
     ),
   );
@@ -1400,128 +2112,6 @@ function hnw_products_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-product-field_product_pressure'.
-  $fields['node-product-field_product_pressure'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_product_pressure',
-      'foreign keys' => array(),
-      'indexes' => array(),
-      'locked' => '0',
-      'module' => 'number',
-      'settings' => array(
-        'decimal_separator' => '.',
-      ),
-      'translatable' => '0',
-      'type' => 'number_float',
-    ),
-    'field_instance' => array(
-      'bundle' => 'product',
-      'default_value' => NULL,
-      'deleted' => '0',
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'number',
-          'settings' => array(
-            'decimal_separator' => '.',
-            'prefix_suffix' => TRUE,
-            'scale' => 2,
-            'thousand_separator' => ' ',
-          ),
-          'type' => 'number_decimal',
-          'weight' => '21',
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_product_pressure',
-      'label' => 'Product pressure',
-      'required' => 0,
-      'settings' => array(
-        'max' => '',
-        'min' => '',
-        'prefix' => '',
-        'suffix' => 'bar',
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 0,
-        'module' => 'number',
-        'settings' => array(),
-        'type' => 'number',
-        'weight' => '12',
-      ),
-    ),
-  );
-
-  // Exported field: 'node-product-field_product_price'.
-  $fields['node-product-field_product_price'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_product_price',
-      'foreign keys' => array(),
-      'indexes' => array(),
-      'locked' => '0',
-      'module' => 'number',
-      'settings' => array(
-        'decimal_separator' => '.',
-      ),
-      'translatable' => '0',
-      'type' => 'number_float',
-    ),
-    'field_instance' => array(
-      'bundle' => 'product',
-      'default_value' => NULL,
-      'deleted' => '0',
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '18',
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_product_price',
-      'label' => 'Product price',
-      'required' => 0,
-      'settings' => array(
-        'max' => '',
-        'min' => '',
-        'prefix' => '$',
-        'suffix' => '',
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 0,
-        'module' => 'number',
-        'settings' => array(),
-        'type' => 'number',
-        'weight' => '9',
-      ),
-    ),
-  );
-
   // Exported field: 'node-product-field_product_video'.
   $fields['node-product-field_product_video'] = array(
     'field_config' => array(
@@ -1604,70 +2194,6 @@ function hnw_products_field_default_fields() {
         ),
         'type' => 'media_generic',
         'weight' => '7',
-      ),
-    ),
-  );
-
-  // Exported field: 'node-product-field_width'.
-  $fields['node-product-field_width'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_width',
-      'foreign keys' => array(),
-      'indexes' => array(),
-      'locked' => '0',
-      'module' => 'number',
-      'settings' => array(
-        'decimal_separator' => '.',
-      ),
-      'translatable' => '0',
-      'type' => 'number_float',
-    ),
-    'field_instance' => array(
-      'bundle' => 'product',
-      'default_value' => NULL,
-      'deleted' => '0',
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'number',
-          'settings' => array(
-            'decimal_separator' => '.',
-            'prefix_suffix' => TRUE,
-            'scale' => 2,
-            'thousand_separator' => ' ',
-          ),
-          'type' => 'number_decimal',
-          'weight' => '24',
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_width',
-      'label' => 'Width',
-      'required' => 0,
-      'settings' => array(
-        'max' => '',
-        'min' => '',
-        'prefix' => '',
-        'suffix' => 'mm',
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 0,
-        'module' => 'number',
-        'settings' => array(),
-        'type' => 'number',
-        'weight' => '14',
       ),
     ),
   );
@@ -1755,29 +2281,40 @@ function hnw_products_field_default_fields() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Applications');
-  t('Backpressure');
-  t('Capacity');
-  t('Coverage in m2');
-  t('Coverage in m3');
+  t('Backpressure mbar');
+  t('Capacity m3/hr');
+  t('Coverage m2');
+  t('Coverage m3');
   t('Description');
-  t('Height');
+  t('Flow rate l/min');
+  t('Flow rate m3/hr');
+  t('Fuel');
+  t('Height m');
+  t('Height mm');
   t('Industries');
-  t('Length');
-  t('Max flow rate (l/min)');
-  t('Maximum temperature');
+  t('Length m');
+  t('Length mm');
+  t('Medium');
   t('Model');
   t('Model ID');
-  t('Net capacity');
-  t('Operating temperature');
+  t('Net capacity kW');
   t('Parent industries');
-  t('Pressure difference');
+  t('Pressure difference mbar');
+  t('Pressure difference mmg');
   t('Product categories');
   t('Product download');
   t('Product image');
-  t('Product pressure');
+  t('Product pressure bar');
+  t('Product pressure psi');
   t('Product price');
   t('Product video');
-  t('Width');
+  t('Temperature');
+  t('Type');
+  t('Type of control');
+  t('Volume flow cfm');
+  t('Volume flow m3/hr');
+  t('Width m');
+  t('Width mm');
 
   return $fields;
 }
