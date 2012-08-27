@@ -38,7 +38,6 @@ dependencies[] = facetapi
 dependencies[] = field_group
 dependencies[] = features
 dependencies[] = diff
-dependencies[] = module_filter
 dependencies[] = mollom
 dependencies[] = omega_tools
 dependencies[] = panels
@@ -50,6 +49,7 @@ dependencies[] = webform
 dependencies[] = coder
 dependencies[] = devel
 dependencies[] = devel_generate
+dependencies[] = module_filter
 
 ; Features
 dependencies[] = hnw_appearance
