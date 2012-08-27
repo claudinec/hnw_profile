@@ -133,12 +133,6 @@ projects[webform][subdir] = "contrib"
 ; Download a specific Git commit as Features exportability has been committed
 ; but no stable build has been released.
 
-projects[conditional_fields][type] = "module"
-projects[conditional_fields][download][type] = "git"
-projects[conditional_fields][download][url] = "http://git.drupal.org/project/conditional_fields.git"
-projects[conditional_fields][download][revision] = "de8d798ffc3d976f1ad4302b7b0af086e825a26d"
-projects[conditional_fields][subdir] = "contrib"
-
 projects[wysiwyg][type] = "module"
 projects[wysiwyg][download][type] = "git"
 projects[wysiwyg][download][url] = "http://git.drupal.org/project/wysiwyg.git"
