@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Hurll Nu-Way Products core feature.
+ * Hurll Nu-Way Core feature.
  */
 
 // Enable hnw_domains feature IFF we are on a domain with site aliases enabled in Aegir.
