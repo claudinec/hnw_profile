@@ -12,6 +12,13 @@ function hnw_products_update_7100() {
 }
 
 /**
+ * Changes to hnw_products feature
+ */
+function hnw_products_update_7101() {
+  _hnw_products_flush_revert();
+}
+
+/**
  * helper function: flush caches and revert features.
  */
 function _hnw_products_flush_revert() {
