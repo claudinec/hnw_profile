@@ -34,7 +34,7 @@ function hnw_domains_context_default_contexts() {
         'block-3' => array(
           'module' => 'block',
           'delta' => 3,
-          'region' => 'content',
+          'region' => 'sidebar_first',
           'weight' => '-10',
         ),
       ),
@@ -72,7 +72,7 @@ function hnw_domains_context_default_contexts() {
         'block-4' => array(
           'module' => 'block',
           'delta' => 4,
-          'region' => 'content',
+          'region' => 'sidebar_first',
           'weight' => '-10',
         ),
       ),

@@ -2,6 +2,7 @@ name = HNW Domains
 description = Domain Access settings
 core = 7.x
 package = HNW
+php = 5.2.4
 version = 7.x-0.1
 project = hnw_domains
 dependencies[] = block
