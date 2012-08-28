@@ -34,7 +34,7 @@
 }
 
 .context-events .block-views-exp-events-page{
-	 background:#f9f9f9;
+	 background:url(../images/corner_background.png)  #ececec no-repeat bottom right;
 	 padding:13px 0 13px 16px;
 }
 
@@ -134,9 +134,18 @@
 }
 
 .node-type-event .group-event-info{
-	border-top:1px #cccccc solid;
 	background:#f9f9f9;
 	padding:16px 18px;
 	margin-top:16px;
+}
+
+.node-type-event .field-name-field-event-address{
+	border-top:1px solid #cecece;
+	padding-top:7px;
+	width: 282px;
+}
+
+.node-type-event .group_event_info h3{
+	margin-bottom:4px;
 }
 
