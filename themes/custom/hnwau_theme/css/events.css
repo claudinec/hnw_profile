@@ -47,17 +47,6 @@
 	 margin-bottom:8px;
 }
 
-.context-events .form-submit{
-	border-color:#9AA9B0;
-	border-width:4px;
-	text-transform:uppercase;
-	color:white;
-	font-weight: normal;
-	text-shadow:none;
-	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#4c62ab), to(#0e2142));
-	background:-moz-linear-gradient(center top , rgb(76, 98, 171) 0%, rgb(14, 33, 66) 100%) repeat scroll 0% 0% transparent
-}
-
 .context-events .views-submit-button{
 	float:right;
 	margin-right:18px;
