@@ -47,3 +47,30 @@
 	margin:0px;
 	width:960px;
 }
+
+/* node link style */
+.node-links ul li a, .comment-links ul li a{
+	text-transform: capitalize;
+	display: inline;
+	float: left;
+	text-decoration: none;
+	margin: 0;
+	vertical-align: middle;
+	background:none;
+	border: none;
+	cursor: pointer;
+	color: #F77219;
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font-size:13px;
+	font-weight: normal;
+	outline: 0;
+	overflow: visible;
+	letter-spacing: normal;
+	padding: 0;
+	text-shadow: none;
+	width: auto;
+}
+
+.node-links ul li a:hover, .comment-links ul li a:hover{
+	background:none;
+}
