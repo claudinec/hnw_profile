@@ -87,7 +87,9 @@
 	text-decoration: none;
 }
 
-.context-events #page-title{
+.context-events #page-title,
+.node-type-event  #page-title
+{
 	display:none;
 }
 
