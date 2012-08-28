@@ -9,6 +9,10 @@
  */
 function hnw_events_ctools_plugin_api() {
   list($module, $api) = func_get_args();
+  if ($module == "context" && $api == "context") {
+    return array("version" => "3");
+  }
+  list($module, $api) = func_get_args();
   if ($module == "custom_formatters" && $api == "custom_formatters") {
     return array("version" => "2");
   }

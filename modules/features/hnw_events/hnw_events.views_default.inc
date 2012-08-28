@@ -205,9 +205,11 @@ function hnw_events_views_default_views() {
   $handler->display->display_options['filters']['field_event_date_value']['expose']['identifier'] = 'field_event_date_value';
   $handler->display->display_options['filters']['field_event_date_value']['expose']['remember'] = 1;
   $handler->display->display_options['filters']['field_event_date_value']['expose']['multiple'] = FALSE;
+  $handler->display->display_options['filters']['field_event_date_value']['granularity'] = 'month';
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
+  $handler->display->display_options['exposed_block'] = TRUE;
   $handler->display->display_options['path'] = 'events';
   $handler->display->display_options['menu']['type'] = 'normal';
   $handler->display->display_options['menu']['title'] = 'Events';
