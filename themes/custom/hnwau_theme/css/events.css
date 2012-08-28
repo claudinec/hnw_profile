@@ -33,6 +33,49 @@
 	line-height: 20px;
 }
 
+.context-events .block-views-exp-events-page{
+	 background:#f9f9f9;
+	 padding:13px 0 13px 16px;
+}
+
+.context-events .block-views-exp-events-page label{
+	 font-weight: 400;
+	 font-size:25px;
+	 text-transform: uppercase;
+	 width:130px;
+	 line-height:23px;
+	 margin-bottom:8px;
+}
+
+.context-events .form-submit{
+	border-color:#9AA9B0;
+	border-width:4px;
+	text-transform:uppercase;
+	color:white;
+	font-weight: normal;
+	text-shadow:none;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#4c62ab), to(#0e2142));
+	background:-moz-linear-gradient(center top , rgb(76, 98, 171) 0%, rgb(14, 33, 66) 100%) repeat scroll 0% 0% transparent
+}
+
+.context-events .views-submit-button{
+	float:right;
+	margin-right:18px;
+	margin-top:0px;
+}
+
+.context-events .container-inline-date .form-item select{
+	width:90px;
+}
+
+.context-events .views-exposed-form .views-exposed-widget{
+	padding:0;
+}
+
+.context-events .views-exposed-form .views-exposed-widget .form-submit {
+	margin-top:13px;
+}
+
 .view-events .views-field-field-event-date .date-month{
 	text-transform: uppercase;
 	font-size:24px;
@@ -44,7 +87,7 @@
 	text-decoration: none;
 }
 
-.node-type-event #page-title{
+.context-events #page-title{
 	display:none;
 }
 
@@ -76,12 +119,24 @@
 .node-type-event .field-type-link-field a{
 	color:black;
 	text-decoration:none;
-	
 }
 
-.group-event-info{
+.view-events .views-row{
+	background:url(../images/date_background.png) #f9f9f9 top right no-repeat;
+	margin-bottom:10px;
+	padding:22px 17px;
+}
+
+.view-events .view-header{
+	background:#f9f9f9;
+	margin-bottom:10px;
+	padding:22px 17px;
+}
+
+.node-type-event .group-event-info{
 	border-top:1px #cccccc solid;
 	background:#f9f9f9;
 	padding:16px 18px;
 	margin-top:16px;
 }
+
