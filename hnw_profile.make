@@ -161,6 +161,3 @@ libraries[profiler][download][url] = "http://ftp.drupal.org/files/projects/profi
 libraries[editarea][type] = "libraries"
 libraries[editarea][download][type] = "file"
 libraries[editarea][download][url] = "http://downloads.sourceforge.net/project/editarea/EditArea/EditArea%200.8.2/editarea_0_8_2.zip"
-libraries[jquery.cycle][type] = "libraries"
-libraries[jquery.cycle][download][type] = "file"
-libraries[jquery.cycle][download][url] = "http://malsup.github.com/jquery.cycle.all.js"
