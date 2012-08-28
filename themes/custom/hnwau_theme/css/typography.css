@@ -23,6 +23,7 @@ h2.block-title,
 h2.node-title
 {
 	font-size: 25px;
+	margin-bottom:auto;
 }
 
 h2.node-title a{
