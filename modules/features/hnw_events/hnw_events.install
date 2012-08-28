@@ -23,6 +23,13 @@ function hnw_events_update_7101() {
 }
 
 /**
+ * Added events context. Layout of events listing page.
+ */
+function hnw_events_update_7102() {
+  _hnw_events_flush_revert();
+}
+
+/**
  * helper function: flush caches and revert features.
  */
 function _hnw_events_flush_revert() {

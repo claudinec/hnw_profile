@@ -21,18 +21,19 @@ function hnw_products_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Applications and Industries',
-    'weight' => '4',
+    'weight' => '5',
     'children' => array(
       0 => 'field_industries',
       1 => 'field_applications',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
-      'formatter' => 'collapsible',
+      'label' => 'Applications and Industries',
       'instance_settings' => array(
-        'description' => '',
         'classes' => '',
+        'description' => '',
       ),
+      'formatter' => 'open',
     ),
   );
   $export['group_apps_ind|node|product|default'] = $field_group;

@@ -9,6 +9,11 @@ h6{
 	color:#333333;
 }
 
+h1,
+h2{
+		font-weight: 400;
+}
+
 a:link, a:visited {
 	color:#F77219;
 }
@@ -18,6 +23,7 @@ h2.block-title,
 h2.node-title
 {
 	font-size: 25px;
+	margin-bottom:auto;
 }
 
 h2.node-title a{

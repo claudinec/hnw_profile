@@ -47,3 +47,121 @@
 	margin:0px;
 	width:960px;
 }
+
+/* node link style */
+.node-links ul li a, .comment-links ul li a{
+	text-transform: capitalize;
+	display: inline;
+	float: left;
+	text-decoration: none;
+	margin: 0;
+	vertical-align: middle;
+	background:none;
+	border: none;
+	cursor: pointer;
+	color: #F77219;
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font-size:13px;
+	font-weight: normal;
+	outline: 0;
+	overflow: visible;
+	letter-spacing: normal;
+	padding: 0;
+	text-shadow: none;
+	width: auto;
+}
+
+.node-links ul li a:hover, .comment-links ul li a:hover{
+	background:none;
+}
+
+select{
+	border:1px #999999 solid;
+}
+
+input[type="submit"].form-submit{
+	border-color:#9AA9B0;
+	border-width:4px;
+	text-transform:uppercase;
+	color:white;
+	font-weight: normal;
+	text-shadow:none;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#4c62ab), to(#0e2142));
+	background:-moz-linear-gradient(center top , rgb(76, 98, 171) 0%, rgb(14, 33, 66) 100%) repeat scroll 0% 0% transparent
+}
+
+/* Contact us page styles */
+.webform-client-form{
+	background:url(../images/corner_background.png)  #ececec no-repeat bottom right;
+	padding:13px 0 13px 16px;
+}
+
+.webform-client-form label{
+	font-weight:normal;
+	width:210px;
+	display: block;
+	float:left;
+	margin-right:130px;
+}
+
+.webform-client-form .form-item{
+	height:38px;
+}
+
+.webform-client-form #webform-component-enquiry{
+	height:168px;
+}
+
+.webform-client-form input,
+.webform-client-form select,
+.webform-client-form textarea
+{
+	width:227px;
+	border:1px solid #999;
+}
+
+.webform-client-form input,
+.webform-client-form select{
+	height:32px;
+}
+
+.node-type-enquiry .group-right{
+	width:629px;
+	float:right;
+}
+
+.node-type-enquiry .grippie{
+	display:none;
+}
+
+.node-type-enquiry .form-submit{
+	float:right;
+	width:auto;
+	margin-right:47px;
+	margin-top:-74px;
+}
+
+#block-block-3{
+	background:#f9f9f9;
+	width:300px;
+}
+
+.node-type-enquiry .container-12 .grid-9 {
+	width: 629px;
+	float: right;
+}
+
+.node-type-enquiry .field-name-body{
+	background:#f9f9fa;
+	padding:16px 16px;
+	margin-bottom:11px;
+}
+
+.node-type-enquiry #page-title{
+	display:block;
+	background:#f9f9fa;
+	text-transform: uppercase;
+	font-size:25px;
+	margin-bottom:0;
+	padding:12px 16px 0px 16px;
+}
