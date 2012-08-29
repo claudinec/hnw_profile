@@ -133,6 +133,12 @@ projects[webform][subdir] = "contrib"
 ; Download a specific Git commit as Features exportability has been committed
 ; but no stable build has been released.
 
+projects[cer][type] = "module"
+projects[cer][download][type] = "git"
+projects[cer][download][url] = "http://git.drupal.org/project/cer.git"
+projects[cer][download][revision] = "c6cca056f61d1abe55f6204023460ed24c9e7a89"
+projects[cer][subdir] = "contrib"
+
 projects[wysiwyg][type] = "module"
 projects[wysiwyg][download][type] = "git"
 projects[wysiwyg][download][url] = "http://git.drupal.org/project/wysiwyg.git"
