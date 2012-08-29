@@ -120,4 +120,4 @@ features[variable][] = menu_parent_product
 features[variable][] = node_options_product
 features[variable][] = node_preview_product
 features[variable][] = node_submitted_product
-features[views_view][] = product_list
+features[views_view][] = product_range

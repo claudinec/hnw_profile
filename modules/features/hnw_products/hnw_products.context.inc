@@ -17,18 +17,9 @@ function hnw_products_context_default_contexts() {
   $context->description = '';
   $context->tag = 'products';
   $context->conditions = array(
-    'taxonomy_term' => array(
-      'values' => array(
-        'applications' => 'applications',
-        'industries' => 'industries',
-      ),
-      'options' => array(
-        'term_form' => '1',
-      ),
-    ),
     'views' => array(
       'values' => array(
-        'product_list:page_2' => 'product_list:page_2',
+        'product_range:page_1' => 'product_range:page_1',
       ),
     ),
   );
@@ -82,17 +73,9 @@ function hnw_products_context_default_contexts() {
   $context->description = '';
   $context->tag = 'products';
   $context->conditions = array(
-    'taxonomy_term' => array(
-      'values' => array(
-        'product_categories' => 'product_categories',
-      ),
-      'options' => array(
-        'term_form' => '1',
-      ),
-    ),
     'views' => array(
       'values' => array(
-        'product_list:page_1' => 'product_list:page_1',
+        'product_range:page' => 'product_range:page',
       ),
     ),
   );
@@ -116,12 +99,6 @@ function hnw_products_context_default_contexts() {
           'delta' => 'sort',
           'region' => 'sidebar_first',
           'weight' => '-8',
-        ),
-        'facetapi-mkMgGMz0RZSwrDpH7Gcb81EPTl2kz5fO' => array(
-          'module' => 'facetapi',
-          'delta' => 'mkMgGMz0RZSwrDpH7Gcb81EPTl2kz5fO',
-          'region' => 'sidebar_first',
-          'weight' => '-7',
         ),
       ),
     ),
