@@ -1,0 +1,11 @@
+name = HNW WYSIWYG
+core = 7.x
+package = HNW
+version = 7.x-0.1
+project = hnw_wysiwyg
+dependencies[] = features
+dependencies[] = filter
+dependencies[] = wysiwyg
+features[features_api][] = api:1
+features[filter][] = hnw_wysiwyg
+features[wysiwyg][] = hnw_wysiwyg
