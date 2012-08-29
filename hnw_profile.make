@@ -103,6 +103,12 @@ projects[omega_tools][subdir] = "contrib"
 projects[panels][version]= 3.2
 projects[panels][type] = "module"
 projects[panels][subdir] = "contrib"
+projects[relation][version] = 1.0-rc3
+projects[relation][type] = "module"
+projects[relation][subdir] = "contrib"
+projects[rules][version] = 2.2
+projects[rules][type] = "module"
+projects[rules][subdir] = "contrib"
 projects[search_api][version] = 1.2
 projects[search_api][type] = "module"
 projects[search_api][subdir] = "contrib"
@@ -132,12 +138,6 @@ projects[webform][subdir] = "contrib"
 
 ; Download a specific Git commit as Features exportability has been committed
 ; but no stable build has been released.
-
-projects[cer][type] = "module"
-projects[cer][download][type] = "git"
-projects[cer][download][url] = "http://git.drupal.org/project/cer.git"
-projects[cer][download][revision] = "c6cca056f61d1abe55f6204023460ed24c9e7a89"
-projects[cer][subdir] = "contrib"
 
 projects[wysiwyg][type] = "module"
 projects[wysiwyg][download][type] = "git"

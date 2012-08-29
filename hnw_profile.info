@@ -25,7 +25,6 @@ dependencies[] = admin_menu
 dependencies[] = apachesolr
 dependencies[] = backup_migrate
 dependencies[] = boxes
-dependencies[] = cer
 dependencies[] = context
 dependencies[] = context_ui
 dependencies[] = ctools
