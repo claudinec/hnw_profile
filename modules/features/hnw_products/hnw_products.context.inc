@@ -53,15 +53,15 @@ function hnw_products_context_default_contexts() {
           'region' => 'sidebar_first',
           'weight' => '-8',
         ),
-        'facetapi-IHSAQCg0Y6NK339STNmphi8fsJlKIu9f' => array(
-          'module' => 'facetapi',
-          'delta' => 'IHSAQCg0Y6NK339STNmphi8fsJlKIu9f',
+        'menu-menu-industries' => array(
+          'module' => 'menu',
+          'delta' => 'menu-industries',
           'region' => 'sidebar_first',
           'weight' => '-7',
         ),
-        'facetapi-hl8vfjKwt4Yz9Yia20lh1qTuYy1GYRlZ' => array(
-          'module' => 'facetapi',
-          'delta' => 'hl8vfjKwt4Yz9Yia20lh1qTuYy1GYRlZ',
+        'menu-menu-applications' => array(
+          'module' => 'menu',
+          'delta' => 'menu-applications',
           'region' => 'sidebar_first',
           'weight' => '-6',
         ),

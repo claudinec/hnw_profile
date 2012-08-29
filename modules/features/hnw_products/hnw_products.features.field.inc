@@ -1103,64 +1103,6 @@ function hnw_products_field_default_fields() {
     ),
   );
 
-  // Exported field: 'field_collection_item-field_model-field_product_price'.
-  $fields['field_collection_item-field_model-field_product_price'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_product_price',
-      'foreign keys' => array(),
-      'indexes' => array(),
-      'locked' => '0',
-      'module' => 'number',
-      'settings' => array(
-        'decimal_separator' => '.',
-      ),
-      'translatable' => '0',
-      'type' => 'number_float',
-    ),
-    'field_instance' => array(
-      'bundle' => 'field_model',
-      'default_value' => NULL,
-      'deleted' => '0',
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'number',
-          'settings' => array(
-            'decimal_separator' => '.',
-            'prefix_suffix' => TRUE,
-            'scale' => 2,
-            'thousand_separator' => ' ',
-          ),
-          'type' => 'number_decimal',
-          'weight' => 3,
-        ),
-      ),
-      'entity_type' => 'field_collection_item',
-      'field_name' => 'field_product_price',
-      'label' => 'Product price',
-      'required' => 0,
-      'settings' => array(
-        'max' => '',
-        'min' => '',
-        'prefix' => '$',
-        'suffix' => '',
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 0,
-        'module' => 'number',
-        'settings' => array(),
-        'type' => 'number',
-        'weight' => '20',
-      ),
-    ),
-  );
-
   // Exported field: 'field_collection_item-field_model-field_temperature'.
   $fields['field_collection_item-field_model-field_temperature'] = array(
     'field_config' => array(
@@ -1685,6 +1627,76 @@ function hnw_products_field_default_fields() {
     ),
   );
 
+  // Exported field: 'node-product-field_manufacturer'.
+  $fields['node-product-field_manufacturer'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_manufacturer',
+      'foreign keys' => array(
+        'format' => array(
+          'columns' => array(
+            'format' => 'format',
+          ),
+          'table' => 'filter_format',
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'text',
+      'settings' => array(
+        'max_length' => '255',
+      ),
+      'translatable' => '0',
+      'type' => 'text',
+    ),
+    'field_instance' => array(
+      'bundle' => 'product',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'text',
+          'settings' => array(),
+          'type' => 'text_default',
+          'weight' => 20,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'ds_extras_field_template' => '',
+      'entity_type' => 'node',
+      'field_name' => 'field_manufacturer',
+      'label' => 'Manufacturer',
+      'required' => 0,
+      'settings' => array(
+        'text_processing' => '0',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'text',
+        'settings' => array(
+          'size' => '60',
+        ),
+        'type' => 'text_textfield',
+        'weight' => '7',
+      ),
+    ),
+  );
+
   // Exported field: 'node-product-field_model'.
   $fields['node-product-field_model'] = array(
     'field_config' => array(
@@ -1734,7 +1746,7 @@ function hnw_products_field_default_fields() {
         'module' => 'field_collection',
         'settings' => array(),
         'type' => 'field_collection_embed',
-        'weight' => '10',
+        'weight' => '8',
       ),
     ),
   );
@@ -1878,7 +1890,7 @@ function hnw_products_field_default_fields() {
           'progress_indicator' => 'throbber',
         ),
         'type' => 'file_generic',
-        'weight' => '8',
+        'weight' => '6',
       ),
     ),
   );
@@ -1958,65 +1970,7 @@ function hnw_products_field_default_fields() {
           'progress_indicator' => 'throbber',
         ),
         'type' => 'image_image',
-        'weight' => '6',
-      ),
-    ),
-  );
-
-  // Exported field: 'node-product-field_product_price'.
-  $fields['node-product-field_product_price'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_product_price',
-      'foreign keys' => array(),
-      'indexes' => array(),
-      'locked' => '0',
-      'module' => 'number',
-      'settings' => array(
-        'decimal_separator' => '.',
-      ),
-      'translatable' => '0',
-      'type' => 'number_float',
-    ),
-    'field_instance' => array(
-      'bundle' => 'product',
-      'default_value' => NULL,
-      'deleted' => '0',
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '18',
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_product_price',
-      'label' => 'Product price',
-      'required' => 0,
-      'settings' => array(
-        'max' => '',
-        'min' => '',
-        'prefix' => '$',
-        'suffix' => '',
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 0,
-        'module' => 'number',
-        'settings' => array(),
-        'type' => 'number',
-        'weight' => '9',
+        'weight' => '4',
       ),
     ),
   );
@@ -2102,87 +2056,7 @@ function hnw_products_field_default_fields() {
           'progress_indicator' => 'throbber',
         ),
         'type' => 'media_generic',
-        'weight' => '7',
-      ),
-    ),
-  );
-
-  // Exported field: 'taxonomy_term-applications-field_parent_industries'.
-  $fields['taxonomy_term-applications-field_parent_industries'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '-1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_parent_industries',
-      'foreign keys' => array(
-        'node' => array(
-          'columns' => array(
-            'target_id' => 'nid',
-          ),
-          'table' => 'node',
-        ),
-      ),
-      'indexes' => array(
-        'target_id' => array(
-          0 => 'target_id',
-        ),
-      ),
-      'locked' => '0',
-      'module' => 'entityreference',
-      'settings' => array(
-        'handler' => 'base',
-        'handler_settings' => array(
-          'behaviors' => array(
-            'views-select-list' => array(
-              'status' => 0,
-            ),
-          ),
-          'sort' => array(
-            'direction' => 'ASC',
-            'field' => 'field_parent_industries:target_id',
-            'property' => 'name',
-            'type' => 'property',
-          ),
-          'target_bundles' => array(
-            'industries' => 'industries',
-          ),
-        ),
-        'handler_submit' => 'Change handler',
-        'target_type' => 'taxonomy_term',
-      ),
-      'translatable' => '0',
-      'type' => 'entityreference',
-    ),
-    'field_instance' => array(
-      'bundle' => 'applications',
-      'default_value' => NULL,
-      'deleted' => '0',
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'entityreference',
-          'settings' => array(
-            'link' => 1,
-          ),
-          'type' => 'entityreference_label',
-          'weight' => '2',
-        ),
-      ),
-      'entity_type' => 'taxonomy_term',
-      'field_name' => 'field_parent_industries',
-      'label' => 'Parent industries',
-      'required' => 0,
-      'settings' => array(
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'options',
-        'settings' => array(),
-        'type' => 'options_select',
-        'weight' => '1',
+        'weight' => '5',
       ),
     ),
   );
@@ -2338,11 +2212,11 @@ function hnw_products_field_default_fields() {
   t('Industries');
   t('Length m');
   t('Length mm');
+  t('Manufacturer');
   t('Medium');
   t('Model');
   t('Model ID');
   t('Net capacity kW');
-  t('Parent industries');
   t('Pressure difference mbar');
   t('Pressure difference mmg');
   t('Product categories');
@@ -2350,7 +2224,6 @@ function hnw_products_field_default_fields() {
   t('Product image');
   t('Product pressure bar');
   t('Product pressure psi');
-  t('Product price');
   t('Product video');
   t('Temperature');
   t('Type');
