@@ -54,12 +54,8 @@ dependencies[] = module_filter
 ; Features
 dependencies[] = hnw_core
 dependencies[] = hnw_appearance
-; dependencies[] = hnw_ds_fields
 dependencies[] = hnw_events
-; dependencies[] = hnw_enquiry
 dependencies[] = hnw_layout
 dependencies[] = hnw_media
 dependencies[] = hnw_products
 dependencies[] = hnw_wysiwyg
-; dependencies[] = moat_basic_pages
-
