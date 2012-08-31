@@ -1,7 +1,6 @@
 name = HNW Layout
 core = 7.x
 package = HNW
-php = 5.2.4
 dependencies[] = ctools
 dependencies[] = strongarm
 features[ctools][] = strongarm:strongarm:1

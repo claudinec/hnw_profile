@@ -9,7 +9,6 @@ dependencies[] = date
 dependencies[] = ds
 dependencies[] = features
 dependencies[] = file
-dependencies[] = hnw_products
 dependencies[] = image
 dependencies[] = link
 dependencies[] = strongarm
