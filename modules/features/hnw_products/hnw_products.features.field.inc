@@ -10,6 +10,139 @@
 function hnw_products_field_default_fields() {
   $fields = array();
 
+  // Exported field: 'field_collection_item-field_industries_and_application-field_applications'.
+  $fields['field_collection_item-field_industries_and_application-field_applications'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '-1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_applications',
+      'foreign keys' => array(
+        'tid' => array(
+          'columns' => array(
+            'tid' => 'tid',
+          ),
+          'table' => 'taxonomy_term_data',
+        ),
+      ),
+      'indexes' => array(
+        'tid' => array(
+          0 => 'tid',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'taxonomy',
+      'settings' => array(
+        'allowed_values' => array(
+          0 => array(
+            'vocabulary' => 'applications',
+            'parent' => '0',
+          ),
+        ),
+      ),
+      'translatable' => '0',
+      'type' => 'taxonomy_term_reference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'field_industries_and_application',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'taxonomy',
+          'settings' => array(),
+          'type' => 'taxonomy_term_reference_link',
+          'weight' => 1,
+        ),
+      ),
+      'entity_type' => 'field_collection_item',
+      'field_name' => 'field_applications',
+      'label' => 'Applications',
+      'required' => 0,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 0,
+        'module' => 'taxonomy',
+        'settings' => array(
+          'autocomplete_path' => 'taxonomy/autocomplete',
+          'size' => 60,
+        ),
+        'type' => 'taxonomy_autocomplete',
+        'weight' => '2',
+      ),
+    ),
+  );
+
+  // Exported field: 'field_collection_item-field_industries_and_application-field_industries'.
+  $fields['field_collection_item-field_industries_and_application-field_industries'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_industries',
+      'foreign keys' => array(
+        'tid' => array(
+          'columns' => array(
+            'tid' => 'tid',
+          ),
+          'table' => 'taxonomy_term_data',
+        ),
+      ),
+      'indexes' => array(
+        'tid' => array(
+          0 => 'tid',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'taxonomy',
+      'settings' => array(
+        'allowed_values' => array(
+          0 => array(
+            'vocabulary' => 'industries',
+            'parent' => '0',
+          ),
+        ),
+      ),
+      'translatable' => '0',
+      'type' => 'taxonomy_term_reference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'field_industries_and_application',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'taxonomy',
+          'settings' => array(),
+          'type' => 'taxonomy_term_reference_link',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'field_collection_item',
+      'field_name' => 'field_industries',
+      'label' => 'Industries',
+      'required' => 0,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'options',
+        'settings' => array(),
+        'type' => 'options_select',
+        'weight' => '1',
+      ),
+    ),
+  );
+
   // Exported field: 'field_collection_item-field_model-field_backpressure_mbar'.
   $fields['field_collection_item-field_model-field_backpressure_mbar'] = array(
     'field_config' => array(
@@ -2061,127 +2194,72 @@ function hnw_products_field_default_fields() {
     ),
   );
 
-  // Exported field: 'taxonomy_term-product_categories-field_applications'.
-  $fields['taxonomy_term-product_categories-field_applications'] = array(
+  // Exported field: 'taxonomy_term-applications-field_parent_industries'.
+  $fields['taxonomy_term-applications-field_parent_industries'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '-1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_applications',
+      'field_name' => 'field_parent_industries',
       'foreign keys' => array(
-        'tid' => array(
+        'node' => array(
           'columns' => array(
-            'tid' => 'tid',
+            'target_id' => 'nid',
           ),
-          'table' => 'taxonomy_term_data',
+          'table' => 'node',
         ),
       ),
       'indexes' => array(
-        'tid' => array(
-          0 => 'tid',
+        'target_id' => array(
+          0 => 'target_id',
         ),
       ),
       'locked' => '0',
-      'module' => 'taxonomy',
+      'module' => 'entityreference',
       'settings' => array(
-        'allowed_values' => array(
-          0 => array(
-            'vocabulary' => 'applications',
-            'parent' => '0',
+        'handler' => 'base',
+        'handler_settings' => array(
+          'behaviors' => array(
+            'views-select-list' => array(
+              'status' => 0,
+            ),
+          ),
+          'sort' => array(
+            'direction' => 'ASC',
+            'field' => 'field_parent_industries:target_id',
+            'property' => 'name',
+            'type' => 'property',
+          ),
+          'target_bundles' => array(
+            'industries' => 'industries',
           ),
         ),
+        'handler_submit' => 'Change handler',
+        'target_type' => 'taxonomy_term',
       ),
       'translatable' => '0',
-      'type' => 'taxonomy_term_reference',
+      'type' => 'entityreference',
     ),
     'field_instance' => array(
-      'bundle' => 'product_categories',
+      'bundle' => 'applications',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'taxonomy',
-          'settings' => array(),
-          'type' => 'taxonomy_term_reference_link',
-          'weight' => 1,
-        ),
-      ),
-      'ds_extras_field_template' => '',
-      'entity_type' => 'taxonomy_term',
-      'field_name' => 'field_applications',
-      'label' => 'Applications',
-      'required' => 0,
-      'settings' => array(
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 0,
-        'module' => 'taxonomy',
-        'settings' => array(
-          'autocomplete_path' => 'taxonomy/autocomplete',
-          'size' => 60,
-        ),
-        'type' => 'taxonomy_autocomplete',
-        'weight' => '2',
-      ),
-    ),
-  );
-
-  // Exported field: 'taxonomy_term-product_categories-field_industries'.
-  $fields['taxonomy_term-product_categories-field_industries'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '-1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_industries',
-      'foreign keys' => array(
-        'tid' => array(
-          'columns' => array(
-            'tid' => 'tid',
+          'module' => 'entityreference',
+          'settings' => array(
+            'link' => 1,
           ),
-          'table' => 'taxonomy_term_data',
+          'type' => 'entityreference_label',
+          'weight' => '2',
         ),
       ),
-      'indexes' => array(
-        'tid' => array(
-          0 => 'tid',
-        ),
-      ),
-      'locked' => '0',
-      'module' => 'taxonomy',
-      'settings' => array(
-        'allowed_values' => array(
-          0 => array(
-            'vocabulary' => 'industries',
-            'parent' => '0',
-          ),
-        ),
-      ),
-      'translatable' => '0',
-      'type' => 'taxonomy_term_reference',
-    ),
-    'field_instance' => array(
-      'bundle' => 'product_categories',
-      'default_value' => NULL,
-      'deleted' => '0',
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'taxonomy',
-          'settings' => array(),
-          'type' => 'taxonomy_term_reference_link',
-          'weight' => 0,
-        ),
-      ),
-      'ds_extras_field_template' => '',
       'entity_type' => 'taxonomy_term',
-      'field_name' => 'field_industries',
-      'label' => 'Industries',
+      'field_name' => 'field_parent_industries',
+      'label' => 'Parent industries',
       'required' => 0,
       'settings' => array(
         'user_register_form' => FALSE,
@@ -2191,6 +2269,61 @@ function hnw_products_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_select',
+        'weight' => '1',
+      ),
+    ),
+  );
+
+  // Exported field: 'taxonomy_term-product_categories-field_industries_and_application'.
+  $fields['taxonomy_term-product_categories-field_industries_and_application'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '-1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_industries_and_application',
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'locked' => '0',
+      'module' => 'field_collection',
+      'settings' => array(
+        'path' => '',
+      ),
+      'translatable' => '0',
+      'type' => 'field_collection',
+    ),
+    'field_instance' => array(
+      'bundle' => 'product_categories',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'field_collection',
+          'settings' => array(
+            'add' => 'Add',
+            'delete' => 'Delete',
+            'description' => TRUE,
+            'edit' => 'Edit',
+            'view_mode' => 'full',
+          ),
+          'type' => 'field_collection_view',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'taxonomy_term',
+      'field_name' => 'field_industries_and_application',
+      'label' => 'Industries and Applications',
+      'required' => 0,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 0,
+        'module' => 'field_collection',
+        'settings' => array(),
+        'type' => 'field_collection_embed',
         'weight' => '1',
       ),
     ),
@@ -2210,6 +2343,7 @@ function hnw_products_field_default_fields() {
   t('Height m');
   t('Height mm');
   t('Industries');
+  t('Industries and Applications');
   t('Length m');
   t('Length mm');
   t('Manufacturer');
@@ -2217,6 +2351,7 @@ function hnw_products_field_default_fields() {
   t('Model');
   t('Model ID');
   t('Net capacity kW');
+  t('Parent industries');
   t('Pressure difference mbar');
   t('Pressure difference mmg');
   t('Product categories');
