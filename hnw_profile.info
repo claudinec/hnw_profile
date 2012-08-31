@@ -47,6 +47,7 @@ dependencies[] = webform
 
 ; Development
 dependencies[] = coder
+dependencies[] = coder_review
 dependencies[] = devel
 dependencies[] = devel_generate
 dependencies[] = module_filter
