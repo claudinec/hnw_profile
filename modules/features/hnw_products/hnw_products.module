@@ -5,3 +5,83 @@
  */
 
 include_once 'hnw_products.features.inc';
+
+/**
+ * Implements hook_taxonomy_term_insert($term).
+ */
+function hnw_products_taxonomy_term_insert($term) {
+  // Only act if vocabulary is product_categories.
+  if ($term['vid'] == 3) {
+    _hnw_products_update_category_relations($term);
+  }
+}
+
+/**
+ * Implements hook_taxonomy_term_update($term).
+ */
+function hnw_products_taxonomy_term_update($term) {
+  // Only act if vocabulary is product_categories.
+  if ($term['vid'] == 3) {
+    _hnw_products_update_category_relations($term);
+  }
+}
+
+/**
+ * After saving a product category term, update the relationships between
+ * industries and applications in the term's field collections.
+ */
+function _hnw_products_update_category_relations($term) {
+  // Database connection.
+  $db = $databases['default']['database'];
+  $user = $databases['default']['username'];
+  $pass = $databases['default']['password'];
+  $dbh = new PDO("mysql:host=localhost;dbname=$db", $user, $pass);
+  // Loop over industries for this product category and fetch entity_id of
+  // industry-and-application field collections. For each field collection,
+  // there is one industry and unlimited applications.
+  $results = _hnw_products_db_select($dbh, 'field_industries_and_application_value', 'field_data_field_industries_and_application', 'entity_id', $term['tid']);
+  foreach($results as &$row) {
+    // Industry.
+    $industries = _hnw_products_db_select($dbh, 'field_industries_tid', 'field_data_industries', 'entity_id', $row['field_industries_and_application_value']);
+    if (count($industries) != 1){
+      dpm('Number of industries does not equal 1', $type='error');
+    }
+    else {
+      $tid = $industries[1]['field_industries_tid'];
+      dpm("Industry number $tid returned");
+    }
+    // Applications.
+    // Assign industry as parent industry of application.
+  }
+}
+
+/**
+ * Prepare and execute a select query on the database.
+ *
+ * @param $dbh
+ *   Database handler
+ * @param $select_col
+ *   Column to be selected
+ * @param $query_tbl
+ *   Table to be queried
+ * @param $query_col
+ *   Column to be queried
+ * @param $query_val
+ *   Value to compare
+ *
+ * @return $results
+ *   Row of results from the select query
+ */
+function _hnw_products_db_select($dbh, $select_col, $query_tbl, $query_col, $query_val) {
+  $results = array();
+  $stmt = $dbh->prepare('select ? from ? where ? = ?');
+  $stmt->bindParam(1, $select_col);
+  $stmt->bindParam(2, $query_tbl);
+  $stmt->bindParam(3, $query_col);
+  if ($stmt->execute(array($query_val))) {
+    while ($row = $stmt->fetch()) {
+      array_push($results, $row);
+    }
+  }
+  return $results;
+}
