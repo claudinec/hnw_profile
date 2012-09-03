@@ -26,6 +26,13 @@ function hnw_products_update_7102() {
 }
 
 /**
+ * Changes to hnw_products feature: enable field_collection_table module
+ */
+function hnw_products_update_7103() {
+  _hnw_products_module_enable();
+}
+
+/**
  * helper function: flush caches and revert features.
  */
 function _hnw_products_flush_revert() {
@@ -33,3 +40,9 @@ function _hnw_products_flush_revert() {
   features_revert(array('hnw_products'));
 }
 
+/**
+ * Helper function: enable moudles.
+ */
+function _hnw_products_module_enable() {
+  module_enable(array('field_collection_table'));
+}
