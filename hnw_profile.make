@@ -149,7 +149,9 @@ projects[wysiwyg][subdir] = "contrib"
 
 ; Themes
 ; --------
-projects[] = omega
+projects[omega][version] = 3.1
+projects[omega][type] = theme
+projects[omega][subdir] = contrib
 
   
   
