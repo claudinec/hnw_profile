@@ -133,3 +133,27 @@
 {
 	margin-left:4px;
 }
+
+.field-name-field-model th{
+	font-weight: bold;
+}
+
+.field-name-field-model th,
+.field-name-field-model tr td,
+.field-name-field-model tr:hover td,
+.field-name-field-model tr
+{
+	background:#f9f9f9;
+	border:none;
+}
+
+.field-name-field-model td{
+	padding-top:0;	
+	padding-bottom:0;	
+}
+
+.field-name-field-model table{
+	width:586px;
+	background:#f9f9f9;
+	border:none;
+}
