@@ -17,6 +17,16 @@ function hnw_products_context_default_contexts() {
   $context->description = '';
   $context->tag = 'products';
   $context->conditions = array(
+    'taxonomy_term' => array(
+      'values' => array(
+        'applications' => 'applications',
+        'industries' => 'industries',
+        'product_categories' => 'product_categories',
+      ),
+      'options' => array(
+        'term_form' => '1',
+      ),
+    ),
     'views' => array(
       'values' => array(
         'product_range:page_1' => 'product_range:page_1',
@@ -26,24 +36,6 @@ function hnw_products_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'search-form' => array(
-          'module' => 'search',
-          'delta' => 'form',
-          'region' => 'sidebar_first',
-          'weight' => '-10',
-        ),
-        'current_search-standard' => array(
-          'module' => 'current_search',
-          'delta' => 'standard',
-          'region' => 'sidebar_first',
-          'weight' => '-9',
-        ),
-        'apachesolr_search-sort' => array(
-          'module' => 'apachesolr_search',
-          'delta' => 'sort',
-          'region' => 'sidebar_first',
-          'weight' => '-8',
-        ),
         'menu-menu-industries' => array(
           'module' => 'menu',
           'delta' => 'menu-industries',

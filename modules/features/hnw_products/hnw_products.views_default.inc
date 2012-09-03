@@ -64,6 +64,8 @@ function hnw_products_views_default_views() {
 
   /* Display: Industries and Applications */
   $handler = $view->new_display('page', 'Industries and Applications', 'page_1');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Industries and Applications';
   $handler->display->display_options['path'] = 'industries-and-applications';
   $export['product_range'] = $view;
 
