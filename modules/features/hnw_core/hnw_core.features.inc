@@ -23,10 +23,10 @@ function hnw_core_ctools_plugin_api() {
 
 // Helper function to disable hnw_domains feature.
 function _hnw_domains_disable() {
-  module_disable(array('hnw_domains'));
+  module_disable(array('domain', 'hnw_domains'));
 }
 
 // Helper function to enable hnw_domains feature.
 function _hnw_domains_enable() {
-  module_enable(array('hnw_domains'));
+  module_enable(array('domain', 'hnw_domains'));
 }
