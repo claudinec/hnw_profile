@@ -28,11 +28,18 @@ function hnw_products_menu_default_menu_custom() {
     'title' => 'Industries',
     'description' => '',
   );
+  // Exported menu: menu-product-range.
+  $menus['menu-product-range'] = array(
+    'menu_name' => 'menu-product-range',
+    'title' => 'Product Range',
+    'description' => '',
+  );
   // Translatables
   // Included for use with string extractors like potx.
   t('Applications');
   t('Industries');
   t('Main menu');
+  t('Product Range');
   t('The <em>Main</em> menu is used on many sites to show the major sections of the site, often in a top navigation bar.');
 
 

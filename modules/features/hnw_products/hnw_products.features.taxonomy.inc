@@ -53,7 +53,7 @@ function hnw_products_taxonomy_default_vocabularies() {
       'name' => 'Product Categories',
       'machine_name' => 'product_categories',
       'description' => '',
-      'hierarchy' => '1',
+      'hierarchy' => '0',
       'module' => 'taxonomy',
       'weight' => '-10',
     ),

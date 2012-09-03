@@ -19,9 +19,7 @@ function hnw_products_context_default_contexts() {
   $context->conditions = array(
     'taxonomy_term' => array(
       'values' => array(
-        'applications' => 'applications',
         'industries' => 'industries',
-        'product_categories' => 'product_categories',
       ),
       'options' => array(
         'term_form' => '1',
@@ -29,7 +27,7 @@ function hnw_products_context_default_contexts() {
     ),
     'views' => array(
       'values' => array(
-        'product_range:page_1' => 'product_range:page_1',
+        'industries_and_applications:page' => 'industries_and_applications:page',
       ),
     ),
   );
@@ -42,12 +40,6 @@ function hnw_products_context_default_contexts() {
           'region' => 'sidebar_first',
           'weight' => '-7',
         ),
-        'menu-menu-applications' => array(
-          'module' => 'menu',
-          'delta' => 'menu-applications',
-          'region' => 'sidebar_first',
-          'weight' => '-6',
-        ),
       ),
     ),
   );
@@ -57,6 +49,66 @@ function hnw_products_context_default_contexts() {
   // Included for use with string extractors like potx.
   t('products');
   $export['industries_and_applications'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
+  $context->name = 'industry_display';
+  $context->description = 'Display product categories that apply to this industry';
+  $context->tag = 'products';
+  $context->conditions = array(
+    'taxonomy_term' => array(
+      'values' => array(
+        'industries' => 'industries',
+      ),
+      'options' => array(
+        'term_form' => '1',
+      ),
+    ),
+  );
+  $context->reactions = array();
+  $context->condition_mode = 0;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('Display product categories that apply to this industry');
+  t('products');
+  $export['industry_display'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
+  $context->name = 'product_category_term_page';
+  $context->description = '';
+  $context->tag = 'products';
+  $context->conditions = array(
+    'taxonomy_term' => array(
+      'values' => array(
+        'product_categories' => 'product_categories',
+      ),
+      'options' => array(
+        'term_form' => '1',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'menu-menu-product-range' => array(
+          'module' => 'menu',
+          'delta' => 'menu-product-range',
+          'region' => 'sidebar_first',
+          'weight' => '-10',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 0;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('products');
+  $export['product_category_term_page'] = $context;
 
   $context = new stdClass();
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */

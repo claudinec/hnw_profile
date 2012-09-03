@@ -18,17 +18,17 @@ function hnw_products_ds_field_settings_info() {
   $ds_fieldsetting->view_mode = 'default';
   $ds_fieldsetting->settings = array(
     'products_like_this' => array(
-      'weight' => '8',
+      'weight' => '7',
       'label' => 'hidden',
       'format' => 'default',
     ),
     'product_back_button' => array(
-      'weight' => '9',
+      'weight' => '8',
       'label' => 'hidden',
       'format' => 'default',
     ),
     'title' => array(
-      'weight' => '2',
+      'weight' => '3',
       'label' => 'hidden',
       'format' => 'default',
     ),
@@ -128,29 +128,31 @@ function hnw_products_ds_layout_settings_info() {
       'left' => array(
         0 => 'field_product_image',
         1 => 'field_product_video',
+        2 => 'field_product_download',
       ),
       'right' => array(
-        2 => 'title',
-        3 => 'field_product_categories',
-        4 => 'group_apps_ind',
-        5 => 'body',
-        6 => 'field_model',
-        7 => 'field_product_download',
-        8 => 'products_like_this',
-        9 => 'product_back_button',
+        3 => 'title',
+        4 => 'field_product_categories',
+        5 => 'group_apps_ind',
+        6 => 'body',
+        7 => 'products_like_this',
+        8 => 'product_back_button',
+        9 => 'field_industries',
+        10 => 'field_applications',
       ),
     ),
     'fields' => array(
       'field_product_image' => 'left',
       'field_product_video' => 'left',
+      'field_product_download' => 'left',
       'title' => 'right',
       'field_product_categories' => 'right',
       'group_apps_ind' => 'right',
       'body' => 'right',
-      'field_model' => 'right',
-      'field_product_download' => 'right',
       'products_like_this' => 'right',
       'product_back_button' => 'right',
+      'field_industries' => 'right',
+      'field_applications' => 'right',
     ),
     'classes' => array(
       'left' => array(
@@ -236,10 +238,12 @@ function hnw_products_ds_layout_settings_info() {
     'regions' => array(
       'ds_content' => array(
         0 => 'description',
+        1 => 'field_industries_and_application',
       ),
     ),
     'fields' => array(
       'description' => 'ds_content',
+      'field_industries_and_application' => 'ds_content',
     ),
     'classes' => array(),
     'wrappers' => array(

@@ -16,8 +16,12 @@ function hnw_products_menu_default_menu_links() {
     'link_path' => 'industries-and-applications',
     'router_path' => 'industries-and-applications',
     'link_title' => 'Industries and Applications',
-    'options' => array(),
-    'module' => 'system',
+    'options' => array(
+      'attributes' => array(
+        'title' => '',
+      ),
+    ),
+    'module' => 'menu',
     'hidden' => '0',
     'external' => '0',
     'has_children' => '0',
