@@ -154,5 +154,37 @@ function hnw_products_context_default_contexts() {
   t('products');
   $export['product_range'] = $context;
 
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
+  $context->name = 'product_range_page';
+  $context->description = '';
+  $context->tag = 'products';
+  $context->conditions = array(
+    'path' => array(
+      'values' => array(
+        'product-range' => 'product-range',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'menu-menu-product-range' => array(
+          'module' => 'menu',
+          'delta' => 'menu-product-range',
+          'region' => 'content',
+          'weight' => '-10',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 0;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('products');
+  $export['product_range_page'] = $context;
+
   return $export;
 }
