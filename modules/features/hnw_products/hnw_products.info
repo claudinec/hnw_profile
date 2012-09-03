@@ -92,6 +92,7 @@ features[field][] = node-product-field_product_image
 features[field][] = node-product-field_product_video
 features[field][] = taxonomy_term-applications-field_parent_industries
 features[field][] = taxonomy_term-product_categories-field_industries_and_application
+features[field_group][] = group_apps_ind|node|product|default
 features[field_group][] = group_vessel_size|field_collection_item|field_model|form
 features[menu_custom][] = main-menu
 features[menu_custom][] = menu-applications

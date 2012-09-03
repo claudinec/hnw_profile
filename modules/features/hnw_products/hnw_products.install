@@ -19,7 +19,7 @@ function hnw_products_update_7101() {
 }
 
 /**
- * Display suite changes for product contant type.
+ * Changes to hnw_products feature
  */
 function hnw_products_update_7102() {
   _hnw_products_flush_revert();
@@ -32,3 +32,4 @@ function _hnw_products_flush_revert() {
   drupal_flush_all_caches();
   features_revert(array('hnw_products'));
 }
+
