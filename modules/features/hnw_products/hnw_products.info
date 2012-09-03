@@ -125,4 +125,5 @@ features[variable][] = node_options_product
 features[variable][] = node_preview_product
 features[variable][] = node_submitted_product
 features[views_view][] = industries_and_applications
+features[views_view][] = product_categories_in_industry
 features[views_view][] = product_range

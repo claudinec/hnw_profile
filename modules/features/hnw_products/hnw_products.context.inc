@@ -17,14 +17,6 @@ function hnw_products_context_default_contexts() {
   $context->description = '';
   $context->tag = 'products';
   $context->conditions = array(
-    'taxonomy_term' => array(
-      'values' => array(
-        'industries' => 'industries',
-      ),
-      'options' => array(
-        'term_form' => '1',
-      ),
-    ),
     'views' => array(
       'values' => array(
         'industries_and_applications:page' => 'industries_and_applications:page',
@@ -66,7 +58,24 @@ function hnw_products_context_default_contexts() {
       ),
     ),
   );
-  $context->reactions = array();
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'views-8009e60a5b328c4bcda087b1ada3d89b' => array(
+          'module' => 'views',
+          'delta' => '8009e60a5b328c4bcda087b1ada3d89b',
+          'region' => 'content',
+          'weight' => '-10',
+        ),
+        'menu-menu-industries' => array(
+          'module' => 'menu',
+          'delta' => 'menu-industries',
+          'region' => 'sidebar_first',
+          'weight' => '-10',
+        ),
+      ),
+    ),
+  );
   $context->condition_mode = 0;
 
   // Translatables
