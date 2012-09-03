@@ -28,14 +28,14 @@ function hnw_products_menu_default_menu_links() {
     'expanded' => '0',
     'weight' => '0',
   );
-  // Exported menu link: main-menu:product-range
-  $menu_links['main-menu:product-range'] = array(
+  // Exported menu link: main-menu:node/12
+  $menu_links['main-menu:node/12'] = array(
     'menu_name' => 'main-menu',
-    'link_path' => 'product-range',
-    'router_path' => 'product-range',
+    'link_path' => 'node/12',
+    'router_path' => 'node/%',
     'link_title' => 'Product Range',
     'options' => array(),
-    'module' => 'system',
+    'module' => 'menu',
     'hidden' => '0',
     'external' => '0',
     'has_children' => '0',
