@@ -30,7 +30,6 @@ dependencies[] = context_ui
 dependencies[] = ctools
 dependencies[] = custom_formatters
 dependencies[] = diff
-dependencies[] = domain
 dependencies[] = ds
 dependencies[] = entity
 dependencies[] = entityreference
