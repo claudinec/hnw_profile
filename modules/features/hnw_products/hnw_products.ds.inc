@@ -18,17 +18,17 @@ function hnw_products_ds_field_settings_info() {
   $ds_fieldsetting->view_mode = 'default';
   $ds_fieldsetting->settings = array(
     'products_like_this' => array(
-      'weight' => '7',
+      'weight' => '6',
       'label' => 'hidden',
       'format' => 'default',
     ),
     'product_back_button' => array(
-      'weight' => '8',
+      'weight' => '9',
       'label' => 'hidden',
       'format' => 'default',
     ),
     'title' => array(
-      'weight' => '3',
+      'weight' => '2',
       'label' => 'hidden',
       'format' => 'default',
     ),
@@ -128,29 +128,29 @@ function hnw_products_ds_layout_settings_info() {
       'left' => array(
         0 => 'field_product_image',
         1 => 'field_product_video',
-        2 => 'field_product_download',
       ),
       'right' => array(
-        3 => 'title',
-        4 => 'group_apps_ind',
-        5 => 'field_product_categories',
-        6 => 'body',
-        7 => 'products_like_this',
-        8 => 'product_back_button',
-        9 => 'field_model',
+        2 => 'title',
+        3 => 'group_apps_ind',
+        4 => 'field_product_categories',
+        5 => 'body',
+        6 => 'products_like_this',
+        7 => 'field_model',
+        8 => 'field_product_download',
+        9 => 'product_back_button',
       ),
     ),
     'fields' => array(
       'field_product_image' => 'left',
       'field_product_video' => 'left',
-      'field_product_download' => 'left',
       'title' => 'right',
       'group_apps_ind' => 'right',
       'field_product_categories' => 'right',
       'body' => 'right',
       'products_like_this' => 'right',
-      'product_back_button' => 'right',
       'field_model' => 'right',
+      'field_product_download' => 'right',
+      'product_back_button' => 'right',
     ),
     'classes' => array(
       'left' => array(
