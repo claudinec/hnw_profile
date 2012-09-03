@@ -112,6 +112,7 @@
 	background:#f9f9f9;
 	margin-bottom:10px;
 	padding:8px 17px;
+	margin-top:8px;
 }
 
 .node-type-product .field-name-products-like-this .block-title{
@@ -145,11 +146,13 @@
 {
 	background:#f9f9f9;
 	border:none;
+	vertical-align: top;
 }
 
 .field-name-field-model td{
 	padding-top:0;	
-	padding-bottom:0;	
+	padding-bottom:0;
+	vertical-align: top;
 }
 
 .field-name-field-model table{
