@@ -132,13 +132,12 @@ function hnw_products_ds_layout_settings_info() {
       ),
       'right' => array(
         3 => 'title',
-        4 => 'field_product_categories',
-        5 => 'group_apps_ind',
+        4 => 'group_apps_ind',
+        5 => 'field_product_categories',
         6 => 'body',
         7 => 'products_like_this',
         8 => 'product_back_button',
-        9 => 'field_industries',
-        10 => 'field_applications',
+        9 => 'field_model',
       ),
     ),
     'fields' => array(
@@ -146,13 +145,12 @@ function hnw_products_ds_layout_settings_info() {
       'field_product_video' => 'left',
       'field_product_download' => 'left',
       'title' => 'right',
-      'field_product_categories' => 'right',
       'group_apps_ind' => 'right',
+      'field_product_categories' => 'right',
       'body' => 'right',
       'products_like_this' => 'right',
       'product_back_button' => 'right',
-      'field_industries' => 'right',
-      'field_applications' => 'right',
+      'field_model' => 'right',
     ),
     'classes' => array(
       'left' => array(

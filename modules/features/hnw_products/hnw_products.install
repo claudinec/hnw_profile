@@ -19,6 +19,13 @@ function hnw_products_update_7101() {
 }
 
 /**
+ * Display suite changes for product contant type.
+ */
+function hnw_products_update_7102() {
+  _hnw_products_flush_revert();
+}
+
+/**
  * helper function: flush caches and revert features.
  */
 function _hnw_products_flush_revert() {
