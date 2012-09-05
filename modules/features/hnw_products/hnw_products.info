@@ -5,6 +5,7 @@ package = HNW
 version = 7.x-0.6
 project = hnw_products
 dependencies[] = apachesolr_search
+dependencies[] = cer
 dependencies[] = context
 dependencies[] = ctools
 dependencies[] = current_search
