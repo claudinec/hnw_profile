@@ -18,12 +18,12 @@ function hnw_products_ds_field_settings_info() {
   $ds_fieldsetting->view_mode = 'default';
   $ds_fieldsetting->settings = array(
     'products_like_this' => array(
-      'weight' => '7',
+      'weight' => '8',
       'label' => 'hidden',
       'format' => 'default',
     ),
     'product_back_button' => array(
-      'weight' => '8',
+      'weight' => '9',
       'label' => 'hidden',
       'format' => 'default',
     ),
@@ -132,13 +132,12 @@ function hnw_products_ds_layout_settings_info() {
       ),
       'right' => array(
         3 => 'title',
-        4 => 'field_product_categories',
-        5 => 'group_apps_ind',
+        4 => 'group_apps_ind',
+        5 => 'field_product_categories',
         6 => 'body',
-        7 => 'products_like_this',
-        8 => 'product_back_button',
-        9 => 'field_industries',
-        10 => 'field_applications',
+        7 => 'field_model',
+        8 => 'products_like_this',
+        9 => 'product_back_button',
       ),
     ),
     'fields' => array(
@@ -146,13 +145,12 @@ function hnw_products_ds_layout_settings_info() {
       'field_product_video' => 'left',
       'field_product_download' => 'left',
       'title' => 'right',
-      'field_product_categories' => 'right',
       'group_apps_ind' => 'right',
+      'field_product_categories' => 'right',
       'body' => 'right',
+      'field_model' => 'right',
       'products_like_this' => 'right',
       'product_back_button' => 'right',
-      'field_industries' => 'right',
-      'field_applications' => 'right',
     ),
     'classes' => array(
       'left' => array(
@@ -184,11 +182,13 @@ function hnw_products_ds_layout_settings_info() {
     'regions' => array(
       'ds_content' => array(
         0 => 'description',
-        1 => 'field_parent_industries',
+        1 => 'field_application_image',
+        2 => 'field_parent_industries',
       ),
     ),
     'fields' => array(
       'description' => 'ds_content',
+      'field_application_image' => 'ds_content',
       'field_parent_industries' => 'ds_content',
     ),
     'classes' => array(),
@@ -212,10 +212,12 @@ function hnw_products_ds_layout_settings_info() {
     'regions' => array(
       'ds_content' => array(
         0 => 'description',
+        1 => 'field_industry_image',
       ),
     ),
     'fields' => array(
       'description' => 'ds_content',
+      'field_industry_image' => 'ds_content',
     ),
     'classes' => array(),
     'wrappers' => array(
@@ -239,11 +241,13 @@ function hnw_products_ds_layout_settings_info() {
       'ds_content' => array(
         0 => 'description',
         1 => 'field_industries_and_application',
+        2 => 'field_product_category_image',
       ),
     ),
     'fields' => array(
       'description' => 'ds_content',
       'field_industries_and_application' => 'ds_content',
+      'field_product_category_image' => 'ds_content',
     ),
     'classes' => array(),
     'wrappers' => array(
@@ -254,54 +258,6 @@ function hnw_products_ds_layout_settings_info() {
     'layout_attributes_merge' => 1,
   );
   $export['taxonomy_term|product_categories|default'] = $ds_layout;
-
-  $ds_layout = new stdClass();
-  $ds_layout->api_version = 1;
-  $ds_layout->id = 'taxonomy_term|product_categories|full';
-  $ds_layout->entity_type = 'taxonomy_term';
-  $ds_layout->bundle = 'product_categories';
-  $ds_layout->view_mode = 'full';
-  $ds_layout->layout = 'ds_1col';
-  $ds_layout->settings = array(
-    'regions' => array(
-      'ds_content' => array(
-        0 => 'description',
-      ),
-    ),
-    'fields' => array(
-      'description' => 'ds_content',
-    ),
-    'classes' => array(),
-    'wrappers' => array(),
-    'layout_wrapper' => 'div',
-    'layout_attributes' => '',
-    'layout_attributes_merge' => TRUE,
-  );
-  $export['taxonomy_term|product_categories|full'] = $ds_layout;
-
-  $ds_layout = new stdClass();
-  $ds_layout->api_version = 1;
-  $ds_layout->id = 'taxonomy_term|product_categories|term_page';
-  $ds_layout->entity_type = 'taxonomy_term';
-  $ds_layout->bundle = 'product_categories';
-  $ds_layout->view_mode = 'term_page';
-  $ds_layout->layout = 'ds_1col';
-  $ds_layout->settings = array(
-    'regions' => array(
-      'ds_content' => array(
-        0 => 'description',
-      ),
-    ),
-    'fields' => array(
-      'description' => 'ds_content',
-    ),
-    'classes' => array(),
-    'wrappers' => array(),
-    'layout_wrapper' => 'div',
-    'layout_attributes' => '',
-    'layout_attributes_merge' => TRUE,
-  );
-  $export['taxonomy_term|product_categories|term_page'] = $ds_layout;
 
   return $export;
 }

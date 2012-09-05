@@ -37,7 +37,7 @@ function hnw_products_taxonomy_default_vocabularies() {
       'name' => 'Industries',
       'machine_name' => 'industries',
       'description' => '',
-      'hierarchy' => '0',
+      'hierarchy' => '1',
       'module' => 'taxonomy',
       'weight' => '-9',
     ),
