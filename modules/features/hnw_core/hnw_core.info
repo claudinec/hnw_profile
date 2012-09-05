@@ -3,59 +3,42 @@ description = Core module for Hurll Nu-Way
 core = 7.x
 package = HNW
 version = 7.x-0.4
-files[] = hnw_core.module
-project[] = hnw_core
-
-; Core
+project = hnw_core
+dependencies[] = admin
 dependencies[] = block
-dependencies[] = dblog
-dependencies[] = field_ui
-dependencies[] = file
-dependencies[] = image
-dependencies[] = list
-dependencies[] = menu
-dependencies[] = number
-dependencies[] = options
-dependencies[] = path
-dependencies[] = taxonomy
-dependencies[] = toolbar
-
-; Contrib
-dependencies[] = apachesolr
-dependencies[] = backup_migrate
-dependencies[] = boxes
 dependencies[] = context
 dependencies[] = context_ui
 dependencies[] = ctools
 dependencies[] = custom_formatters
+dependencies[] = dblog
+dependencies[] = devel
+dependencies[] = devel_generate
 dependencies[] = diff
 dependencies[] = ds
 dependencies[] = entity
 dependencies[] = entityreference
 dependencies[] = facetapi
-dependencies[] = field_group
 dependencies[] = features
-dependencies[] = diff
-dependencies[] = mollom
-dependencies[] = omega_tools
-dependencies[] = panels
-dependencies[] = strongarm
-dependencies[] = views_ui
-dependencies[] = webform
-
-; Development
-dependencies[] = admin
-dependencies[] = coder
-dependencies[] = coder_review
-dependencies[] = devel
-dependencies[] = devel_generate
-dependencies[] = module_filter
-
-; Features
+dependencies[] = field_collection
+dependencies[] = field_ui
+dependencies[] = file
 dependencies[] = hnw_appearance
 dependencies[] = hnw_events
 dependencies[] = hnw_layout
 dependencies[] = hnw_media
 dependencies[] = hnw_products
+dependencies[] = hnw_users
 dependencies[] = hnw_wysiwyg
+dependencies[] = image
+dependencies[] = menu
 dependencies[] = moat_basic_pages
+dependencies[] = module_filter
+dependencies[] = number
+dependencies[] = options
+dependencies[] = path
+dependencies[] = strongarm
+dependencies[] = taxonomy
+dependencies[] = views
+dependencies[] = views_ui
+dependencies[] = webform
+features[features_api][] = api:1
