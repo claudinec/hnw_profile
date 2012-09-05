@@ -59,3 +59,4 @@ dependencies[] = hnw_layout
 dependencies[] = hnw_media
 dependencies[] = hnw_products
 dependencies[] = hnw_wysiwyg
+dependencies[] = moat_basic_pages
