@@ -6,6 +6,7 @@ version = 7.x-0.1
 project = hnw_domains
 dependencies[] = block
 dependencies[] = context
+dependencies[] = context_ui
 dependencies[] = domain
 dependencies[] = themekey
 features[context][] = domains_contactus_au
