@@ -10,7 +10,7 @@ include_once 'hnw_products.features.inc';
  * Implements hook_taxonomy_term_insert($term).
  */
 function hnw_products_taxonomy_term_insert($term) {
-  // Only act if vocabulary is product_categories.
+  // FIXME Only act if vocabulary is product_categories.
   if ($term->vid == 3) {
     _hnw_products_update_category_relations($term);
   }
@@ -44,7 +44,12 @@ function _hnw_products_update_category_relations($term) {
       foreach ($applications as $application) {
         // Assign industry as parent industry of application.
         dpm("Assigning Industry " . $industry->field_industries_tid . " as parent of Application " . $application->field_applications_tid);
-        $fields = array('entity_type' => 'taxonomy_term', 'bundle' => 'applications', 'deleted' => 0, 'entity_id' => $application->field_applications_tid, 'revision_id' => $application->field_applications_tid, 'delta' => 0, 'field_parent_industries_target_id' => $industry->field_industries_tid);
+        $fields = array('entity_type' => 'taxonomy_term',
+          'bundle' => 'applications', 'deleted' => 0,
+          'entity_id' => $application->field_applications_tid,
+          'revision_id' => $application->field_applications_tid,
+          'language' => und, 'delta' => 0,
+          'field_parent_industries_target_id' => $industry->field_industries_tid);
         db_insert('field_data_field_parent_industries')->fields($fields)->execute(); 
       }
     }
